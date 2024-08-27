@@ -6,8 +6,9 @@ export default function Features() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h2 mb-4">The majority our customers do not understand their workflows.</h2>
-            <p className="text-xl text-gray-400">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-green-600 bg-green-200 rounded-full mb-4">Atteignez des objectifs qui comptent</div>
+            <h2 className="h2 mb-4">Une solution complète pour renforcer votre empreinte numérique.</h2>
+            <p className="text-xl text-gray-400">De la création de sites web optimisés et attractifs à la gestion des réseaux sociaux, en passant par des stratégies de marketing digital personnalisées, nous donnons vie à vos ambitions digitales.</p>
           </div>
 
           {/* Items */}
@@ -20,8 +21,8 @@ export default function Features() {
                 <path className="stroke-current text-purple-100" d="M30 39.313l-4.18 2.197L27 34.628l-5-4.874 6.91-1.004L32 22.49l3.09 6.26L42 29.754l-3 2.924" strokeLinecap="square" strokeWidth="2" fill="none" fillRule="evenodd" />
                 <path className="stroke-current text-purple-300" d="M43 42h-9M43 37h-9" strokeLinecap="square" strokeWidth="2" />
               </svg>
-              <h4 className="h4 mb-2">Instant Features</h4>
-              <p className="text-lg text-gray-400 text-center">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</p>
+              <h4 className="h4 mb-2">Identitée Visuelle</h4>
+              <p className="text-lg text-gray-400 text-center"> Création d'une image de marque unique et cohérente pour renforcer votre reconnaissance et impact sur tous supports.</p>
             </div>
 
             {/* 2nd item */}
@@ -31,8 +32,8 @@ export default function Features() {
                 <path className="stroke-current text-purple-100" strokeWidth="2" strokeLinecap="square" d="M21 23h22v18H21z" fill="none" fillRule="evenodd" />
                 <path className="stroke-current text-purple-300" d="M26 28h12M26 32h12M26 36h5" strokeWidth="2" strokeLinecap="square" />
               </svg>
-              <h4 className="h4 mb-2">Instant Features</h4>
-              <p className="text-lg text-gray-400 text-center">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</p>
+              <h4 className="h4 mb-2">Site web et Application </h4>
+              <p className="text-lg text-gray-400 text-center">Concevoir des plateformes digitales sur mesure, alliant design moderne et performance, pour offrir une expérience utilisateur optimale.</p>
             </div>
 
             {/* 3rd item */}
@@ -45,8 +46,8 @@ export default function Features() {
                   <circle className="stroke-current text-purple-100" cx="11" cy="11" r="11" />
                 </g>
               </svg>
-              <h4 className="h4 mb-2">Instant Features</h4>
-              <p className="text-lg text-gray-400 text-center">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</p>
+              <h4 className="h4 mb-2">Référencement SEO</h4>
+              <p className="text-lg text-gray-400 text-center"> Optimiser votre visibilité en ligne pour vous positionner en tête des résultats de recherche et attirer plus de trafic qualifié.</p>
             </div>
 
             {/* 4th item */}
@@ -58,8 +59,8 @@ export default function Features() {
                   <circle className="stroke-current text-purple-300" cx="13" cy="9" r="3" />
                 </g>
               </svg>
-              <h4 className="h4 mb-2">Instant Features</h4>
-              <p className="text-lg text-gray-400 text-center">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</p>
+              <h4 className="h4 mb-2">Stratégies Marketing</h4>
+              <p className="text-lg text-gray-400 text-center">Développer des plans sur mesure pour maximiser votre visibilité, attirer votre cible et stimuler votre croissance.</p>
             </div>
 
             {/* 5th item */}
@@ -71,8 +72,8 @@ export default function Features() {
                   <path className="stroke-current text-purple-300" d="M22 30h4v12h-4z" />
                 </g>
               </svg>
-              <h4 className="h4 mb-2">Instant Features</h4>
-              <p className="text-lg text-gray-400 text-center">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</p>
+              <h4 className="h4 mb-2">Campagnes Pub</h4>
+              <p className="text-lg text-gray-400 text-center">Créer des campagnes publicitaires efficaces pour accroître votre visibilité et générer des conversions.</p>
             </div>
 
             {/* 6th item */}
@@ -85,8 +86,8 @@ export default function Features() {
                   <path className="stroke-current text-purple-100" d="M8.86 1.18C3.8 1.988 0 5.6 0 10c0 5 4.9 9 11 9a10.55 10.55 0 003.1-.4L20 21l-.6-5.2a9.125 9.125 0 001.991-2.948" />
                 </g>
               </svg>
-              <h4 className="h4 mb-2">Instant Features</h4>
-              <p className="text-lg text-gray-400 text-center">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</p>
+              <h4 className="h4 mb-2">Audit</h4>
+              <p className="text-lg text-gray-400 text-center">Évaluer et optimiser vos performances digitales pour identifier les opportunités d'amélioration.</p>
             </div>
 
           </div>

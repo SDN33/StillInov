@@ -1,20 +1,20 @@
 export const metadata = {
-  title: 'Home - Open PRO',
-  description: 'Page description',
+  title: 'StillInov | Agence de communication digitale',
+  description: 'Donnez vie à vos ambitions digitales et transformez vos idées en réalité.',
 }
 
 import Hero from '@/components/hero'
 import Features from '@/components/features'
 import Newsletter from '@/components/newsletter'
-import Zigzag from '@/components/zigzag'
 import Testimonials from '@/components/testimonials'
+import AboutUs from '@/components/quisommesnous'
 
 export default function Home() {
   return (
     <>
       <Hero />
       <Features />
-      <Zigzag />
+      <AboutUs />
       <Testimonials />
       <Newsletter />
     </>
