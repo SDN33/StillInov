@@ -4,44 +4,40 @@ import Image from 'next/image'
 
 export default function Footer() {
   return (
-    <footer>
-      <div className="py-12 md:py-16">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+    <footer className="bg-gray-900 py-8">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
 
-          {/* Top area: Blocks */}
-          <div className="grid md:grid-cols-12 gap-8 lg:gap-20 mb-8 md:mb-12">
+        {/* Top area: Blocks */}
+        <div className="flex justify-between items-center">
 
-            {/* 1st block */}
-            <div className="md:col-span-4 lg:col-span-5">
-              <div className="mb-2">
-                {/* Logo */}
-                <Link href="/" className="inline-block" aria-label="Stillinov">
-                  <Image
-                    src="/images/logo.png"
-                    alt="Stillinov logo"
-                    width={150}
-                    height={50}
-                    quality={100}
-                  />
-                </Link>
-              </div>
-            </div>
+          {/* 1st block */}
+          <div className="flex items-center">
+            {/* Logo */}
+            <Link href="/" className="inline-block">
+              <Image src="/images/logo.png" alt="StillInov Logo" width={120} height={40} />
+            </Link>
           </div>
 
-          {/* Bottom area */}
-          <div className="md:flex md:items-center md:justify-between">
-
-            {/* Social links */}
-            <ul className="flex mb-4 md:order-1 md:ml-4 md:mb-0">
-              {/* ... (social media links remain unchanged) ... */}
-            </ul>
-
-            {/* Copyrights note */}
-            <div className="text-gray-400 text-sm mr-4">&copy; StillInov.com. Tout droits réservés.</div>
-
+          {/* Social links */}
+          <div className="flex space-x-4">
+            <Link href="https://www.instagram.com/stillinov" target="_blank" rel="noopener noreferrer">
+              <Image src="/images/instagram.webp" alt="Instagram" width={24} height={24} />
+            </Link>
+            <Link href="https://www.linkedin.com/company/stillinov" target="_blank" rel="noopener noreferrer">
+              <Image src="/images/linkedin.png" alt="LinkedIn" width={24} height={24} />
+            </Link>
+            <Link href="https://www.facebook.com/stillinov" target="_blank" rel="noopener noreferrer">
+              <Image src="/images/facebook.png" alt="Facebook" width={24} height={24} />
+            </Link>
           </div>
 
         </div>
+
+        {/* Bottom area */}
+        <div className="text-center text-gray-500 text-sm mt-4">
+          © StillInov.com. Tous droits réservés.
+        </div>
+
       </div>
     </footer>
   )
