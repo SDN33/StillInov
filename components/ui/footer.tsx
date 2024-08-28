@@ -25,7 +25,7 @@ export default function Footer() {
                   />
                 </Link>
               </div>
-              <div className="text-gray-400">Chez StillInov, nous croyons que chaque projet est unique, c'est pourquoi nous offrons des solutions personnalisées adaptées à vos besoins spécifiques. Que vous ayez un petit budget ou de grandes ambitions, nous nous engageons à optimiser chaque aspect de votre projet pour vous offrir le meilleur résultat possible.</div>
+              <div className="text-gray-400">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</div>
             </div>
 
             {/* 2nd, 3rd and 4th blocks */}
