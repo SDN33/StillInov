@@ -11,7 +11,14 @@ export default function Header() {
           <div className="flex items-center shrink-0 mr-4">
             {/* Logo */}
             <Link href="/" className="block" aria-label="Stillinov">
-              <Image src="/images/logo.png" alt="Stillinov logo" width={90} height={90} />
+              <Image
+                src="/images/logo.png"
+                alt="Stillinov logo"
+                width={150}
+                height={50}
+                quality={100}
+                priority
+              />
             </Link>
           </div>
 
