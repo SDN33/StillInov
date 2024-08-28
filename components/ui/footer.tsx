@@ -19,13 +19,13 @@ export default function Footer() {
                   <Image
                     src="/images/logo.png"
                     alt="Stillinov logo"
-                    width={300}
-                    height={100}
+                    width={150}
+                    height={50}
                     quality={100}
                   />
                 </Link>
               </div>
-              <div className="text-gray-400">Chez StillInov, nous croyons que chaque projet est unique, c'est pourquoi nous offrons des solutions personnalisées adaptées à vos besoins spécifiques. Que vous ayez un petit budget ou de grandes ambitions, nous nous engageons à optimiser chaque aspect de votre projet pour vous offrir le meilleur résultat possible. </div>
+              <div className="text-gray-400">Chez StillInov, nous croyons que chaque projet est unique, c'est pourquoi nous offrons des solutions personnalisées adaptées à vos besoins spécifiques. Que vous ayez un petit budget ou de grandes ambitions, nous nous engageons à optimiser chaque aspect de votre projet pour vous offrir le meilleur résultat possible.</div>
             </div>
 
             {/* 2nd, 3rd and 4th blocks */}
