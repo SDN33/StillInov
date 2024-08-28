@@ -32,7 +32,7 @@ export default function AboutUs() {
       image: Avatar02.src,
       name: "Laura Marron",
       role: "Digital Business Developer",
-      description: "Forte de 10 ans d'expérience dans le marketing digital, je suis diplômée en Digital Business Development et spécialisée dans l'optimisation de la visibilité en ligne. J'accompagne les entreprises dans leurs audits marketing, le référencement SEO/SEA, ainsi que dans la définition et la mise en œuvre de stratégies digitales efficaces.",
+      description: "Forte de 10 ans d'expérience dans le marketing digital, je suis diplômée en Digital Business Development et spécialisée dans l'optimisation de la visibilité en ligne. J'accompagne les entreprises dans leurs audits marketing, le référencement SEO/SEA, ainsi que dans la mise en œuvre de stratégies digitales efficaces.",
       linkedinUrl: "https://www.linkedin.com/in/laura-marron-/"
     }
   ];
