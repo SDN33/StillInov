@@ -1,4 +1,35 @@
+import { useState } from 'react';
+
 export default function Newsletter() {
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isError, setIsError] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault(); // Empêche la soumission par défaut
+    const form = e.currentTarget;
+
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch('https://formspree.io/f/xblrwadg', {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json',
+        },
+      });
+
+      if (response.ok) {
+        setIsSubmitted(true); // Affiche le message de succès
+        form.reset(); // Réinitialise le formulaire
+      } else {
+        setIsError(true); // Affiche le message d'erreur
+      }
+    } catch (error) {
+      setIsError(true);
+    }
+  };
+
   return (
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -20,7 +51,7 @@ export default function Newsletter() {
             </div>
 
             {/* CTA form */}
-            <form className="w-full lg:w-1/2" action="https://formspree.io/f/xblrwadg" method="POST">
+            <form className="w-full lg:w-1/2" onSubmit={handleSubmit}>
               <div className="flex flex-col sm:flex-row justify-center max-w-xs mx-auto sm:max-w-md lg:max-w-none">
                 <input type="email" name="email" className="w-full appearance-none bg-purple-700 border border-purple-500 focus:border-purple-300 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-white placeholder-purple-400" placeholder="Votre email…" aria-label="Votre email…" required />
                 <input type="hidden" name="message" value="newsletter" />
@@ -30,9 +61,22 @@ export default function Newsletter() {
 
           </div>
 
+          {/* Success/Error Message Popup */}
+          {isSubmitted && (
+            <div className="absolute top-0 right-0 bg-green-500 text-white p-4 rounded shadow-lg">
+              Merci pour votre inscription à la newsletter !
+            </div>
+          )}
+
+          {isError && (
+            <div className="absolute top-0 right-0 bg-red-500 text-white p-4 rounded shadow-lg">
+              Une erreur s'est produite. Veuillez réessayer.
+            </div>
+          )}
+
         </div>
 
       </div>
     </section>
-  )
+  );
 }
