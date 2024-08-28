@@ -13,21 +13,53 @@ export default function Footer() {
           {/* 1st block */}
           <div className="flex items-center">
             {/* Logo */}
-            <Link href="/" className="inline-block">
-              <Image src="/images/logo.png" alt="StillInov Logo" width={120} height={40} />
+            <Link href="/" passHref>
+              <a className="inline-block">
+                <Image
+                  src="/images/logo.png"
+                  alt="StillInov Logo"
+                  width={120}
+                  height={40}
+                  layout="intrinsic"
+                />
+              </a>
             </Link>
           </div>
 
           {/* Social links */}
           <div className="flex space-x-4">
-            <Link href="https://www.instagram.com/stillinov" target="_blank" rel="noopener noreferrer">
-              <Image src="/images/instagram.webp" alt="Instagram" width={24} height={24} />
+            <Link href="https://www.instagram.com/stillinov" passHref>
+              <a target="_blank" rel="noopener noreferrer">
+                <Image
+                  src="/images/instagram.webp"
+                  alt="Instagram"
+                  width={24}
+                  height={24}
+                  layout="intrinsic"
+                />
+              </a>
             </Link>
-            <Link href="https://www.linkedin.com/company/stillinov" target="_blank" rel="noopener noreferrer">
-              <Image src="/images/linkedin.png" alt="LinkedIn" width={24} height={24} />
+            <Link href="https://www.linkedin.com/company/stillinov" passHref>
+              <a target="_blank" rel="noopener noreferrer">
+                <Image
+                  src="/images/linkedin.png"
+                  alt="LinkedIn"
+                  width={24}
+                  height={24}
+                  layout="intrinsic"
+                />
+              </a>
             </Link>
-            <Link href="https://www.facebook.com/stillinov" target="_blank" rel="noopener noreferrer">
-              <Image src="/images/facebook.png" alt="Facebook" width={24} height={24} />
+            <Link href="https://www.facebook.com/stillinov" passHref>
+              <a target="_blank" rel="noopener noreferrer">
+                <Image
+                  src="/images/facebook.png"
+                  alt="Facebook"
+                  width={24}
+                  height={24}
+                  layout="intrinsic"
+                />
+              </a>
             </Link>
           </div>
 
