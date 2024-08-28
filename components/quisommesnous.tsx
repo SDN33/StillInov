@@ -25,7 +25,7 @@ export default function AboutUs() {
       image: Avatar01.src,
       name: "Stéphane Dei-negri",
       role: "Graphiste et Web Developer",
-      description: "Graphiste freelance depuis 2017 ans et aussi Web developeur diplomé, Ma double expertise me permet de transformer vos idées en créations visuelles captivantes tout en assurant une fonctionnalité web impeccable. Faites confiance à Stéphane pour insuffler une touche d'originalité et de précision technique à vos projets.",
+      description: "Graphiste freelance depuis 2017 et aussi Web developeur diplomé. Ma double expertise me permet de transformer vos idées en créations visuelles captivantes tout en assurant une fonctionnalité web impeccable. Faites confiance à Stéphane pour insuffler une touche d'originalité et de précision technique à vos projets.",
       linkedinUrl: "https://www.linkedin.com/in/stephane-dn/"
     },
     {
@@ -33,7 +33,7 @@ export default function AboutUs() {
       name: "Laura Marron",
       role: "Digital Business Developer",
       description: "Forte de 10 ans d'expérience dans le marketing digital, je suis diplômée en Digital Business Development et spécialisée dans l'optimisation de la visibilité en ligne. J'accompagne les entreprises dans leurs audits marketing, le référencement SEO/SEA, ainsi que dans la définition et la mise en œuvre de stratégies digitales efficaces.",
-      linkedinUrl: "https://www.linkedin.com/in/laura-marron-/" 
+      linkedinUrl: "https://www.linkedin.com/in/laura-marron-/"
     }
   ];
 
