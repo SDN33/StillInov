@@ -15,12 +15,12 @@ export default function Footer() {
             <div className="md:col-span-4 lg:col-span-5">
               <div className="mb-2">
                 {/* Logo */}
-                <Link href="/" className="inline-block" aria-label="Stillinov">
+                <Link href="www.stillinov.com" className="inline-block" aria-label="Stillinov">
                   <Image
                     src="/images/logo.png"
                     alt="Stillinov logo"
-                    width={150}
-                    height={50}
+                    width={300}
+                    height={100}
                     quality={100}
                   />
                 </Link>

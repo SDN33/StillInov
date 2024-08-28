@@ -10,7 +10,7 @@ export default function Header() {
           {/* Site branding */}
           <div className="flex items-center shrink-0 mr-4">
             {/* Logo */}
-            <Link href="/" className="block" aria-label="Stillinov">
+            <Link href="www.stillinov.com" className="block" aria-label="Stillinov">
               <Image
                 src="/images/logo.png"
                 alt="Stillinov logo"
