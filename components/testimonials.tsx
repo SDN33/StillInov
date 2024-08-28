@@ -69,7 +69,7 @@ export default function Testimonials() {
           </div>
 
           {/* Additional Information */}
-          <div className="mt-3 mb-3">
+          <div className="mt-5 mb-3">
             <p className='text-xl text-gray-400 text-center'>
               Chez StillInov, nous croyons que chaque projet est unique, c'est pourquoi nous offrons des solutions personnalisées adaptées à vos besoins spécifiques. Que vous ayez un petit budget ou de grandes ambitions, nous nous engageons à optimiser chaque aspect de votre projet pour vous offrir le meilleur résultat possible.
             </p>
