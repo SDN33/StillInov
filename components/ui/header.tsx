@@ -2,7 +2,6 @@ import Link from 'next/link'
 import Image from 'next/image'
 import MobileMenu from './mobile-menu'
 
-
 export default function Header() {
   return (
     <header className="absolute w-full z-30">
@@ -12,7 +11,7 @@ export default function Header() {
           <div className="flex items-center shrink-0 mr-4">
             {/* Logo */}
             <Link href="/" className="block" aria-label="Stillinov">
-              <Image src="/logo.png" alt="Stillinov logo" width={32} height={32} />
+              <Image src="public/images/logo.png" alt="Stillinov logo" width={32} height={32} />
             </Link>
           </div>
 
