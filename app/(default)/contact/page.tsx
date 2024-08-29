@@ -1,90 +1,75 @@
-import React, { useState } from 'react';
-import { useForm, ValidationError } from '@formspree/react';
+import React from 'react';
 
-// Si vous n'utilisez pas shadcn/ui, nous allons créer des composants simples pour Alert et AlertDescription
-const Alert: React.FC<{ children: React.ReactNode }> = ({ children }) => (
-  <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative" role="alert">
-    {children}
-  </div>
-);
-
-const AlertDescription: React.FC<{ children: React.ReactNode }> = ({ children }) => (
-  <span className="block sm:inline">{children}</span>
-);
-
+// Define the ContactForm component
 const ContactForm: React.FC = () => {
-  const [state, handleSubmit] = useForm("xblrwadg");
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
-
-  if (state.succeeded) {
-    return (
-      <Alert>
-        <AlertDescription>
-          Merci pour votre message ! Nous vous contacterons bientôt.
-        </AlertDescription>
-      </Alert>
-    );
-  }
-
   return (
-    <form onSubmit={handleSubmit} className="space-y-4">
-      <div>
-        <label htmlFor="name" className="block text-sm font-medium text-gray-700">
-          Nom
-        </label>
-        <input
-          id="name"
-          type="text"
-          name="name"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          required
-          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-        />
-        <ValidationError prefix="Name" field="name" errors={state.errors} />
+    <section>
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+        {/* CTA box */}
+        <div className="relative bg-purple-600 py-10 px-8 md:py-16 md:px-12" data-aos="fade-up">
+
+          {/* Background illustration */}
+          <div className="absolute right-0 top-0 -ml-40 pointer-events-none" aria-hidden="true">
+            {/* SVG code or background illustration here */}
+          </div>
+
+          <div className="relative flex flex-col lg:flex-row justify-between items-center">
+
+            {/* CTA content */}
+            <div className="mb-6 lg:mr-16 lg:mb-0 text-center lg:text-left lg:w-1/2">
+              <h3 className="text-white text-3xl font-semibold mb-2">Contactez-nous</h3>
+              <p className="text-purple-200 text-lg">
+                Envoyez-nous un message, nous serons ravis de vous répondre.
+              </p>
+            </div>
+
+            {/* CTA form */}
+            <form
+              className="w-full lg:w-1/2"
+              action="https://formspree.io/f/xblrwadg"
+              method="POST"
+            >
+              <div className="flex flex-col sm:flex-row justify-center max-w-xs mx-auto sm:max-w-md lg:max-w-none">
+                <input
+                  type="email"
+                  name="email"
+                  className="w-full appearance-none bg-purple-700 border border-purple-500 focus:border-purple-300 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-white placeholder-purple-400"
+                  placeholder="Votre email…"
+                  aria-label="Votre email…"
+                  required
+                />
+                <textarea
+                  name="message"
+                  className="w-full appearance-none bg-purple-700 border border-purple-500 focus:border-purple-300 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-white placeholder-purple-400"
+                  placeholder="Votre message…"
+                  aria-label="Votre message…"
+                  required
+                />
+                <button
+                  type="submit"
+                  className="w-full sm:w-auto btn text-purple-600 bg-purple-100 hover:bg-white shadow mt-2 sm:mt-0"
+                >
+                  Envoyer
+                </button>
+              </div>
+            </form>
+
+          </div>
+
+        </div>
+
       </div>
-      <div>
-        <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-          Email
-        </label>
-        <input
-          id="email"
-          type="email"
-          name="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-        />
-        <ValidationError prefix="Email" field="email" errors={state.errors} />
-      </div>
-      <div>
-        <label htmlFor="message" className="block text-sm font-medium text-gray-700">
-          Message
-        </label>
-        <textarea
-          id="message"
-          name="message"
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-          required
-          rows={4}
-          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-        ></textarea>
-        <ValidationError prefix="Message" field="message" errors={state.errors} />
-      </div>
-      <button
-        type="submit"
-        disabled={state.submitting}
-        className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-      >
-        {state.submitting ? 'Envoi...' : 'Envoyer'}
-      </button>
-      <ValidationError errors={state.errors} />
-    </form>
+    </section>
   );
 };
 
-export default ContactForm;
+// Define the Contact component
+const Contact: React.FC = () => {
+  return (
+    <>
+      <ContactForm />
+    </>
+  );
+};
+
+export default Contact;
