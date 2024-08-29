@@ -1,33 +1,16 @@
-export const metadata = {
-  title: 'StillInov | Contactez-nous pour vos projets digitaux',
-  description: 'StillInov, votre partenaire en communication digitale, offre des services personnalisés de création, design, et développement web pour transformer vos idées en réalité, quel que soit votre budget.',
-  keywords: 'communication digitale, création site web, design graphique, développement web, SEO, marketing digital, agence web, solutions personnalisées, agence communication digitale, audit marketing, référencement SEO, SEA, stratégies digitales,faire pub insta, faire pub facebook, faire pub google, faire audit',
-  openGraph: {
-    title: 'StillInov | Agence de Communication Digitale',
-    description: 'Découvrez comment StillInov transforme vos idées en projets digitaux réussis grâce à des solutions personnalisées adaptées à vos besoins et à votre budget.',
-    url: 'https://www.stillinov.com',
-    type: 'website',
-    images: [
-      {
-        url: 'https://www.stillinov.com/images/logo.png', // Assurez-vous d'avoir une image dédiée pour Open Graph
-        width: 1200,
-        height: 630,
-        alt: 'StillInov - Agence de Communication Digitale',
-      },
-    ],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    site: '@StillInov',
-    title: 'StillInov | Agence de Communication Digitale - Création, Design & Développement Web',
-    description: 'StillInov, votre partenaire en communication digitale, offre des services personnalisés de création, design, et développement web pour transformer vos idées en réalité.',
-  },
-};
-
-
 import React, { useState } from 'react';
 import { useForm, ValidationError } from '@formspree/react';
-import { Alert, AlertDescription } from '@/components/ui/alert';
+
+// Si vous n'utilisez pas shadcn/ui, nous allons créer des composants simples pour Alert et AlertDescription
+const Alert: React.FC<{ children: React.ReactNode }> = ({ children }) => (
+  <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative" role="alert">
+    {children}
+  </div>
+);
+
+const AlertDescription: React.FC<{ children: React.ReactNode }> = ({ children }) => (
+  <span className="block sm:inline">{children}</span>
+);
 
 const ContactForm: React.FC = () => {
   const [state, handleSubmit] = useForm("xblrwadg");
