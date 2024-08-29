@@ -38,7 +38,7 @@ export default function AboutUs() {
   ];
 
   return (
-    <section className="bg-gray-900 py-12 md:py-20">
+    <section className="bg-gray-900 py-12 md:py-20" id='about'>
       <div className="py-12 md:py-20 border-t border-gray-800">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="text-center pb-12 md:pb-20">
