@@ -40,7 +40,7 @@ const ContactForm: React.FC = () => {
               <textarea
                 id="message"
                 name="message"
-                className="w-full mt-1 p-3 border border-gray-300 rounded-md shadow-sm focus:ring-purple-500 focus:border-purple-500"
+                className="w-full mt-1 p-3 border border-gray-700 rounded-md shadow-sm focus:ring-purple-500 focus:border-purple-500"
                 placeholder="Votre message…"
                 aria-label="Votre message…"
                 rows={4}
