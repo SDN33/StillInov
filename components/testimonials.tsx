@@ -71,7 +71,7 @@ export default function Testimonials() {
           {/* Additional Information */}
           <div>
             <h3 className='mt-8 mb-3 text-xl text-gray-400 text-center'>
-              Chez StillInov, nous croyons que chaque projet est unique, c'est pourquoi nous offrons des solutions personnalisées adaptées à vos besoins spécifiques. Que vous ayez un petit budget ou de grandes ambitions, nous nous engageons à optimiser chaque aspect de votre projet pour vous offrir le meilleur résultat possible.
+              Chez StillInov,<br /> nous croyons que chaque projet est unique, c'est pourquoi nous offrons des solutions personnalisées adaptées à vos besoins spécifiques. Que vous ayez un petit budget ou de grandes ambitions, nous nous engageons à optimiser chaque aspect de votre projet pour vous offrir le meilleur résultat possible.
             </h3>
           </div>
 
