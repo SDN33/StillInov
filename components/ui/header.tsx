@@ -32,7 +32,7 @@ export default function Header() {
                 <Link href="#about" className="font-medium text-white hover:text-gray-300 px-5 py-3 flex items-center transition duration-150 ease-in-out">Qui sommes-nous ?</Link>
               </li>
               <li>
-                <Link href="/contact" className="font-medium text-white hover:text-gray-300 px-5 py-3 flex items-center transition duration-150 ease-in-out">Contact</Link>
+                <Link href="public/pages/contact.tsx" className="font-medium text-white hover:text-gray-300 px-5 py-3 flex items-center transition duration-150 ease-in-out">Contact</Link>
               </li>
             </ul>
           </nav>
