@@ -17,7 +17,7 @@ export default function Features() {
             {/* 1st item */}
             <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-anchor="[data-aos-id-blocks]">
             <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-              <rect className="fill-current text-purple-600" width="64" height="64" rx="32" />
+              <rect className="fill-current text-purple-600" width="32" height="32" rx="32" />
 
               <ellipse cx="32" cy="32" rx="20" ry="12" fill="#C4B5FD" className="stroke-current text-purple-300" strokeWidth="2" />
               <circle cx="32" cy="32" r="8" fill="#7C3AED" className="stroke-current text-purple-100" strokeWidth="2" />
