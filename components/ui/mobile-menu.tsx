@@ -9,36 +9,26 @@ export default function MobileMenu() {
   const trigger = useRef<HTMLButtonElement>(null)
   const mobileNav = useRef<HTMLDivElement>(null)
 
-  // Close the mobile menu on click outside
+  // close the mobile menu on click outside
   useEffect(() => {
     const clickHandler = ({ target }: { target: EventTarget | null }): void => {
-      if (!mobileNav.current || !trigger.current) return
-      if (!mobileNavOpen || mobileNav.current.contains(target as Node) || trigger.current.contains(target as Node)) return
+      if (!mobileNav.current || !trigger.current) return;
+      if (!mobileNavOpen || mobileNav.current.contains(target as Node) || trigger.current.contains(target as Node)) return;
       setMobileNavOpen(false)
-    }
+    };
     document.addEventListener('click', clickHandler)
     return () => document.removeEventListener('click', clickHandler)
-  }, [mobileNavOpen])
+  })
 
-  // Close the mobile menu if the esc key is pressed
+  // close the mobile menu if the esc key is pressed
   useEffect(() => {
     const keyHandler = ({ keyCode }: { keyCode: number }): void => {
-      if (!mobileNavOpen || keyCode !== 27) return
+      if (!mobileNavOpen || keyCode !== 27) return;
       setMobileNavOpen(false)
-    }
+    };
     document.addEventListener('keydown', keyHandler)
     return () => document.removeEventListener('keydown', keyHandler)
-  }, [mobileNavOpen])
-
-  const handleLinkClick = (href: string) => {
-    if (href.startsWith('#')) {
-      // For internal anchor links, just close the menu
-      setMobileNavOpen(false)
-    } else {
-      // For external or path links, close the menu and allow navigation
-      setMobileNavOpen(false)
-    }
-  }
+  })
 
   return (
     <div className="md:hidden">
@@ -62,7 +52,7 @@ export default function MobileMenu() {
         </svg>
       </button>
 
-      {/* Mobile navigation */}
+      {/*Mobile navigation */}
       <nav
         id="mobile-nav"
         ref={mobileNav}
@@ -71,33 +61,22 @@ export default function MobileMenu() {
       >
         <ul className="bg-gray-800 px-4 py-2">
           <li>
-            <Link href="#about">
-              <a
-                className="flex font-medium w-full text-purple-600 hover:text-gray-200 py-2 justify-center"
-                onClick={() => handleLinkClick('#about')}
-              >
-                Qui sommes-nous ?
-              </a>
+            <Link href="#about" className="flex font-medium w-full text-purple-600 hover:text-gray-200 py-2 justify-center" onClick={() => setMobileNavOpen(false)}>
+              Qui sommes-nous ?
             </Link>
           </li>
           <li>
-            <Link href="#services">
-              <a
-                className="flex font-medium w-full text-purple-600 hover:text-gray-200 py-2 justify-center"
-                onClick={() => handleLinkClick('#services')}
-              >
-                Services
-              </a>
+            <Link
+              href="#services"
+              className="flex font-medium w-full text-purple-600 hover:text-gray-200 py-2 justify-center" onClick={() => setMobileNavOpen(false)}>
+              Services
             </Link>
           </li>
           <li>
-            <Link href="/contact">
-              <a
-                className="flex font-medium w-full text-purple-600 hover:text-gray-200 py-2 justify-center"
-                onClick={() => handleLinkClick('/contact')}
-              >
-                Contact
-              </a>
+            <Link
+              href="/contact"
+              className="flex font-medium w-full text-purple-600 hover:text-gray-200 py-2 justify-center" onClick={() => setMobileNavOpen(false)}>
+              Contact
             </Link>
           </li>
         </ul>
