@@ -70,8 +70,9 @@ export default function Testimonials() {
 
           {/* Additional Information */}
           <div>
-            <br /><br />
-            <div className="mt-6 md:py-20 border-t border-gray-800"></div>
+            <br /><br /><br /><br />
+            <div className="border-t border-gray-800"></div>
+            <br /><br /><br /><br />
             <h2 className="h2 mb-2 text-center">Chez <Image
                 src="/images/logo.png"
                 alt="Stillinov logo"
