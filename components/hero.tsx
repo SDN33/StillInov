@@ -20,10 +20,10 @@ export default function Hero() {
             <h1 className="h1 mb-4" data-aos="fade-up">
               Agence Digitale et
               <span className="animated-text">
-                <span>Innovante !</span>
-                <span>Ambicieuse !</span>
-                <span>Technologique !</span>
-                <span>Fun !</span>
+                <span>Innovante 🚀</span>
+                <span>Ambicieuse 💪</span>
+                <span>Technologique 🧪</span>
+                <span>Fun</span>
               </span>
             </h1>
             <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">Donnez vie à vos ambitions digitales et transformez vos idées en réalité.</p>

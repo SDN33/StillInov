@@ -20,7 +20,7 @@ export default function Features() {
                 <rect className="fill-current text-purple-600" width="64" height="64" rx="32" />
                 <ellipse cx="32" cy="32" rx="20" ry="12" fill="#C4B5FD" className="stroke-current text-purple-300" strokeWidth="2" />
                 <circle cx="32" cy="32" r="8" fill="#7C3AED" className="stroke-current text-purple-100" strokeWidth="2" />
-                <circle cx="35" cy="29" r="3" fill="#5d5dff" /> 
+                <circle cx="35" cy="29" r="3" fill="#EDE9FE" />
               </svg>
               <h4 className="h4 mb-2">Identité Visuelle</h4>
               <p className="text-lg text-gray-400 text-center">Création d'une image de marque unique et cohérente pour renforcer votre reconnaissance et impact sur tous supports.</p>
