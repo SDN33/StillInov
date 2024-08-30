@@ -17,9 +17,9 @@ export default function Hero() {
         <div className="relative pt-32 pb-10 md:pt-40 md:pb-16">
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h1 mb-4" data-aos="fade-up">
-              Agence Digitale et
-              <span className="animated-text">
+            <h1 className="h1 mb-4 flex flex-col items-center" data-aos="fade-up">
+              <span className="block w-full text-center">Agence Digitale et</span>
+              <span className="animated-text text-center">
                 <span>Innovante 🚀</span>
                 <span>Ambicieuse 💪</span>
                 <span>Technologique 🧪</span>
@@ -51,6 +51,13 @@ export default function Hero() {
       </div>
 
       <style jsx>{`
+        .h1 {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+
         .animated-text {
           display: inline-block;
           vertical-align: top;
@@ -61,21 +68,24 @@ export default function Hero() {
         .animated-text span {
           display: block;
           height: 100%;
-          animation: spin 8s infinite;
+          animation: spin 10s infinite;
         }
 
         @keyframes spin {
-          0%, 25% {
+          0%, 20% {
             transform: translateY(0);
           }
-          30%, 50% {
+          25%, 40% {
             transform: translateY(-100%);
           }
-          55%, 75% {
+          45%, 60% {
             transform: translateY(-200%);
           }
-          80%, 100% {
+          65%, 80% {
             transform: translateY(-300%);
+          }
+          85%, 100% {
+            transform: translateY(-400%);
           }
         }
       `}</style>
