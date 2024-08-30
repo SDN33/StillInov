@@ -19,12 +19,13 @@ export default function Hero() {
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
             <h1 className="h1 mb-4 flex flex-col items-center" data-aos="fade-up">
               <span className="block w-full text-center">Agence Digitale</span>
+              <br />
               <span className="animated-text text-center">
-                <span>et Innovante 🚀</span>
-                <span>et Ambicieuse 💪</span>
-                <span>et Technologique 🧪</span>
-                <span>et Fun 😎</span>
-                <span>et Créative 🎨</span>
+                <span>Innovante 🚀</span>
+                <span>Ambicieuse 💪</span>
+                <span>Technologique 🧪</span>
+                <span>Fun 😎</span>
+                <span>Créative 🎨</span>
               </span>
             </h1>
             <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">Donnez vie à vos ambitions digitales et transformez vos idées en réalité.</p>
