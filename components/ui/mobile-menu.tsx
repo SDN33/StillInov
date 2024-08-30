@@ -1,19 +1,14 @@
 'use client'
 
 import { useState, useRef, useEffect } from 'react'
-import { useRouter } from 'next/navigation'
+import Link from 'next/link'
+import { useRouter, NextRouter } from 'next/router'
 
 export default function MobileMenu() {
   const [mobileNavOpen, setMobileNavOpen] = useState(false)
   const trigger = useRef<HTMLButtonElement>(null)
   const mobileNav = useRef<HTMLDivElement>(null)
-  const [isClient, setIsClient] = useState(false)
-  const router = useRouter()
-
-  // Ensure useRouter is used only on client side
-  useEffect(() => {
-    setIsClient(true)
-  }, [])
+  const router: NextRouter = useRouter()
 
   // Close the mobile menu on click outside
   useEffect(() => {
@@ -37,19 +32,17 @@ export default function MobileMenu() {
   }, [mobileNavOpen])
 
   const handleLinkClick = (href: string) => {
-    if (isClient) {
-      if (href.startsWith('#')) {
-        // For internal anchor links, close the menu and scroll to the section
-        setMobileNavOpen(false)
-        if (router.pathname !== '/') {
-          // If not on home page, navigate to home page
-          router.push('/')
-        }
-      } else {
-        // For external or path links, close the menu and navigate
-        setMobileNavOpen(false)
-        router.push(href)
+    if (href.startsWith('#')) {
+      // For internal anchor links, close the menu and scroll to the section
+      setMobileNavOpen(false)
+      if (router.pathname !== '/') {
+        // If not on home page, navigate to home page
+        router.push('/')
       }
+    } else {
+      // For external or path links, close the menu and navigate
+      setMobileNavOpen(false)
+      router.push(href)
     }
   }
 
