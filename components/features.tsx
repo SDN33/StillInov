@@ -21,8 +21,8 @@ export default function Features() {
             <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-anchor="[data-aos-id-blocks]">
             <svg className="w-16 h-16 mb-4" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
               <rect className="fill-current text-purple-600" width="64" height="64" rx="32" />
-              <image href="/public/images/idvisuelle.svg" x="16" y="16" width="32" height="32" />
-            </svg>
+              <Image src="/images/idvisuelle.svg" layout="fill" objectFit="contain" alt="Identité Visuelle" />
+              </svg>
 
               <h4 className="h4 mb-2">Identitée Visuelle</h4>
               <p className="text-lg text-gray-400 text-center"> Création d'une image de marque unique et cohérente pour renforcer votre reconnaissance et impact sur tous supports.</p>
