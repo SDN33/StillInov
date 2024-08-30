@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import idVisuelle from '/public/images/Eye1.svg';
+import idVisuelle from '/public/images/Eye3.svg';
 
 export default function Features() {
   return (
