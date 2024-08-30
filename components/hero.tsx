@@ -79,7 +79,6 @@ export default function Hero() {
           animation: spin 10s infinite;
           font-size: 2.5rem;
           padding: 0.2em 0.5em;
-          margin: 0.1em 0;
         }
 
         .font-innovative {
