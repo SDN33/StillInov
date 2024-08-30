@@ -18,13 +18,13 @@ export default function Hero() {
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
             <h1 className="h1 mb-4" data-aos="fade-up">
-              Agence Digitale
+              Agence Digitale <br />et
               <span className="animated-text">
-                <span>et Innovante 🚀</span>
-                <span>et Ambicieuse 💪</span>
-                <span>et Technologique 🧪</span>
-                <span>et Fun 😎</span>
-                <span>et Créative 🎨</span>
+                <span>Innovante 🚀</span>
+                <span>Ambicieuse 💪</span>
+                <span>Technologique 🧪</span>
+                <span>Fun 😎</span>
+                <span>Créative 🎨</span>
               </span>
             </h1>
             <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">Donnez vie à vos ambitions digitales et transformez vos idées en réalité.</p>
