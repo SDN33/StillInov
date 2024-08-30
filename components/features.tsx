@@ -21,7 +21,7 @@ export default function Features() {
             <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-anchor="[data-aos-id-blocks]">
             <svg className="w-16 h-16 mb-4" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
               <rect className="fill-current text-purple-600" width="64" height="64" rx="32" />
-              <Image src="/images/idvisuelle.svg" layout="fill" objectFit="contain" alt="Identité Visuelle" />
+              <img> src="/images/idvisuelle.svg" layout="fill" objectFit="contain" alt="Identité Visuelle" / </img>
               </svg>
 
               <h4 className="h4 mb-2">Identitée Visuelle</h4>
