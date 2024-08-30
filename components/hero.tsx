@@ -20,9 +20,9 @@ export default function Hero() {
             <h1 className="h1 mb-4 flex flex-col items-center" data-aos="fade-up">
               <span className="block w-full text-center main-title">Agence Digitale</span>
               <span className="animated-text text-center">
-                <span className="font-innovative">Innovante 🔬</span>
-                <span className="font-ambitious">Ambicieuse 🏆</span>
-                <span className="font-creative">Créative 🎨</span>
+                <span className="font-innovative">Innovante</span>
+                <span className="font-ambitious">Ambicieuse</span>
+                <span className="font-creative">Créative</span>
               </span>
             </h1>
             <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">Donnez vie à vos ambitions digitales et transformez vos idées en réalité.</p>
@@ -84,12 +84,6 @@ export default function Hero() {
         }
         .font-ambitious {
           font-family: 'Permanent Marker', cursive;
-        }
-        .font-tech {
-          font-family: 'Roboto Mono', monospace;
-        }
-        .font-fun {
-          font-family: 'Pacifico', cursive;
         }
         .font-creative {
           font-family: 'Permanent Marker', cursive;
