@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Button } from '@/components/ui/button';
 
-const CookieBanner = () => {
+const Cookies = () => {
   const [showBanner, setShowBanner] = useState(false);
 
   useEffect(() => {
@@ -24,23 +23,29 @@ const CookieBanner = () => {
   if (!showBanner) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 bg-gray-100 p-4 shadow-md">
-      <div className="container mx-auto flex justify-between items-center">
-        <p className="text-sm mr-4">
+    <div className="fixed bottom-0 left-0 right-0 bg-purple-600 text-white p-4 shadow-lg">
+      <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center">
+        <p className="text-sm mb-4 sm:mb-0 sm:mr-4 text-center sm:text-left">
           Nous utilisons des cookies pour améliorer votre expérience sur notre site.
           Acceptez-vous l'utilisation de cookies ?
         </p>
-        <div>
-          <Button onClick={handleAccept} className="mr-2">
+        <div className="flex space-x-4">
+          <button
+            onClick={handleAccept}
+            className="px-4 py-2 bg-white text-purple-600 rounded hover:bg-purple-100 transition duration-300 ease-in-out"
+          >
             Accepter
-          </Button>
-          <Button onClick={handleRefuse} variant="outline">
+          </button>
+          <button
+            onClick={handleRefuse}
+            className="px-4 py-2 bg-transparent border border-white rounded hover:bg-purple-500 transition duration-300 ease-in-out"
+          >
             Refuser
-          </Button>
+          </button>
         </div>
       </div>
     </div>
   );
 };
 
-export default CookieBanner;
+export default Cookies;

@@ -30,7 +30,7 @@ import Features from '@/components/features'
 import Newsletter from '@/components/newsletter'
 import Testimonials from '@/components/testimonials'
 import AboutUs from '@/components/quisommesnous'
-import CookieBanner from '@/components/CookieBanner'
+import Cookies from '@/components/cookies'
 
 export default function Home() {
   return (
@@ -40,7 +40,7 @@ export default function Home() {
       <AboutUs />
       <Testimonials />
       <Newsletter />
-      <CookieBanner />
-    </>
-  )
+      <Cookies />
+
+    </>)
 }
