@@ -70,9 +70,9 @@ export default function Testimonials() {
 
           {/* Additional Information */}
           <div>
-            <div className="py-12 md:py-20 border-t border-gray-800"></div>
+            <div className="mt-5 py-12 md:py-20 border-t border-gray-800"></div>
             <br />
-            <h2 className="h2 mt-6 mb-2 text-center">Chez StillInov,</h2>
+            <h2 className="h2 mt-4 mb-2 text-center">Chez StillInov,</h2>
             <h3 className='mt-8 mb-3 text-xl text-white text-center'>
               Nous croyons que chaque projet est unique, c'est pourquoi nous offrons des solutions personnalisées adaptées à vos besoins spécifiques. Que vous ayez un petit budget ou de grandes ambitions, nous nous engageons à optimiser chaque aspect de votre projet pour vous offrir le meilleur résultat possible.<br /><br />L'équipe StillInov 🤝
             </h3>
