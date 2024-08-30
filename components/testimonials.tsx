@@ -70,8 +70,9 @@ export default function Testimonials() {
 
           {/* Additional Information */}
           <div>
+            <h1 className='mt-8 mb-3 text-3xl text-white text-center'><br />Chez StillInov,</h1>
             <h3 className='mt-8 mb-3 text-xl text-white text-center'>
-              <br />Chez StillInov,<br /> Nous croyons que chaque projet est unique, c'est pourquoi nous offrons des solutions personnalisées adaptées à vos besoins spécifiques. Que vous ayez un petit budget ou de grandes ambitions, nous nous engageons à optimiser chaque aspect de votre projet pour vous offrir le meilleur résultat possible.<br /><br />L'équipe StillInov 🤝
+              <br /> Nous croyons que chaque projet est unique, c'est pourquoi nous offrons des solutions personnalisées adaptées à vos besoins spécifiques. Que vous ayez un petit budget ou de grandes ambitions, nous nous engageons à optimiser chaque aspect de votre projet pour vous offrir le meilleur résultat possible.<br /><br />L'équipe StillInov 🤝
             </h3>
           </div>
 
