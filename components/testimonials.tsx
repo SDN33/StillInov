@@ -70,6 +70,7 @@ export default function Testimonials() {
 
           {/* Additional Information */}
           <div>
+            <br /><br />
             <div className="mt-6 md:py-20 border-t border-gray-800"></div>
             <h2 className="h2 mb-2 text-center">Chez StillInov,</h2>
             <h3 className='mt-8 mb-3 text-xl text-white text-center'>
