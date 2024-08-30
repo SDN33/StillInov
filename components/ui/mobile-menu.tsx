@@ -1,15 +1,14 @@
 'use client'
 
 import { useState, useRef, useEffect } from 'react'
-import { useRouter, NextRouter } from 'next/router';
-import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 
 export default function MobileMenu() {
   const [mobileNavOpen, setMobileNavOpen] = useState(false)
   const trigger = useRef<HTMLButtonElement>(null)
   const mobileNav = useRef<HTMLDivElement>(null)
   const [isClient, setIsClient] = useState(false)
-  const router: NextRouter = useRouter();
+  const router = useRouter()
 
   // Ensure useRouter is used only on client side
   useEffect(() => {
