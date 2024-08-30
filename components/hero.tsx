@@ -51,7 +51,7 @@ export default function Hero() {
       </div>
 
       <style jsx>{`
-        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee&family=Orbitron&family=Pacifico&family=Permanent+Marker&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee&family=Orbitron&family=Pacifico&family=Permanent+Marker&family=Roboto+Mono&display=swap');
 
         .h1 {
           display: flex;
@@ -78,13 +78,37 @@ export default function Hero() {
           height: 100%;
           animation: spin 10s infinite;
           font-size: 2.5rem;
+          padding: 0.2em 0.5em;
+          border: 3px solid;
+          border-radius: 10px;
+          margin: 0.1em 0;
         }
 
-        .font-innovative { font-family: 'Orbitron', sans-serif; }
-        .font-ambitious { font-family: 'Permanent Marker', cursive; }
-        .font-tech { font-family: 'Bungee', cursive; }
-        .font-fun { font-family: 'Pacifico', cursive; }
-        .font-creative { font-family: 'Permanent Marker', cursive; }
+        .font-innovative {
+          font-family: 'Orbitron', sans-serif;
+          border-color: #00ffff;
+          color: #00ffff;
+        }
+        .font-ambitious {
+          font-family: 'Permanent Marker', cursive;
+          border-color: #ff6b6b;
+          color: #ff6b6b;
+        }
+        .font-tech {
+          font-family: 'Roboto Mono', monospace;
+          border-color: #4ecdc4;
+          color: #4ecdc4;
+        }
+        .font-fun {
+          font-family: 'Pacifico', cursive;
+          border-color: #feca57;
+          color: #feca57;
+        }
+        .font-creative {
+          font-family: 'Permanent Marker', cursive;
+          border-color: #ff9ff3;
+          color: #ff9ff3;
+        }
 
         @keyframes spin {
           0%, 20% {
