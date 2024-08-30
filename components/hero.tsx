@@ -90,20 +90,14 @@ export default function Hero() {
         }
 
         @keyframes spin {
-          0%, 20% {
+          0%, 33% {
             transform: translateY(0);
           }
-          25%, 40% {
+          38%, 66% {
             transform: translateY(-100%);
           }
-          45%, 60% {
+          71%, 100% {
             transform: translateY(-200%);
-          }
-          65%, 80% {
-            transform: translateY(-300%);
-          }
-          85%, 100% {
-            transform: translateY(-400%);
           }
         }
       `}</style>
