@@ -28,7 +28,7 @@ export default function Testimonials() {
                   </svg>
                 </div>
               </div>
-              <blockquote className="text-lg text-gray-400 grow">— StillInov a créé un site e-commerce pour ma marque de vêtements, avec un design au goût du jour et une partie admin pour un suivi complet de mon activité. Je ne pouvais pas espérer mieux ! </blockquote>
+              <blockquote className="text-lg text-gray-400 grow">— StillInov a créé un site e-commerce pour ma marque de vêtements, avec un design au goût du jour et une partie admin pour un suivi complet de mon activité. Je ne pouvais pas espérer mieux !</blockquote>
               <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
                 <cite className="text-gray-200 not-italic">J.F Kitsadi</cite> - <a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="#0">SevenMates</a>
               </div>
@@ -69,14 +69,44 @@ export default function Testimonials() {
           </div>
 
           {/* Additional Information */}
-          <div>
-            <br /><br /><br /><br />
-            <div className="border-t border-gray-800"></div>
-            <br /><br /><br /><br />
-            <h2 className="h2 mb-2 text-center"><strong>Still'Inov</strong> Agency</h2>
-            <h3 className='mt-8 mb-3 text-xl text-white text-center'>
-              Nous croyons que chaque projet est unique, c'est pourquoi nous offrons des solutions personnalisées adaptées à vos besoins spécifiques. Que vous ayez un petit budget ou de grandes ambitions, nous nous engageons à optimiser chaque aspect de votre projet pour vous offrir le meilleur résultat possible.<br /><br />L'équipe StillInov 🤝
-            </h3>
+          <div className="bg-gray-900 py-16">
+            <div className="container mx-auto px-4">
+              <div className="border-t border-gray-800 mb-16"></div>
+
+              <h2 className="text-4xl font-bold mb-8 text-center text-white"><strong>Still'Inov</strong> Agency</h2>
+
+              <h3 className='mt-8 mb-12 text-xl text-gray-300 text-center max-w-3xl mx-auto'>
+                Nous croyons que chaque projet est unique, c'est pourquoi nous offrons des solutions personnalisées adaptées à vos besoins spécifiques. Que vous ayez un petit budget ou de grandes ambitions, nous nous engageons à optimiser chaque aspect de votre projet pour vous offrir le meilleur résultat possible.
+              </h3>
+
+              <div className="flex flex-wrap justify-center gap-12">
+                <div className="flex flex-col items-center max-w-sm">
+                  <svg className="w-16 h-16 mb-4 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                  </svg>
+                  <h4 className="text-xl font-semibold mb-3 text-white">Confiance</h4>
+                  <p className="text-center text-gray-400">Nous bâtissons des relations durables avec nos clients, basées sur la transparence, l'intégrité et des résultats concrets.</p>
+                </div>
+
+                <div className="flex flex-col items-center max-w-sm">
+                  <svg className="w-16 h-16 mb-4 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                  </svg>
+                  <h4 className="text-xl font-semibold mb-3 text-white">Qualité</h4>
+                  <p className="text-center text-gray-400">Notre expertise et notre attention aux détails garantissent des solutions de haute qualité qui dépassent vos attentes.</p>
+                </div>
+
+                <div className="flex flex-col items-center max-w-sm">
+                  <svg className="w-16 h-16 mb-4 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                  </svg>
+                  <h4 className="text-xl font-semibold mb-3 text-white">Adaptation</h4>
+                  <p className="text-center text-gray-400">Notre approche flexible nous permet de nous adapter à tout type de marché et de répondre efficacement à vos besoins spécifiques.</p>
+                </div>
+              </div>
+
+              <p className="text-center text-gray-300 mt-16">L'équipe StillInov 🤝</p>
+            </div>
           </div>
 
         </div>
