@@ -29,7 +29,7 @@ export default function Header() {
                 <Link href="https://www.stillinov.com/#features" className="font-medium text-white hover:text-gray-300 px-5 py-3 flex items-center transition duration-150 ease-in-out">Services</Link>
               </li>
               <li>
-                <Link href="/" className="font-medium text-white hover:text-gray-300 px-5 py-3 flex items-center transition duration-150 ease-in-out">Qui sommes-nous ?</Link>
+                <Link href="https://www.stillinov.com/#about" className="font-medium text-white hover:text-gray-300 px-5 py-3 flex items-center transition duration-150 ease-in-out">Qui sommes-nous ?</Link>
               </li>
               <li>
                 <Link href="/contact" className="font-medium text-white hover:text-gray-300 px-5 py-3 flex items-center transition duration-150 ease-in-out">Contact</Link>

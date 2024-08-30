@@ -61,13 +61,13 @@ export default function MobileMenu() {
       >
         <ul className="bg-gray-800 px-4 py-2">
           <li>
-            <Link href="/" className="flex font-medium w-full text-purple-600 hover:text-gray-200 py-2 justify-center" onClick={() => setMobileNavOpen(false)}>
+            <Link href="https://www.stillinov.com/#about" className="flex font-medium w-full text-purple-600 hover:text-gray-200 py-2 justify-center" onClick={() => setMobileNavOpen(false)}>
               Qui sommes-nous ?
             </Link>
           </li>
           <li>
             <Link
-              href="/"
+              href="https://www.stillinov.com/#features"
               className="flex font-medium w-full text-purple-600 hover:text-gray-200 py-2 justify-center" onClick={() => setMobileNavOpen(false)}>
               Services
             </Link>
