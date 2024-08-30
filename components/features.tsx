@@ -16,15 +16,14 @@ export default function Features() {
 
             {/* 1st item */}
             <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-anchor="[data-aos-id-blocks]">
-            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-              <rect className="fill-current text-purple-600" width="32" height="32" rx="32" />
-
-              <ellipse cx="32" cy="32" rx="20" ry="12" fill="#C4B5FD" className="stroke-current text-purple-300" strokeWidth="2" />
-              <circle cx="32" cy="32" r="8" fill="#7C3AED" className="stroke-current text-purple-100" strokeWidth="2" />
-              <circle cx="35" cy="29" r="3" fill="#EDE9FE" />
-            </svg>
-              <h4 className="h4 mb-2">Identitée Visuelle</h4>
-              <p className="text-lg text-gray-400 text-center"> Création d'une image de marque unique et cohérente pour renforcer votre reconnaissance et impact sur tous supports.</p>
+              <svg className="w-16 h-16 mb-4" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                <rect className="fill-current text-purple-600" width="64" height="64" rx="32" />
+                <ellipse cx="32" cy="32" rx="20" ry="12" fill="#C4B5FD" className="stroke-current text-purple-300" strokeWidth="2" />
+                <circle cx="32" cy="32" r="8" fill="#7C3AED" className="stroke-current text-purple-100" strokeWidth="2" />
+                <circle cx="35" cy="29" r="3" fill="#EDE9FE" />
+              </svg>
+              <h4 className="h4 mb-2">Identité Visuelle</h4>
+              <p className="text-lg text-gray-400 text-center">Création d'une image de marque unique et cohérente pour renforcer votre reconnaissance et impact sur tous supports.</p>
             </div>
 
             {/* 2nd item */}
@@ -34,7 +33,7 @@ export default function Features() {
                 <path className="stroke-current text-purple-100" strokeWidth="2" strokeLinecap="square" d="M21 23h22v18H21z" fill="none" fillRule="evenodd" />
                 <path className="stroke-current text-purple-300" d="M26 28h12M26 32h12M26 36h5" strokeWidth="2" strokeLinecap="square" />
               </svg>
-              <h4 className="h4 mb-2">Site web et Application </h4>
+              <h4 className="h4 mb-2">Site web et Application</h4>
               <p className="text-lg text-gray-400 text-center">Concevoir des plateformes digitales sur mesure, alliant design moderne et performance, pour offrir une expérience utilisateur optimale.</p>
             </div>
 
@@ -49,7 +48,7 @@ export default function Features() {
                 </g>
               </svg>
               <h4 className="h4 mb-2">Référencement SEO</h4>
-              <p className="text-lg text-gray-400 text-center"> Optimiser votre visibilité en ligne pour vous positionner en tête des résultats de recherche et attirer plus de trafic qualifié.</p>
+              <p className="text-lg text-gray-400 text-center">Optimiser votre visibilité en ligne pour vous positionner en tête des résultats de recherche et attirer plus de trafic qualifié.</p>
             </div>
 
             {/* 4th item */}
