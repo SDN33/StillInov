@@ -1,6 +1,8 @@
+'use client';
+
 import React, { useState, useEffect } from 'react';
 
-const Cookies = () => {
+const CookieBanner = () => {
   const [showBanner, setShowBanner] = useState(false);
 
   useEffect(() => {
@@ -23,7 +25,7 @@ const Cookies = () => {
   if (!showBanner) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 bg-purple-600 text-white p-4 shadow-lg">
+    <div className="fixed bottom-0 left-0 right-0 bg-purple-600 text-white p-4 shadow-lg z-50">
       <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center">
         <p className="text-sm mb-4 sm:mb-0 sm:mr-4 text-center sm:text-left">
           Nous utilisons des cookies pour améliorer votre expérience sur notre site.
@@ -48,4 +50,4 @@ const Cookies = () => {
   );
 };
 
-export default Cookies;
+export default CookieBanner;
