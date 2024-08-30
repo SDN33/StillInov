@@ -6,10 +6,22 @@ const CookieBanner = () => {
   const [showBanner, setShowBanner] = useState(false);
 
   useEffect(() => {
-    const cookieConsent = localStorage.getItem('cookieConsent');
-    if (!cookieConsent) {
-      setShowBanner(true);
-    }
+    const checkCookieConsent = () => {
+      const cookieConsent = localStorage.getItem('cookieConsent');
+      const lastShown = localStorage.getItem('cookieBannerLastShown');
+      const currentTime = new Date().getTime();
+
+      if (!cookieConsent || (cookieConsent === 'refused' && lastShown && currentTime - parseInt(lastShown) > 24 * 60 * 60 * 1000)) {
+        setShowBanner(true);
+        localStorage.setItem('cookieBannerLastShown', currentTime.toString());
+      }
+    };
+
+    checkCookieConsent();
+    // Vérifier toutes les heures si la bannière doit être réaffichée
+    const interval = setInterval(checkCookieConsent, 60 * 60 * 1000);
+
+    return () => clearInterval(interval);
   }, []);
 
   const handleAccept = () => {
