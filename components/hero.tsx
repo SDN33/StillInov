@@ -18,13 +18,13 @@ export default function Hero() {
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
             <h1 className="h1 mb-4 flex flex-col items-center" data-aos="fade-up">
-              <span className="block w-full text-center">Agence Digitale</span>
+              <span className="block w-full text-center main-title">Agence Digitale</span>
               <span className="animated-text text-center">
-                <span>Innovante</span>
-                <span>Ambicieuse</span>
-                <span>Technologique</span>
-                <span>Fun</span>
-                <span>Créative</span>
+                <span className="font-innovative">Innovante</span>
+                <span className="font-ambitious">Ambicieuse</span>
+                <span className="font-tech">Technologique</span>
+                <span className="font-fun">Fun</span>
+                <span className="font-creative">Créative</span>
               </span>
             </h1>
             <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">Donnez vie à vos ambitions digitales et transformez vos idées en réalité.</p>
@@ -51,6 +51,8 @@ export default function Hero() {
       </div>
 
       <style jsx>{`
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee&family=Orbitron&family=Pacifico&family=Permanent+Marker&display=swap');
+
         .h1 {
           display: flex;
           flex-direction: column;
@@ -58,18 +60,31 @@ export default function Hero() {
           text-align: center;
         }
 
+        .main-title {
+          font-family: 'Bebas Neue', sans-serif;
+          font-size: 3rem;
+          letter-spacing: 2px;
+        }
+
         .animated-text {
           display: inline-block;
           vertical-align: top;
           overflow: hidden;
-          height: 1.2em;
+          height: 1.5em;
         }
 
         .animated-text span {
           display: block;
           height: 100%;
           animation: spin 10s infinite;
+          font-size: 2.5rem;
         }
+
+        .font-innovative { font-family: 'Orbitron', sans-serif; }
+        .font-ambitious { font-family: 'Permanent Marker', cursive; }
+        .font-tech { font-family: 'Bungee', cursive; }
+        .font-fun { font-family: 'Pacifico', cursive; }
+        .font-creative { font-family: 'Permanent Marker', cursive; }
 
         @keyframes spin {
           0%, 20% {
