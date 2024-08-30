@@ -26,7 +26,7 @@ export default function Header() {
           <nav className="hidden md:flex md:grow">
             <ul className="flex grow justify-end flex-wrap items-center">
               <li>
-                <Link href="/" className="font-medium text-white hover:text-gray-300 px-5 py-3 flex items-center transition duration-150 ease-in-out">Services</Link>
+                <Link href="https://www.stillinov.com/#features" className="font-medium text-white hover:text-gray-300 px-5 py-3 flex items-center transition duration-150 ease-in-out">Services</Link>
               </li>
               <li>
                 <Link href="/" className="font-medium text-white hover:text-gray-300 px-5 py-3 flex items-center transition duration-150 ease-in-out">Qui sommes-nous ?</Link>
