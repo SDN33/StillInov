@@ -83,27 +83,22 @@ export default function Hero() {
 
         .font-innovative {
           font-family: 'Orbitron', sans-serif;
-          border-color: #00ffff;
           color: #00ffff;
         }
         .font-ambitious {
           font-family: 'Permanent Marker', cursive;
-          border-color: #ff6b6b;
           color: #ff6b6b;
         }
         .font-tech {
           font-family: 'Roboto Mono', monospace;
-          border-color: #4ecdc4;
           color: #4ecdc4;
         }
         .font-fun {
           font-family: 'Pacifico', cursive;
-          border-color: #feca57;
           color: #feca57;
         }
         .font-creative {
           font-family: 'Permanent Marker', cursive;
-          border-color: #ff9ff3;
           color: #ff9ff3;
         }
 
