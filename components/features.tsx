@@ -217,12 +217,34 @@ export default function Features() {
             {/* 5th item */}
             <div className="relative flex flex-col items-center transform transition-transform duration-300 hover:scale-105 focus:scale-105 active:scale-105" data-aos="fade-up" data-aos-delay="400" data-aos-anchor="[data-aos-id-blocks]">
               <svg className="w-16 h-16 mb-4" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                <rect className="fill-current text-purple-600" width="64" height="64" rx="32" />
+                <rect className="fill-current text-purple-600" width="64" height="64" rx="32">
+                  <animate
+                    attributeName="rx"
+                    values="32;16;32"
+                    dur="2s"
+                    repeatCount="indefinite" />
+                </rect>
+
                 <g strokeLinecap="square" strokeWidth="2" fill="none" fillRule="evenodd">
-                  <path className="stroke-current text-purple-100" d="M29 42h10.229a2 2 0 001.912-1.412l2.769-9A2 2 0 0042 29h-7v-4c0-2.373-1.251-3.494-2.764-3.86a1.006 1.006 0 00-1.236.979V26l-5 6" />
-                  <path className="stroke-current text-purple-300" d="M22 30h4v12h-4z" />
+                  <path className="stroke-current text-purple-100" d="M29 42h10.229a2 2 0 001.912-1.412l2.769-9A2 2 0 0042 29h-7v-4c0-2.373-1.251-3.494-2.764-3.86a1.006 1.006 0 00-1.236.979V26l-5 6">
+                    <animateTransform
+                      attributeName="transform"
+                      type="translate"
+                      values="0,0; 5,0; 0,0"
+                      dur="2s"
+                      repeatCount="indefinite" />
+                  </path>
+
+                  <path className="stroke-current text-purple-300" d="M22 30h4v12h-4z">
+                    <animate
+                      attributeName="d"
+                      values="M22 30h4v12h-4z; M22 28h4v16h-4z; M22 30h4v12h-4z"
+                      dur="2s"
+                      repeatCount="indefinite" />
+                  </path>
                 </g>
               </svg>
+
               <h4 className="h4 mb-2">Campagnes Pub</h4>
               <p className="text-lg text-gray-400 text-center">
                 Créer des campagnes publicitaires efficaces pour accroître votre visibilité et générer des conversions.
@@ -232,13 +254,45 @@ export default function Features() {
             {/* 6th item */}
             <div className="relative flex flex-col items-center transform transition-transform duration-300 hover:scale-105 focus:scale-105 active:scale-105" data-aos="fade-up" data-aos-delay="500" data-aos-anchor="[data-aos-id-blocks]">
               <svg className="w-16 h-16 mb-4" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                <rect className="fill-current text-purple-600" width="64" height="64" rx="32" />
+                <rect className="fill-current text-purple-600" width="64" height="64" rx="32">
+                  <animate
+                    attributeName="rx"
+                    values="32;16;32"
+                    dur="2s"
+                    repeatCount="indefinite" />
+                </rect>
+
                 <g transform="translate(21 22)" strokeLinecap="square" strokeWidth="2" fill="none" fillRule="evenodd">
-                  <path className="stroke-current text-purple-300" d="M17 2V0M19.121 2.879l1.415-1.415M20 5h2M19.121 7.121l1.415 1.415M17 8v2M14.879 7.121l-1.415 1.415M14 5h-2M14.879 2.879l-1.415-1.415" />
-                  <circle className="stroke-current text-purple-300" cx="17" cy="5" r="3" />
-                  <path className="stroke-current text-purple-100" d="M8.86 1.18C3.8 1.988 0 5.6 0 10c0 5 4.9 9 11 9a10.55 10.55 0 003.1-.4L20 21l-.6-5.2a9.125 9.125 0 001.991-2.948" />
+                  <path className="stroke-current text-purple-300" d="M17 2V0M19.121 2.879l1.415-1.415M20 5h2M19.121 7.121l1.415 1.415M17 8v2M14.879 7.121l-1.415 1.415M14 5h-2M14.879 2.879l-1.415-1.415">
+                    <animateTransform
+                      attributeName="transform"
+                      type="rotate"
+                      from="0 17 5"
+                      to="360 17 5"
+                      dur="4s"
+                      repeatCount="indefinite" />
+                  </path>
+
+                  <circle className="stroke-current text-purple-300" cx="17" cy="5" r="3">
+                    <animate
+                      attributeName="r"
+                      values="3;6;3"
+                      dur="2s"
+                      repeatCount="indefinite" />
+                  </circle>
+
+                  <path className="stroke-current text-purple-100" d="M8.86 1.18C3.8 1.988 0 5.6 0 10c0 5 4.9 9 11 9a10.55 10.55 0 003.1-.4L20 21l-.6-5.2a9.125 9.125 0 001.991-2.948">
+                    <animate
+                      attributeName="d"
+                      values="M8.86 1.18C3.8 1.988 0 5.6 0 10c0 5 4.9 9 11 9a10.55 10.55 0 003.1-.4L20 21l-.6-5.2a9.125 9.125 0 001.991-2.948;
+                             M8.86 1.18C3.8 2.988 1 6 1 11c0 4 4.9 9 11 9a10.55 10.55 0 003.1-.4L20 21l-.6-5.2a9.125 9.125 0 001.991-2.948;
+                             M8.86 1.18C3.8 1.988 0 5.6 0 10c0 5 4.9 9 11 9a10.55 10.55 0 003.1-.4L20 21l-.6-5.2a9.125 9.125 0 001.991-2.948"
+                      dur="4s"
+                      repeatCount="indefinite" />
+                  </path>
                 </g>
               </svg>
+
               <h4 className="h4 mb-2">Audit</h4>
               <p className="text-lg text-gray-400 text-center">
                 Évaluer et optimiser vos performances digitales pour identifier les opportunités d'amélioration.
