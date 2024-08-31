@@ -89,12 +89,13 @@ export default function Testimonials() {
                 Nous croyons que chaque projet est unique, c'est pourquoi nous offrons des solutions personnalisées adaptées à vos besoins spécifiques.
                 <br /><br />
                 Que vous ayez un petit budget ou de grandes ambitions, nous nous engageons à optimiser chaque aspect de votre projet pour vous offrir le meilleur résultat possible.
+                <br />L'équipe Still-Inov 🤝
               </h3>
               <br />
 
               <div className="flex flex-wrap justify-center gap-12">
                 <div className="flex flex-col items-center max-w-sm hover:scale-110 transition transform duration-200">
-                  <div className="icon-wrapper p-4 rounded-full mb-4 bg-green-700 hover:bg-[#f15e4b] hover:scale-110 transition transform duration-200" style={{ fill: "#485b51" }}>
+                  <div className="icon-wrapper p-4 rounded-full mb-4 bg-[#485b51] hover:bg-[#f15e4b] hover:scale-110 transition transform duration-200" style={{ fill: "#485b51" }}>
                     <svg className="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
                     </svg>
@@ -104,7 +105,7 @@ export default function Testimonials() {
                 </div>
 
                 <div className="flex flex-col items-center max-w-sm hover:scale-110 transition transform duration-200">
-                  <div className="icon-wrapper p-4 rounded-full mb-4 bg-green-700 hover:bg-[#f15e4b] hover:scale-110 transition transform duration-200" style={{ fill: "#485b51" }}>
+                  <div className="icon-wrapper p-4 rounded-full mb-4 bg-[#485b51] hover:bg-[#f15e4b] hover:scale-110 transition transform duration-200" style={{ fill: "#485b51" }}>
                     <svg className="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
                     </svg>
@@ -114,7 +115,7 @@ export default function Testimonials() {
                 </div>
 
                 <div className="flex flex-col items-center max-w-sm hover:scale-110 transition transform duration-200">
-                  <div className="icon-wrapper p-4 rounded-full mb-4  bg-green-700 hover:bg-[#f15e4b] hover:scale-110 transition transform duration-200" style={{ fill: "#485b51" }}>
+                  <div className="icon-wrapper p-4 rounded-full mb-4  bg-[#485b51] hover:bg-[#f15e4b] hover:scale-110 transition transform duration-200" style={{ fill: "#485b51" }}>
                     <svg className="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
                     </svg>
@@ -123,8 +124,6 @@ export default function Testimonials() {
                   <p className="text-center text-gray-400">Notre approche flexible nous permet de nous adapter à tout type de marché et de répondre efficacement à vos besoins spécifiques.</p>
                 </div>
               </div>
-
-              <p className="text-center text-gray-300 mt-16">L'équipe Still-Inov 🤝</p>
             </div>
           </div>
         </div>
