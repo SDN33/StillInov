@@ -1,29 +1,60 @@
 'use client';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import VideoThumb from '@/public/images/hero-image-01.jpg';
 import ModalVideo from '@/components/modal-video';
 
-const RocketSVG = () => (
-  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M12 2L5 22H19L12 2Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+const InnovativeSVG = () => (
+  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M20 2L4 10L20 18L36 10L20 2Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+    <path d="M4 20L20 28L36 20" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+    <path d="M4 30L20 38L36 30" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
   </svg>
 );
 
-const StarSVG = () => (
-  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+const AmbitiousSVG = () => (
+  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M20 2L24.5 15.5H38L27 24L31.5 38L20 30L8.5 38L13 24L2 15.5H15.5L20 2Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
   </svg>
 );
+
+const CreativeSVG = () => (
+  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M30 10C30 15.5228 25.5228 20 20 20C14.4772 20 10 15.5228 10 10C10 4.47715 14.4772 0 20 0C25.5228 0 30 4.47715 30 10Z" stroke="white" strokeWidth="2"/>
+    <path d="M20 25V40" stroke="white" strokeWidth="2" strokeLinecap="round"/>
+    <path d="M13 30L27 35" stroke="white" strokeWidth="2" strokeLinecap="round"/>
+    <path d="M27 30L13 35" stroke="white" strokeWidth="2" strokeLinecap="round"/>
+  </svg>
+);
+
+const AnimatedWord = ({ word, SVGComponent }: { word: string, SVGComponent: React.FC }) => {
+  return (
+    <div className="animated-word">
+      <SVGComponent />
+      <span>{word}</span>
+      <SVGComponent />
+    </div>
+  );
+};
 
 export default function Hero() {
+  const [currentWordIndex, setCurrentWordIndex] = useState(0);
+  const words = [
+    { text: 'Innovante', component: InnovativeSVG },
+    { text: 'Ambicieuse', component: AmbitiousSVG },
+    { text: 'Créative', component: CreativeSVG },
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentWordIndex((prevIndex) => (prevIndex + 1) % words.length);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
-        {/* Illustration behind hero content */}
-        <div className="absolute left-0 bottom-0 -ml-20 hidden lg:block pointer-events-none" aria-hidden="true" data-aos="fade-up" data-aos-delay="400">
-          {/* SVG code remains the same */}
-        </div>
-
         {/* Hero content */}
         <div className="relative pt-32 pb-10 md:pt-40 md:pb-16">
           {/* Section header */}
@@ -31,16 +62,15 @@ export default function Hero() {
             <h1 className="h1 mb-4 flex flex-col items-center" data-aos="fade-up">
               <span className="block w-full text-center main-title">Agence Digitale</span>
               <div className="animated-text-container">
-                <RocketSVG />
-                <span className="animated-text text-center">
-                  <span className="font-innovative">Innovante</span>
-                  <span className="font-ambitious">Ambicieuse</span>
-                  <span className="font-creative">Créative</span>
-                </span>
-                <StarSVG />
+                <AnimatedWord
+                  word={words[currentWordIndex].text}
+                  SVGComponent={words[currentWordIndex].component}
+                />
               </div>
             </h1>
-            <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">Donnez vie à vos ambitions digitales et transformez vos idées en réalité.</p>
+            <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">
+              Donnez vie à vos ambitions digitales et transformez vos idées en réalité.
+            </p>
             <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
               <div data-aos="fade-up" data-aos-delay="400">
                 <a className="btn text-white bg-purple-600 hover:bg-purple-800 w-full mb-4 sm:w-auto sm:mb-0" href="/contact">Contactez-nous</a>
@@ -84,44 +114,26 @@ export default function Hero() {
           display: flex;
           align-items: center;
           justify-content: center;
-        }
-
-        .animated-text {
-          display: inline-block;
-          vertical-align: top;
+          height: 60px;
           overflow: hidden;
-          height: 1.5em;
-          margin: 0 0.5em;
         }
 
-        .animated-text span {
-          display: block;
-          height: 100%;
-          animation: spin 10s infinite;
+        .animated-word {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          animation: fadeInOut 3s infinite;
+        }
+
+        .animated-word span {
           font-size: 2.5rem;
-          padding: 0.2em 0.5em;
-        }
-
-        .font-innovative {
-          font-family: 'Orbitron', sans-serif;
-        }
-        .font-ambitious {
-          font-family: 'Permanent Marker', cursive;
-        }
-        .font-creative {
+          padding: 0 0.5em;
           font-family: 'Permanent Marker', cursive;
         }
 
-        @keyframes spin {
-          0%, 33% {
-            transform: translateY(0);
-          }
-          38%, 66% {
-            transform: translateY(-100%);
-          }
-          71%, 100% {
-            transform: translateY(-200%);
-          }
+        @keyframes fadeInOut {
+          0%, 100% { opacity: 0; transform: translateY(20px); }
+          20%, 80% { opacity: 1; transform: translateY(0); }
         }
       `}</style>
     </section>
