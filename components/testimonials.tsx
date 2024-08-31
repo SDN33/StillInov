@@ -73,8 +73,8 @@ export default function Testimonials() {
               <div className="border-t border-gray-800 mb-16"></div>
 
               <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-                <h2 className="h2 mb-4">Chez Still-Inov</h2>
-                <h2 className="h2 mb-4">Nos valeurs, gages de qualité</h2>
+                <h2 className="h2 mb-4">Chez Still-Inov,</h2>
+                <h2 className="h2 mb-4">nos valeurs sont gages de qualité</h2>
               </div>
 
               <br />
