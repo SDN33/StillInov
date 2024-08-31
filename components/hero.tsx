@@ -91,12 +91,9 @@ export default function Hero() {
           display: inline-block;
           padding: 0.5rem;
           border-radius: 9999px;
-          border: 2px solid transparent;
-          background: linear-gradient(45deg, rgba(0,0,0,0.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,0.1) 75%, rgba(0,0,0,0.1)), linear-gradient(45deg, rgba(0,0,0,0.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,0.1) 75%);
-          background-size: 4px 4px;
-          background-position: 0 0, 2px 2px;
           border: 2px solid #f15e4b; /* Adjust border color for roulette effect */
-          z-index: 1;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow for depth */
+          overflow: hidden;
         }
 
         .roulette-border:before {
@@ -109,15 +106,18 @@ export default function Hero() {
           border-radius: 9999px;
           border: 2px solid #f15e4b;
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-          animation: roulette-spin 3s linear infinite;
+          animation: vibrance-zoom 15s ease-in-out infinite;
+          z-index: -1;
         }
 
-        @keyframes roulette-spin {
-          from {
-            transform: rotate(0deg);
+        @keyframes vibrance-zoom {
+          0%, 100% {
+            transform: scale(1);
+            opacity: 0.8;
           }
-          to {
-            transform: rotate(360deg);
+          50% {
+            transform: scale(1.05);
+            opacity: 1;
           }
         }
 
@@ -126,18 +126,24 @@ export default function Hero() {
           display: inline-block;
           position: relative;
           height: 3rem; /* Adjust based on the font size */
+          width: 100%; /* Ensure full width */
         }
 
         .animated-text {
           display: inline-block;
           white-space: nowrap;
-          animation: text-rotation 10s linear infinite;
+          position: absolute;
+          top: 0;
+          left: 0;
+          animation: text-zoom 12s ease-in-out infinite;
         }
 
         .animated-text span {
           display: block;
           font-size: 2.5rem;
           padding: 0.2em 0.5em;
+          color: #fff; /* Ensure text color contrasts well */
+          text-shadow: 0 0 8px rgba(0, 0, 0, 0.6); /* Adds glow effect */
         }
 
         .font-innovative {
@@ -150,11 +156,12 @@ export default function Hero() {
           font-family: 'Permanent Marker', cursive;
         }
 
-        @keyframes text-rotation {
+        @keyframes text-zoom {
           0% { transform: translateY(0); }
-          33% { transform: translateY(-100%); }
-          66% { transform: translateY(-200%); }
-          100% { transform: translateY(-300%); }
+          25% { transform: translateY(-100%); }
+          50% { transform: translateY(-200%); }
+          75% { transform: translateY(-300%); }
+          100% { transform: translateY(-400%); }
         }
       `}</style>
     </section>
