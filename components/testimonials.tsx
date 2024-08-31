@@ -73,7 +73,7 @@ export default function Testimonials() {
             <div className="container mx-auto px-4">
               <div className="border-t border-gray-800 mb-16"></div>
 
-              <div className="mb-4 text-center text-white">
+              <div className="text-center text-white">
               <Image
                 src="/images/logo.png"
                 alt="Stillinov logo"
@@ -81,6 +81,7 @@ export default function Testimonials() {
                 height={92}
                 quality={100}
                 priority
+                className="mx-auto"
               />
               </div>
 
