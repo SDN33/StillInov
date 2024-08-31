@@ -11,7 +11,7 @@ export default function Testimonials() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h2 mb-4">Parce qu'un avis vaut mieux<br /> qu'un long discours !</h2>
+            <h2 className="h2 mb-4">Parce qu'un avis<br /> vaut mieux qu'un<br />long discours !</h2>
           </div>
 
           {/* Testimonials */}
