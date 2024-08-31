@@ -40,7 +40,8 @@ const CookieBanner = () => {
   if (!showBanner) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 bg-[rgba(72,91,81,0.8)] text-white p-4 shadow-lg z-50">
+    <div className="fixed bottom-0 left-0 right-0 bg-[background: rgb(243,115,53);
+          background: radial-gradient(circle, rgba(243,115,53,1) 0%, rgba(241,94,75,1) 35%, rgba(144,231,211,1) 100%);] text-white p-4 shadow-lg z-50">
       <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center">
         <p className="text-sm mb-4 sm:mb-0 sm:mr-4 text-center sm:text-left">
           Nous utilisons des cookies pour améliorer votre expérience sur notre site.
