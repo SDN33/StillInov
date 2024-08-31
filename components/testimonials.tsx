@@ -107,7 +107,7 @@ export default function Testimonials() {
                   <p className="text-center text-gray-400">Notre expertise et notre attention aux détails garantissent des solutions de haute qualité qui dépassent vos attentes.</p>
                 </div>
 
-                <div className="flex flex-col items-center max-w-sm" hover:scale-110 transition transform duration-200>
+                <div className="flex flex-col items-center max-w-sm hover:scale-110 transition transform duration-200">
                   <div className="icon-wrapper p-4 rounded-full mb-4  bg-green-700 hover:bg-[#f15e4b] hover:scale-110 transition transform duration-200" style={{ fill: "#485b51" }}>
                     <svg className="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
