@@ -73,7 +73,7 @@ export default function Testimonials() {
             <div className="container mx-auto px-4">
               <div className="border-t border-gray-800 mb-16"></div>
 
-              <h2 className="text-4xl font-bold mb-8 text-center text-white"><strong>Still-Inov</strong> Agency</h2>
+              <h2 className="text-4xl font-bold mb-8 text-center text-white"><strong>Still-Inov</strong><br /><h3 className='mt-8 mb-12 text-xl text-white text-center max-w-3xl mx-auto'>Agency</h3></h2>
 
               <h3 className='mt-8 mb-12 text-xl text-gray-300 text-center max-w-3xl mx-auto'>
                 Nous croyons que chaque projet est unique, c'est pourquoi nous offrons des solutions personnalisées adaptées à vos besoins spécifiques. Que vous ayez un petit budget ou de grandes ambitions, nous nous engageons à optimiser chaque aspect de votre projet pour vous offrir le meilleur résultat possible.
