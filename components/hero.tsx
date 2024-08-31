@@ -3,20 +3,6 @@ import React from 'react';
 import VideoThumb from '@/public/images/hero-image-01.jpg';
 import ModalVideo from '@/components/modal-video';
 
-const RocketSVG = () => (
-  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M20 2L10 38H30L20 2Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <animate attributeName="d" values="M20 2L10 38H30L20 2Z;M20 2L5 38H35L20 2Z;M20 2L10 38H30L20 2Z" dur="2s" repeatCount="indefinite" />
-    </path>
-    <circle cx="20" cy="15" r="3" fill="white">
-      <animate attributeName="cy" values="15;12;15" dur="1s" repeatCount="indefinite" />
-    </circle>
-    <path d="M15 30L20 35L25 30" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <animate attributeName="d" values="M15 30L20 35L25 30;M13 32L20 37L27 32;M15 30L20 35L25 30" dur="1s" repeatCount="indefinite" />
-    </path>
-  </svg>
-);
-
 const StarSVG = () => (
   <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M20 2L24.5 15.5H38L27 24L31.5 38L20 30L8.5 38L13 24L2 15.5H15.5L20 2Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -47,7 +33,6 @@ export default function Hero() {
             <h1 className="h1 mb-4 flex flex-col items-center" data-aos="fade-up">
               <span className="block w-full text-center main-title">Agence de Communication Digitale</span>
               <div className="animated-text-container">
-                <RocketSVG />
                 <StarSVG />
                 <span className="animated-text text-center">
                   <span className="font-innovative">Innovante</span>
@@ -55,7 +40,6 @@ export default function Hero() {
                   <span className="font-creative">Créative</span>
                 </span>
                 <StarSVG />
-                <RocketSVG />
               </div>
             </h1>
             <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">Donnez vie à vos ambitions digitales et transformez vos idées en réalité.<br />Nous sommes là pour vous accompagner dans votre succès.</p>
