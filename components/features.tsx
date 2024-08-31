@@ -23,45 +23,19 @@ export default function Features() {
             {/* 1st item */}
             <div className="relative flex flex-col items-center transform transition-transform duration-300 hover:scale-105 focus:scale-105 active:scale-105" data-aos="fade-up" data-aos-anchor="[data-aos-id-blocks]">
               <svg className="w-16 h-16 mb-4" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                <rect className="fill-current" width="64" height="64" rx="32"
-                  style={{ background: "#f15e4b" }}
-                >
-                  <animate
-                    attributeName="rx"
-                    values="32;16;32"
-                    dur="2s"
-                    repeatCount="indefinite" />
+                <rect className="fill-current" width="64" height="64" rx="32" style={{ fill: "#f15e4b" }}>
+                  <animate attributeName="rx" values="32;16;32" dur="2s" repeatCount="indefinite" />
                 </rect>
-                <ellipse cx="32" cy="32" rx="20" ry="12" fill="#C4B5FD" className="stroke-current text-purple-300" strokeWidth="2">
-                  <animate
-                    attributeName="rx"
-                    values="20;25;20"
-                    dur="2s"
-                    repeatCount="indefinite" />
-                  <animate
-                    attributeName="ry"
-                    values="12;8;12"
-                    dur="2s"
-                    repeatCount="indefinite" />
+                <ellipse cx="32" cy="32" rx="20" ry="12" fill="#f15e4b" className="stroke-current text-purple-300" strokeWidth="2">
+                  <animate attributeName="rx" values="20;25;20" dur="2s" repeatCount="indefinite" />
+                  <animate attributeName="ry" values="12;8;12" dur="2s" repeatCount="indefinite" />
                 </ellipse>
-                <circle cx="32" cy="32" r="8" fill="#7C3AED" className="stroke-current text-purple-100" strokeWidth="2">
-                  <animate
-                    attributeName="r"
-                    values="8;12;8"
-                    dur="2s"
-                    repeatCount="indefinite" />
+                <circle cx="32" cy="32" r="8" fill="#f15e4b" className="stroke-current text-purple-100" strokeWidth="2">
+                  <animate attributeName="r" values="8;12;8" dur="2s" repeatCount="indefinite" />
                 </circle>
-                <circle cx="35" cy="29" r="3" fill="#EDE9FE">
-                  <animate
-                    attributeName="cx"
-                    values="35;29;35"
-                    dur="2s"
-                    repeatCount="indefinite" />
-                  <animate
-                    attributeName="cy"
-                    values="29;35;29"
-                    dur="2s"
-                    repeatCount="indefinite" />
+                <circle cx="35" cy="29" r="3" fill="#f15e4b">
+                  <animate attributeName="cx" values="35;29;35" dur="2s" repeatCount="indefinite" />
+                  <animate attributeName="cy" values="29;35;29" dur="2s" repeatCount="indefinite" />
                 </circle>
               </svg>
 
@@ -74,47 +48,22 @@ export default function Features() {
             {/* 2nd item */}
             <div className="relative flex flex-col items-center transform transition-transform duration-300 hover:scale-105 focus:scale-105 active:scale-105" data-aos="fade-up" data-aos-delay="100" data-aos-anchor="[data-aos-id-blocks]">
               <svg className="w-16 h-16 mb-4" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                <rect className="fill-current" width="64" height="64" rx="32"
-                  style={{ background: "#f15e4b" }}
-                >
-                  <animate
-                    attributeName="rx"
-                    values="32;28;32"
-                    dur="2s"
-                    repeatCount="indefinite" />
+                <rect className="fill-current" width="64" height="64" rx="32" style={{ fill: "#f15e4b" }}>
+                  <animate attributeName="rx" values="32;28;32" dur="2s" repeatCount="indefinite" />
                 </rect>
 
                 <path className="stroke-current text-purple-100" strokeWidth="2" strokeLinecap="square" d="M21 23h22v18H21z" fill="none" fillRule="evenodd">
-                  <animateTransform
-                    attributeName="transform"
-                    type="scale"
-                    values="1;1.1;1"
-                    dur="2s"
-                    repeatCount="indefinite" />
+                  <animateTransform attributeName="transform" type="scale" values="1;1.1;1" dur="2s" repeatCount="indefinite" />
                 </path>
 
                 <path className="stroke-current text-purple-300" d="M26 28h12M26 32h12M26 36h5" strokeWidth="2" strokeLinecap="square">
-                  <animate
-                    attributeName="stroke-width"
-                    values="2;3;2"
-                    dur="2s"
-                    repeatCount="indefinite" />
+                  <animate attributeName="stroke-width" values="2;3;2" dur="2s" repeatCount="indefinite" />
                 </path>
 
-                <polygon
-                  className="fill-current text-purple-300"
-                  points="40,16 28,24 32,30 36,26 42,32"
-                  style={{transformOrigin: "center"}} >
-                  <animateTransform
-                    attributeName="transform"
-                    type="translate"
-                    values="0,0; 5,5; 0,0"
-                    dur="2s"
-                    repeatCount="indefinite" />
+                <polygon className="fill-current text-purple-300" points="40,16 28,24 32,30 36,26 42,32" style={{ transformOrigin: "center" }}>
+                  <animateTransform attributeName="transform" type="translate" values="0,0; 5,5; 0,0" dur="2s" repeatCount="indefinite" />
                 </polygon>
               </svg>
-
-
 
               <h4 className="h4 mb-2">Site web et Application</h4>
               <p className="text-lg text-gray-400 text-center">
@@ -125,55 +74,27 @@ export default function Features() {
             {/* 3rd item */}
             <div className="relative flex flex-col items-center transform transition-transform duration-300 hover:scale-105 focus:scale-105 active:scale-105" data-aos="fade-up" data-aos-delay="200" data-aos-anchor="[data-aos-id-blocks]">
               <svg className="w-16 h-16 mb-4" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                <rect className="fill-current" width="64" height="64" rx="32"
-                  style={{ background: "#f15e4b" }}
-                >
-                  <animate
-                    attributeName="rx"
-                    values="32;16;32"
-                    dur="2s"
-                    repeatCount="indefinite" />
+                <rect className="fill-current" width="64" height="64" rx="32" style={{ fill: "#f15e4b" }}>
+                  <animate attributeName="rx" values="32;16;32" dur="2s" repeatCount="indefinite" />
                 </rect>
 
                 <g transform="translate(21 21)" strokeLinecap="square" strokeWidth="2" fill="none" fillRule="evenodd">
 
                   <ellipse className="stroke-current text-purple-300" cx="11" cy="11" rx="5.5" ry="11">
-                    <animate
-                      attributeName="rx"
-                      values="5.5;7.5;5.5"
-                      dur="2s"
-                      repeatCount="indefinite" />
-                    <animate
-                      attributeName="ry"
-                      values="11;8;11"
-                      dur="2s"
-                      repeatCount="indefinite" />
+                    <animate attributeName="rx" values="5.5;7.5;5.5" dur="2s" repeatCount="indefinite" />
+                    <animate attributeName="ry" values="11;8;11" dur="2s" repeatCount="indefinite" />
                   </ellipse>
 
                   <path className="stroke-current text-purple-100" d="M11 0v22">
-                    <animateTransform
-                      attributeName="transform"
-                      type="translate"
-                      values="0,0; 0,5; 0,0"
-                      dur="2s"
-                      repeatCount="indefinite" />
+                    <animateTransform attributeName="transform" type="translate" values="0,0; 0,5; 0,0" dur="2s" repeatCount="indefinite" />
                   </path>
 
                   <path className="stroke-current text-purple-100" d="M0 11h22">
-                    <animateTransform
-                      attributeName="transform"
-                      type="translate"
-                      values="0,0; 5,0; 0,0"
-                      dur="2s"
-                      repeatCount="indefinite" />
+                    <animateTransform attributeName="transform" type="translate" values="0,0; 5,0; 0,0" dur="2s" repeatCount="indefinite" />
                   </path>
 
                   <circle className="stroke-current text-purple-100" cx="11" cy="11" r="11">
-                    <animate
-                      attributeName="r"
-                      values="11;14;11"
-                      dur="2s"
-                      repeatCount="indefinite" />
+                    <animate attributeName="r" values="11;14;11" dur="2s" repeatCount="indefinite" />
                   </circle>
                 </g>
               </svg>
@@ -187,130 +108,82 @@ export default function Features() {
             {/* 4th item */}
             <div className="relative flex flex-col items-center transform transition-transform duration-300 hover:scale-105 focus:scale-105 active:scale-105" data-aos="fade-up" data-aos-delay="300" data-aos-anchor="[data-aos-id-blocks]">
               <svg className="w-16 h-16 mb-4" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                <rect className="fill-current" width="64" height="64" rx="32"
-                  style={{ background: "#f15e4b" }}
-                >
-                  <animate
-                    attributeName="rx"
-                    values="32;16;32"
-                    dur="2s"
-                    repeatCount="indefinite" />
+                <rect className="fill-current" width="64" height="64" rx="32" style={{ fill: "#f15e4b" }}>
+                  <animate attributeName="rx" values="32;16;32" dur="2s" repeatCount="indefinite" />
                 </rect>
-
-                <g transform="translate(22 21)" strokeLinecap="square" strokeWidth="2" fill="none" fillRule="evenodd">
-                  <path className="stroke-current text-purple-100" d="M17 22v-6.3a8.97 8.97 0 003-6.569A9.1 9.1 0 0011.262 0 9 9 0 002 9v1l-2 5 2 1v4a2 2 0 002 2h4a5 5 0 005-5v-5">
-                    <animateTransform
-                      attributeName="transform"
-                      type="translate"
-                      values="0,0; 5,5; 0,0"
-                      dur="2s"
-                      repeatCount="indefinite" />
+                <g strokeLinecap="square" strokeWidth="2" fill="none" fillRule="evenodd">
+                  <path className="stroke-current text-purple-100" d="M29 23v18" transform="translate(1)">
+                    <animateTransform attributeName="transform" type="scale" values="1;0.9;1" dur="2s" repeatCount="indefinite" />
                   </path>
-                  <circle className="stroke-current text-purple-300" cx="13" cy="9" r="3">
-                    <animate
-                      attributeName="r"
-                      values="3;6;3"
-                      dur="2s"
-                      repeatCount="indefinite" />
+                  <path className="stroke-current text-purple-100" d="M37 23v18" transform="translate(1)">
+                    <animateTransform attributeName="transform" type="scale" values="1;1.1;1" dur="2s" repeatCount="indefinite" />
+                  </path>
+                  <path className="stroke-current text-purple-300" d="M23 29h18" transform="translate(1)">
+                    <animate attributeName="stroke-width" values="2;3;2" dur="2s" repeatCount="indefinite" />
+                  </path>
+                  <circle className="stroke-current text-purple-300" cx="31" cy="31" r="2">
+                    <animate attributeName="r" values="2;5;2" dur="2s" repeatCount="indefinite" />
                   </circle>
                 </g>
               </svg>
 
-              <h4 className="h4 mb-2">Stratégies Marketing</h4>
+              <h4 className="h4 mb-2">Publicité digitale</h4>
               <p className="text-lg text-gray-400 text-center">
-                Développer des plans sur mesure pour maximiser votre visibilité, attirer votre cible et stimuler votre croissance.
+                Créez des campagnes publicitaires ciblées et efficaces pour atteindre votre audience et maximiser votre retour sur investissement.
               </p>
             </div>
 
             {/* 5th item */}
             <div className="relative flex flex-col items-center transform transition-transform duration-300 hover:scale-105 focus:scale-105 active:scale-105" data-aos="fade-up" data-aos-delay="400" data-aos-anchor="[data-aos-id-blocks]">
               <svg className="w-16 h-16 mb-4" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                <rect className="fill-current" width="64" height="64" rx="32"
-                  style={{ background: "#f15e4b" }}
-                >
-                  <animate
-                    attributeName="rx"
-                    values="32;16;32"
-                    dur="2s"
-                    repeatCount="indefinite" />
+                <rect className="fill-current" width="64" height="64" rx="32" style={{ fill: "#f15e4b" }}>
+                  <animate attributeName="rx" values="32;16;32" dur="2s" repeatCount="indefinite" />
                 </rect>
-
                 <g strokeLinecap="square" strokeWidth="2" fill="none" fillRule="evenodd">
-                  <path className="stroke-current text-purple-100" d="M29 42h10.229a2 2 0 001.912-1.412l2.769-9A2 2 0 0042 29h-7v-4c0-2.373-1.251-3.494-2.764-3.86a1.006 1.006 0 00-1.236.979V26l-5 6">
-                    <animateTransform
-                      attributeName="transform"
-                      type="translate"
-                      values="0,0; 5,0; 0,0"
-                      dur="2s"
-                      repeatCount="indefinite" />
+                  <path className="stroke-current text-purple-100" d="M32 21v22M21 32h22" transform="rotate(45 32 32)">
+                    <animateTransform attributeName="transform" type="rotate" values="45;0;45" dur="2s" repeatCount="indefinite" />
                   </path>
-
-                  <path className="stroke-current text-purple-300" d="M22 30h4v12h-4z">
-                    <animate
-                      attributeName="d"
-                      values="M22 30h4v12h-4z; M22 28h4v16h-4z; M22 30h4v12h-4z"
-                      dur="2s"
-                      repeatCount="indefinite" />
+                  <path className="stroke-current text-purple-300" d="M32 14v36M14 32h36" transform="rotate(45 32 32)">
+                    <animate attributeName="stroke-width" values="2;4;2" dur="2s" repeatCount="indefinite" />
                   </path>
+                  <circle className="stroke-current text-purple-300" cx="32" cy="32" r="10">
+                    <animate attributeName="r" values="10;12;10" dur="2s" repeatCount="indefinite" />
+                  </circle>
                 </g>
               </svg>
 
-              <h4 className="h4 mb-2">Campagnes Pub</h4>
+              <h4 className="h4 mb-2">Analyse et Reporting</h4>
               <p className="text-lg text-gray-400 text-center">
-                Créer des campagnes publicitaires efficaces pour accroître votre visibilité et générer des conversions.
+                Suivez et analysez les performances de vos campagnes et actions digitales grâce à des rapports détaillés et des analyses approfondies.
               </p>
             </div>
 
             {/* 6th item */}
             <div className="relative flex flex-col items-center transform transition-transform duration-300 hover:scale-105 focus:scale-105 active:scale-105" data-aos="fade-up" data-aos-delay="500" data-aos-anchor="[data-aos-id-blocks]">
               <svg className="w-16 h-16 mb-4" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                <rect className="fill-current text-purple-600" width="64" height="64" rx="32">
-                  <animate
-                    attributeName="rx"
-                    values="32;16;32"
-                    dur="2s"
-                    repeatCount="indefinite" />
+                <rect className="fill-current" width="64" height="64" rx="32" style={{ fill: "#f15e4b" }}>
+                  <animate attributeName="rx" values="32;16;32" dur="2s" repeatCount="indefinite" />
                 </rect>
-
-                <g transform="translate(21 22)" strokeLinecap="square" strokeWidth="2" fill="none" fillRule="evenodd">
-                  <path className="stroke-current text-purple-300" d="M17 2V0M19.121 2.879l1.415-1.415M20 5h2M19.121 7.121l1.415 1.415M17 8v2M14.879 7.121l-1.415 1.415M14 5h-2M14.879 2.879l-1.415-1.415">
-                    <animateTransform
-                      attributeName="transform"
-                      type="rotate"
-                      from="0 17 5"
-                      to="360 17 5"
-                      dur="4s"
-                      repeatCount="indefinite" />
+                <g strokeLinecap="square" strokeWidth="2" fill="none" fillRule="evenodd">
+                  <path className="stroke-current text-purple-100" d="M21 23h22v18H21z">
+                    <animateTransform attributeName="transform" type="scale" values="1;1.1;1" dur="2s" repeatCount="indefinite" />
                   </path>
-
-                  <circle className="stroke-current text-purple-300" cx="17" cy="5" r="3">
-                    <animate
-                      attributeName="r"
-                      values="3;6;3"
-                      dur="2s"
-                      repeatCount="indefinite" />
-                  </circle>
-
-                  <path className="stroke-current text-purple-100" d="M8.86 1.18C3.8 1.988 0 5.6 0 10c0 5 4.9 9 11 9a10.55 10.55 0 003.1-.4L20 21l-.6-5.2a9.125 9.125 0 001.991-2.948">
-                    <animate
-                      attributeName="d"
-                      values="M8.86 1.18C3.8 1.988 0 5.6 0 10c0 5 4.9 9 11 9a10.55 10.55 0 003.1-.4L20 21l-.6-5.2a9.125 9.125 0 001.991-2.948;
-                             M8.86 1.18C3.8 2.988 1 6 1 11c0 4 4.9 9 11 9a10.55 10.55 0 003.1-.4L20 21l-.6-5.2a9.125 9.125 0 001.991-2.948;
-                             M8.86 1.18C3.8 1.988 0 5.6 0 10c0 5 4.9 9 11 9a10.55 10.55 0 003.1-.4L20 21l-.6-5.2a9.125 9.125 0 001.991-2.948"
-                      dur="4s"
-                      repeatCount="indefinite" />
+                  <path className="stroke-current text-purple-300" d="M26 28h12M26 32h12M26 36h5">
+                    <animate attributeName="stroke-width" values="2;3;2" dur="2s" repeatCount="indefinite" />
+                  </path>
+                  <path className="stroke-current text-purple-100" d="M31 21v18">
+                    <animate attributeName="stroke-width" values="2;3;2" dur="2s" repeatCount="indefinite" />
                   </path>
                 </g>
               </svg>
 
-              <h4 className="h4 mb-2">Audit</h4>
+              <h4 className="h4 mb-2">Formation et Support</h4>
               <p className="text-lg text-gray-400 text-center">
-                Évaluer et optimiser vos performances digitales pour identifier les opportunités d'amélioration.
+                Offrir des formations personnalisées et un support technique pour vous aider à maîtriser les outils et techniques digitales.
               </p>
             </div>
 
           </div>
-
         </div>
       </div>
     </section>
