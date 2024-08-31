@@ -76,12 +76,14 @@ export default function Hero() {
           flex-direction: column;
           align-items: center;
           text-align: center;
+          z-index: 2;
         }
 
         .main-title {
           font-family: 'Bebas Neue', sans-serif;
           font-size: 3rem;
           letter-spacing: 2px;
+          z-index: 2;
         }
 
         .roulette-border {
@@ -94,6 +96,7 @@ export default function Hero() {
           background-size: 4px 4px;
           background-position: 0 0, 2px 2px;
           border: 2px solid #f15e4b; /* Adjust border color for roulette effect */
+          z-index: 1;
         }
 
         .roulette-border:before {
