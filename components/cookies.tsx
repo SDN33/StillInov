@@ -11,7 +11,10 @@ const CookieBanner = () => {
       const lastShown = localStorage.getItem('cookieBannerLastShown');
       const currentTime = new Date().getTime();
 
-      if (!cookieConsent || (cookieConsent === 'refused' && lastShown && currentTime - parseInt(lastShown) > 24 * 60 * 60 * 1000)) {
+      if (
+        !cookieConsent ||
+        (cookieConsent === 'refused' && lastShown && currentTime - parseInt(lastShown) > 24 * 60 * 60 * 1000)
+      ) {
         setShowBanner(true);
         localStorage.setItem('cookieBannerLastShown', currentTime.toString());
       }
@@ -37,7 +40,7 @@ const CookieBanner = () => {
   if (!showBanner) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 bg-purple-600 text-white p-4 shadow-lg z-50">
+    <div className="fixed bottom-0 left-0 right-0 bg-[#f15e4b] text-white p-4 shadow-lg z-50">
       <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center">
         <p className="text-sm mb-4 sm:mb-0 sm:mr-4 text-center sm:text-left">
           Nous utilisons des cookies pour améliorer votre expérience sur notre site.
@@ -46,13 +49,13 @@ const CookieBanner = () => {
         <div className="flex space-x-4">
           <button
             onClick={handleAccept}
-            className="px-4 py-2 bg-white text-purple-600 rounded hover:bg-purple-100 transition duration-300 ease-in-out"
+            className="px-4 py-2 bg-white text-[#f15e4b] rounded hover:bg-[#485b51] hover:text-white transition duration-300 ease-in-out"
           >
             Accepter
           </button>
           <button
             onClick={handleRefuse}
-            className="px-4 py-2 bg-transparent border border-white rounded hover:bg-purple-500 transition duration-300 ease-in-out"
+            className="px-4 py-2 bg-transparent border border-white rounded hover:bg-[#485b51] transition duration-300 ease-in-out"
           >
             Refuser
           </button>
