@@ -48,12 +48,14 @@ export default function Hero() {
               <span className="block w-full text-center main-title">Agence de Communication Digitale</span>
               <div className="animated-text-container">
                 <RocketSVG />
+                <StarSVG />
                 <span className="animated-text text-center">
                   <span className="font-innovative">Innovante</span>
                   <span className="font-ambitious">Ambicieuse</span>
                   <span className="font-creative">Créative</span>
                 </span>
                 <StarSVG />
+                <RocketSVG />
               </div>
             </h1>
             <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">Donnez vie à vos ambitions digitales et transformez vos idées en réalité.<br />Nous sommes là pour vous accompagner dans votre succès.</p>
