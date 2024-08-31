@@ -73,23 +73,17 @@ export default function Testimonials() {
               <div className="border-t border-gray-800 mb-16"></div>
 
               <div className="text-center text-white">
-              <Image
-                src="/images/logo.png"
-                alt="Stillinov logo"
-                width={292}
-                height={92}
-                quality={100}
-                priority
-                className="mx-auto"
-              />
+                <Image
+                  src="/images/logo.png"
+                  alt="Stillinov logo"
+                  width={292}
+                  height={92}
+                  quality={100}
+                  priority
+                  className="mx-auto"
+                />
               </div>
 
-              <h3 className='mt-4 mb-12 text-xl text-gray-300 text-center max-w-3xl mx-auto'>
-                Nous croyons que chaque projet est unique, c'est pourquoi nous offrons des solutions personnalisées adaptées à vos besoins spécifiques.
-                <br /><br />
-                Que vous ayez un petit budget ou de grandes ambitions, nous nous engageons à optimiser chaque aspect de votre projet pour vous offrir le meilleur résultat possible.
-                <br />L'équipe Still-Inov 🤝
-              </h3>
               <br />
 
               <div className="flex flex-wrap justify-center gap-12">
@@ -122,6 +116,13 @@ export default function Testimonials() {
                   <h4 className="text-xl font-semibold mb-3 text-white">Adaptation</h4>
                   <p className="text-center text-gray-400">Notre approche flexible nous permet de nous adapter à tout type de marché et de répondre efficacement à vos besoins spécifiques.</p>
                 </div>
+
+                <h3 className='mt-4 mb-12 text-xl text-gray-300 text-center max-w-3xl mx-auto'>
+                  Nous croyons que chaque projet est unique, c'est pourquoi nous offrons des solutions personnalisées adaptées à vos besoins spécifiques.
+                  <br /><br />
+                  Que vous ayez un petit budget ou de grandes ambitions, nous nous engageons à optimiser chaque aspect de votre projet pour vous offrir le meilleur résultat possible.
+                  <br /><br />L'équipe Still-Inov 🤝
+                </h3>
               </div>
             </div>
           </div>
