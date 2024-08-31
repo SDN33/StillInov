@@ -86,7 +86,7 @@ export default function Testimonials() {
 
               <br />
 
-              <div className="flex flex-wrap justify-center gap-12">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
                 <div className="flex flex-col items-center max-w-sm hover:scale-110 transition transform duration-200">
                   <div className="icon-wrapper p-4 rounded-full mb-4 bg-[#485b51] hover:bg-[#f15e4b] hover:scale-110 transition transform duration-200" style={{ fill: "#485b51" }}>
                     <svg className="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -117,7 +117,7 @@ export default function Testimonials() {
                   <p className="text-center text-gray-400">Notre approche flexible nous permet de nous adapter à tout type de marché et de répondre efficacement à vos besoins spécifiques.</p>
                 </div>
 
-                <h3 className='mt-4 mb-12 text-xl text-gray-300 text-center max-w-3xl mx-auto'>
+                <h3 className='mt-4 mb-4 text-xl text-gray-300 text-center max-w-3xl mx-auto'>
                   Nous croyons que chaque projet est unique, c'est pourquoi nous offrons des solutions personnalisées adaptées à vos besoins spécifiques.
                   <br /><br />
                   Que vous ayez un petit budget ou de grandes ambitions, nous nous engageons à optimiser chaque aspect de votre projet pour vous offrir le meilleur résultat possible.
