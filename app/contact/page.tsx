@@ -30,7 +30,7 @@ import React from 'react';
 // Define the ContactForm component
 const ContactForm: React.FC = () => {
   return (
-    <section className="bg-[#f15e4b] py-16 sm:py-22 mt-16 sm:mt-24">
+    <section className="bg-[#485b51] py-16 sm:py-22 mt-16 sm:mt-24">
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
         <div className="bg-white rounded-lg shadow-lg p-6 md:p-8">
           <div className="mb-8 text-center">
