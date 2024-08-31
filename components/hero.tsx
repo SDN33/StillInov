@@ -11,7 +11,7 @@ const StarSVG = () => (
     <circle cx="20" cy="20" r="2" fill="white">
       <animate attributeName="r" values="2;4;2" dur="2s" repeatCount="indefinite" />
     </circle>
-    <path d="M20 10V30M10 20H30" stroke="white" strokeWidth="1">
+    <path d="M20 10V30M10 20H30" stroke="currentColor" strokeWidth="2" className="text-purple-600">
       <animateTransform attributeName="transform" type="rotate" from="0 20 20" to="360 20 20" dur="10s" repeatCount="indefinite" />
     </path>
   </svg>
