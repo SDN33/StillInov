@@ -61,22 +61,22 @@ export default function MobileMenu() {
       >
         <ul className="bg-gray-800 px-4 py-2">
           <li>
-            <Link href="https://www.stillinov.com/#about" className="flex font-medium w-full text-purple-600 hover:text-gray-200 py-2 justify-center" onClick={() => setMobileNavOpen(false)}>
+            <Link href="https://www.stillinov.com/#about" className="flex font-medium w-full text-[#f15e4b] hover:text-gray-200 py-2 justify-center" onClick={() => setMobileNavOpen(false)}>
               Qui sommes-nous ?
             </Link>
           </li>
           <li>
             <Link
               href="https://www.stillinov.com/#features"
-              className="flex font-medium w-full text-purple-600 hover:text-gray-200 py-2 justify-center" onClick={() => setMobileNavOpen(false)}>
+              className="flex font-medium w-full text-[#f15e4b] hover:text-gray-200 py-2 justify-center" onClick={() => setMobileNavOpen(false)}>
               Services
             </Link>
           </li>
           <li>
             <Link
               href="/contact"
-              className="flex font-medium w-full text-purple-600 hover:text-gray-200 py-2 justify-center" onClick={() => setMobileNavOpen(false)}>
-              Contact
+              className="flex font-medium w-full text-[#f15e4b] hover:text-gray-200 py-2 justify-center" onClick={() => setMobileNavOpen(false)}>
+              Contactez-nous
             </Link>
           </li>
         </ul>
