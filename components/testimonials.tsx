@@ -2,6 +2,7 @@ import Image from 'next/image';
 import TestimonialImage01 from '@/public/images/testimonial-01.png';
 import TestimonialImage02 from '@/public/images/testimonial-02.jpg';
 import TestimonialImage03 from '@/public/images/testimonial-03.jpg';
+import Logo from '@/public/images/logo.png';
 
 export default function Testimonials() {
   return (
@@ -86,8 +87,8 @@ export default function Testimonials() {
               <br />
 
               <div className="flex flex-wrap justify-center gap-12">
-                <div className="flex flex-col items-center max-w-sm">
-                  <div className="icon-wrapper p-4 rounded-full mb-4 bg-[#f15e4b] hover:bg-green-700 hover:scale-110 transition transform duration-200" style={{ fill: "#485b51" }}>
+                <div className="flex flex-col items-center max-w-sm hover:scale-110 transition transform duration-200">
+                  <div className="icon-wrapper p-4 rounded-full mb-4 bg-green-700 hover:bg-[#f15e4b] hover:scale-110 transition transform duration-200" style={{ fill: "#485b51" }}>
                     <svg className="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
                     </svg>
@@ -96,8 +97,8 @@ export default function Testimonials() {
                   <p className="text-center text-gray-400">Nous bâtissons des relations durables avec nos clients, basées sur la transparence, l'intégrité et des résultats concrets.</p>
                 </div>
 
-                <div className="flex flex-col items-center max-w-sm">
-                  <div className="icon-wrapper p-4 rounded-full mb-4 bg-[#f15e4b] hover:bg-green-700 hover:scale-110 transition transform duration-200" style={{ fill: "#485b51" }}>
+                <div className="flex flex-col items-center max-w-sm hover:scale-110 transition transform duration-200">
+                  <div className="icon-wrapper p-4 rounded-full mb-4 bg-green-700 hover:bg-[#f15e4b] hover:scale-110 transition transform duration-200" style={{ fill: "#485b51" }}>
                     <svg className="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
                     </svg>
@@ -106,8 +107,8 @@ export default function Testimonials() {
                   <p className="text-center text-gray-400">Notre expertise et notre attention aux détails garantissent des solutions de haute qualité qui dépassent vos attentes.</p>
                 </div>
 
-                <div className="flex flex-col items-center max-w-sm">
-                  <div className="icon-wrapper p-4 rounded-full mb-4 bg-[#f15e4b] hover:bg-green-700 hover:scale-110 transition transform duration-200" style={{ fill: "#485b51" }}>
+                <div className="flex flex-col items-center max-w-sm" hover:scale-110 transition transform duration-200>
+                  <div className="icon-wrapper p-4 rounded-full mb-4  bg-green-700 hover:bg-[#f15e4b] hover:scale-110 transition transform duration-200" style={{ fill: "#485b51" }}>
                     <svg className="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
                     </svg>
