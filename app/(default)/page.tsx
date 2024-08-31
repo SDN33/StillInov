@@ -9,7 +9,7 @@ export const metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://www.stillinov.com/images/logo.png', // Assurez-vous d'avoir une image dédiée pour Open Graph
+        url: 'https://www.stillinov.com/images/banner.png', // Assurez-vous d'avoir une image dédiée pour Open Graph
         width: 1200,
         height: 630,
         alt: 'StillInov Agency - Agence de Communication Digitale',
