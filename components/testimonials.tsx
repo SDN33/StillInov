@@ -73,7 +73,7 @@ export default function Testimonials() {
               <div className="border-t border-gray-800 mb-16"></div>
 
               <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-                <h2 className="h2 mb-4">Chez Still-Inov,</h2>
+                <h2 className="h2 mb-4">Chez Still-Inov Agency,</h2>
                 <h2 className="h2 mb-4">nos valeurs sont gages de qualité</h2>
               </div>
 
@@ -109,15 +109,14 @@ export default function Testimonials() {
                   <h4 className="text-xl font-semibold mb-3 text-white">Adaptation</h4>
                   <p className="text-center text-gray-400">Notre approche flexible nous permet de nous adapter à tout type de marché et de répondre efficacement à vos besoins spécifiques.</p>
                 </div>
-
-                <h3 className='text-xl md:text-2xl lg:text-3xl text-gray-300 text-center max-w-3xl mx-auto leading-relaxed mb-8'>
-                  Nous croyons que chaque projet est unique, c'est pourquoi nous offrons des solutions personnalisées adaptées à vos besoins spécifiques.
-                  <br /><br />
-                  Que vous ayez un petit budget ou de grandes ambitions, nous nous engageons à optimiser chaque aspect de votre projet pour vous offrir le meilleur résultat possible.
-                  <br /><br />
-                  L'équipe Still-Inov 🤝
-                </h3>
               </div>
+              <h3 className='text-xl md:text-2xl lg:text-3xl text-gray-300 text-center max-w-3xl mx-auto leading-relaxed mb-8'>
+                Nous croyons que chaque projet est unique, c'est pourquoi nous offrons des solutions personnalisées adaptées à vos besoins spécifiques.
+                <br /><br />
+                Que vous ayez un petit budget ou de grandes ambitions, nous nous engageons à optimiser chaque aspect de votre projet pour vous offrir le meilleur résultat possible.
+                <br /><br />
+                L'équipe Still-Inov 🤝
+              </h3>
             </div>
           </div>
         </div>
