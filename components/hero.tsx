@@ -95,7 +95,7 @@ export default function Hero() {
           display: block;
           height: 100%;
           animation: spin 10s infinite;
-          font-size: 2.5rem;
+          font-size: 4rem;
           padding: 0.2em 0.5em;
         }
 
