@@ -88,7 +88,6 @@ export default function Hero() {
           height: 1.5em;
           margin: 0 0.5em;
           font-size: 3.5rem;
-          background: #f15e4b;
         }
 
         .animated-text span {
