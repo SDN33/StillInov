@@ -25,6 +25,9 @@ export default function Hero() {
                       <span className="font-innovative">Innovante</span>
                       <span className="font-ambitious">Ambicieuse</span>
                       <span className="font-creative">Créative</span>
+                      <span className="font-innovative">Innovante</span>
+                      <span className="font-ambitious">Ambicieuse</span>
+                      <span className="font-creative">Créative</span>
                     </span>
                   </span>
                 </div>
