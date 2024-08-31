@@ -14,7 +14,7 @@ const TeamMember = ({ image, name, role, description, linkedinUrl }: { image: st
     </div>
     <p className="text-lg text-gray-400">{description}</p>
     <div className="text-gray-200 font-medium mt-4">
-      {name} - <span className="text-[#f15e4b] hover:text-gray-200 transition duration-150 ease-in-out">{role}</span>
+      {name} - <span className="text-[#485b51] hover:text-gray-200 transition duration-150 ease-in-out">{role}</span>
     </div>
   </div>
 );
