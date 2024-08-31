@@ -4,14 +4,30 @@ import VideoThumb from '@/public/images/hero-image-01.jpg';
 import ModalVideo from '@/components/modal-video';
 
 const RocketSVG = () => (
-  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M12 2L5 22H19L12 2Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M20 2L10 38H30L20 2Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <animate attributeName="d" values="M20 2L10 38H30L20 2Z;M20 2L5 38H35L20 2Z;M20 2L10 38H30L20 2Z" dur="2s" repeatCount="indefinite" />
+    </path>
+    <circle cx="20" cy="15" r="3" fill="white">
+      <animate attributeName="cy" values="15;12;15" dur="1s" repeatCount="indefinite" />
+    </circle>
+    <path d="M15 30L20 35L25 30" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <animate attributeName="d" values="M15 30L20 35L25 30;M13 32L20 37L27 32;M15 30L20 35L25 30" dur="1s" repeatCount="indefinite" />
+    </path>
   </svg>
 );
 
 const StarSVG = () => (
-  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M20 2L24.5 15.5H38L27 24L31.5 38L20 30L8.5 38L13 24L2 15.5H15.5L20 2Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <animate attributeName="stroke-dasharray" values="0,1000;1000,0" dur="3s" repeatCount="indefinite" />
+    </path>
+    <circle cx="20" cy="20" r="2" fill="white">
+      <animate attributeName="r" values="2;4;2" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <path d="M20 10V30M10 20H30" stroke="white" strokeWidth="1">
+      <animateTransform attributeName="transform" type="rotate" from="0 20 20" to="360 20 20" dur="10s" repeatCount="indefinite" />
+    </path>
   </svg>
 );
 
@@ -40,7 +56,7 @@ export default function Hero() {
                 <StarSVG />
               </div>
             </h1>
-            <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">Donnez vie à vos ambitions digitales et transformez vos idées en réalité.</p>
+            <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">Donnez vie à vos ambitions digitales et transformez vos idées en réalité.<br />Nous sommes là pour vous accompagner dans votre succès.</p>
             <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
               <div data-aos="fade-up" data-aos-delay="400">
                 <a className="btn text-white bg-purple-600 hover:bg-purple-800 w-full mb-4 sm:w-auto sm:mb-0" href="/contact">Contactez-nous</a>
