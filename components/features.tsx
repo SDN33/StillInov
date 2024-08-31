@@ -23,11 +23,46 @@ export default function Features() {
             {/* 1st item */}
             <div className="relative flex flex-col items-center transform transition-transform duration-300 hover:scale-105 focus:scale-105 active:scale-105" data-aos="fade-up" data-aos-anchor="[data-aos-id-blocks]">
               <svg className="w-16 h-16 mb-4" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                <rect className="fill-current text-purple-600" width="64" height="64" rx="32" />
-                <ellipse cx="32" cy="32" rx="20" ry="12" fill="#C4B5FD" className="stroke-current text-purple-300" strokeWidth="2" />
-                <circle cx="32" cy="32" r="8" fill="#7C3AED" className="stroke-current text-purple-100" strokeWidth="2" />
-                <circle cx="35" cy="29" r="3" fill="#EDE9FE" />
+                <rect className="fill-current text-purple-600" width="64" height="64" rx="32">
+                  <animate
+                    attributeName="rx"
+                    values="32;16;32"
+                    dur="2s"
+                    repeatCount="indefinite" />
+                </rect>
+                <ellipse cx="32" cy="32" rx="20" ry="12" fill="#C4B5FD" className="stroke-current text-purple-300" strokeWidth="2">
+                  <animate
+                    attributeName="rx"
+                    values="20;25;20"
+                    dur="2s"
+                    repeatCount="indefinite" />
+                  <animate
+                    attributeName="ry"
+                    values="12;8;12"
+                    dur="2s"
+                    repeatCount="indefinite" />
+                </ellipse>
+                <circle cx="32" cy="32" r="8" fill="#7C3AED" className="stroke-current text-purple-100" strokeWidth="2">
+                  <animate
+                    attributeName="r"
+                    values="8;12;8"
+                    dur="2s"
+                    repeatCount="indefinite" />
+                </circle>
+                <circle cx="35" cy="29" r="3" fill="#EDE9FE">
+                  <animate
+                    attributeName="cx"
+                    values="35;29;35"
+                    dur="2s"
+                    repeatCount="indefinite" />
+                  <animate
+                    attributeName="cy"
+                    values="29;35;29"
+                    dur="2s"
+                    repeatCount="indefinite" />
+                </circle>
               </svg>
+
               <h4 className="h4 mb-2">Identité Visuelle</h4>
               <p className="text-lg text-gray-400 text-center">
                 Création d'une image de marque unique et cohérente pour renforcer votre reconnaissance et impact sur tous supports.
