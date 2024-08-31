@@ -40,7 +40,8 @@ export default function Newsletter() {
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
         .bg-custom-orange {
-          background-color: #f15e4b; /* Background color */
+          background: rgb(243,115,53);
+          background: radial-gradient(circle, rgba(243,115,53,1) 0%, rgba(241,94,75,1) 35%, rgba(144,231,211,1) 100%);
         }
 
         .text-gray-200 {

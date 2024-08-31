@@ -111,6 +111,7 @@ export default function Testimonials() {
                   <p className="text-center text-gray-400">Notre approche flexible nous permet de nous adapter à tout type de marché et de répondre efficacement à vos besoins spécifiques.</p>
                 </div>
               </div>
+              <br /><br />
               <p className="text-lg text-white-400 text-center">
                 Que vous ayez un petit budget ou de grandes ambitions, nous nous engageons à optimiser chaque aspect de votre projet pour vous offrir le meilleur résultat possible.
                 <br /><br />
