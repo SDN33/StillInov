@@ -110,13 +110,13 @@ export default function Testimonials() {
                   <p className="text-center text-gray-400">Notre approche flexible nous permet de nous adapter à tout type de marché et de répondre efficacement à vos besoins spécifiques.</p>
                 </div>
               </div>
-              <h3 className='text-xl md:text-2xl lg:text-3xl text-gray-300 text-center max-w-3xl mx-auto leading-relaxed mb-8'>
+              <p className="text-lg text-gray-400 text-center pb-12 md:pb-20">
                 Nous croyons que chaque projet est unique, c'est pourquoi nous offrons des solutions personnalisées adaptées à vos besoins spécifiques.
                 <br /><br />
                 Que vous ayez un petit budget ou de grandes ambitions, nous nous engageons à optimiser chaque aspect de votre projet pour vous offrir le meilleur résultat possible.
                 <br /><br />
                 L'équipe Still-Inov 🤝
-              </h3>
+              </p>
             </div>
           </div>
         </div>
