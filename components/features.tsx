@@ -72,10 +72,44 @@ export default function Features() {
             {/* 2nd item */}
             <div className="relative flex flex-col items-center transform transition-transform duration-300 hover:scale-105 focus:scale-105 active:scale-105" data-aos="fade-up" data-aos-delay="100" data-aos-anchor="[data-aos-id-blocks]">
               <svg className="w-16 h-16 mb-4" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                <rect className="fill-current text-purple-600" width="64" height="64" rx="32" />
-                <path className="stroke-current text-purple-100" strokeWidth="2" strokeLinecap="square" d="M21 23h22v18H21z" fill="none" fillRule="evenodd" />
-                <path className="stroke-current text-purple-300" d="M26 28h12M26 32h12M26 36h5" strokeWidth="2" strokeLinecap="square" />
+                <rect className="fill-current text-purple-600" width="64" height="64" rx="32">
+                  <animate
+                    attributeName="rx"
+                    values="32;28;32"
+                    dur="2s"
+                    repeatCount="indefinite" />
+                </rect>
+
+                <path className="stroke-current text-purple-100" strokeWidth="2" strokeLinecap="square" d="M21 23h22v18H21z" fill="none" fillRule="evenodd">
+                  <animateTransform
+                    attributeName="transform"
+                    type="scale"
+                    values="1;1.1;1"
+                    dur="2s"
+                    repeatCount="indefinite" />
+                </path>
+
+                <path className="stroke-current text-purple-300" d="M26 28h12M26 32h12M26 36h5" strokeWidth="2" strokeLinecap="square">
+                  <animate
+                    attributeName="stroke-width"
+                    values="2;3;2"
+                    dur="2s"
+                    repeatCount="indefinite" />
+                </path>
+
+                <polygon
+                  className="fill-current text-purple-300"
+                  points="40,16 28,24 32,30 36,26 42,32"
+                  style={{transformOrigin: "center"}} >
+                  <animateTransform
+                    attributeName="transform"
+                    type="translate"
+                    values="0,0; 5,5; 0,0"
+                    dur="2s"
+                    repeatCount="indefinite" />
+                </polygon>
               </svg>
+
               <h4 className="h4 mb-2">Site web et Application</h4>
               <p className="text-lg text-gray-400 text-center">
                 Concevoir des plateformes digitales sur mesure, alliant design moderne et performance, pour offrir une expérience utilisateur optimale.
