@@ -1,9 +1,11 @@
 'use client';
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 import VideoThumb from '@/public/images/hero-image-01.jpg';
 import ModalVideo from '@/components/modal-video';
 
-const InnovativeSVG = () => (
+// SVG components
+const InnovativeSVG: React.FC = () => (
   <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M20 2L4 10L20 18L36 10L20 2Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
     <path d="M4 20L20 28L36 20" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -11,13 +13,13 @@ const InnovativeSVG = () => (
   </svg>
 );
 
-const AmbitiousSVG = () => (
+const AmbitiousSVG: React.FC = () => (
   <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M20 2L24.5 15.5H38L27 24L31.5 38L20 30L8.5 38L13 24L2 15.5H15.5L20 2Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
   </svg>
 );
 
-const CreativeSVG = () => (
+const CreativeSVG: React.FC = () => (
   <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M30 10C30 15.5228 25.5228 20 20 20C14.4772 20 10 15.5228 10 10C10 4.47715 14.4772 0 20 0C25.5228 0 30 4.47715 30 10Z" stroke="white" strokeWidth="2"/>
     <path d="M20 25V40" stroke="white" strokeWidth="2" strokeLinecap="round"/>
@@ -26,7 +28,12 @@ const CreativeSVG = () => (
   </svg>
 );
 
-const AnimatedWord = ({ word, SVGComponent }: { word: string, SVGComponent: React.FC }) => {
+interface AnimatedWordProps {
+  word: string;
+  SVGComponent: React.FC;
+}
+
+const AnimatedWord: React.FC<AnimatedWordProps> = ({ word, SVGComponent }) => {
   return (
     <div className="animated-word">
       <SVGComponent />
@@ -36,7 +43,7 @@ const AnimatedWord = ({ word, SVGComponent }: { word: string, SVGComponent: Reac
   );
 };
 
-export default function Hero() {
+const Hero: React.FC = () => {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const words = [
     { text: 'Innovante', component: InnovativeSVG },
@@ -138,4 +145,8 @@ export default function Hero() {
       `}</style>
     </section>
   );
-}
+};
+
+export default Hero;
+
+
