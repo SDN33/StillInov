@@ -85,7 +85,7 @@ export default function Testimonials() {
               />
               </div>
 
-              <h3 className='mt-8 mb-12 text-xl text-gray-300 text-center max-w-3xl mx-auto'>
+              <h3 className='mt-4 mb-12 text-xl text-gray-300 text-center max-w-3xl mx-auto'>
                 Nous croyons que chaque projet est unique, c'est pourquoi nous offrons des solutions personnalisées adaptées à vos besoins spécifiques.
                 <br /><br />
                 Que vous ayez un petit budget ou de grandes ambitions, nous nous engageons à optimiser chaque aspect de votre projet pour vous offrir le meilleur résultat possible.
