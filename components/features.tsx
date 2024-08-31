@@ -75,27 +75,44 @@ export default function Features() {
                 <rect className="fill-current text-purple-600" width="64" height="64" rx="32">
                   <animate
                     attributeName="rx"
-                    values="32;28;32"
+                    values="32;16;32"
                     dur="2s"
                     repeatCount="indefinite" />
                 </rect>
 
-                <path className="stroke-current text-purple-100" strokeWidth="2" strokeLinecap="square" d="M21 23h22v18H21z" fill="none" fillRule="evenodd">
-                  <animateTransform
-                    attributeName="transform"
-                    type="scale"
-                    values="1;1.1;1"
-                    dur="2s"
-                    repeatCount="indefinite" />
-                </path>
-
-                <path className="stroke-current text-purple-300" d="M26 28h12M26 32h12M26 36h5" strokeWidth="2" strokeLinecap="square">
+                <ellipse cx="32" cy="32" rx="20" ry="12" fill="#C4B5FD" className="stroke-current text-purple-300" strokeWidth="2">
                   <animate
-                    attributeName="stroke-width"
-                    values="2;3;2"
+                    attributeName="rx"
+                    values="20;25;20"
                     dur="2s"
                     repeatCount="indefinite" />
-                </path>
+                  <animate
+                    attributeName="ry"
+                    values="12;8;12"
+                    dur="2s"
+                    repeatCount="indefinite" />
+                </ellipse>
+
+                <circle cx="32" cy="32" r="8" fill="#7C3AED" className="stroke-current text-purple-100" strokeWidth="2">
+                  <animate
+                    attributeName="r"
+                    values="8;12;8"
+                    dur="2s"
+                    repeatCount="indefinite" />
+                </circle>
+
+                <circle cx="35" cy="29" r="3" fill="#EDE9FE">
+                  <animate
+                    attributeName="cx"
+                    values="35;29;35"
+                    dur="2s"
+                    repeatCount="indefinite" />
+                  <animate
+                    attributeName="cy"
+                    values="29;35;29"
+                    dur="2s"
+                    repeatCount="indefinite" />
+                </circle>
 
                 <polygon
                   className="fill-current text-purple-300"
@@ -110,6 +127,7 @@ export default function Features() {
                 </polygon>
               </svg>
 
+
               <h4 className="h4 mb-2">Site web et Application</h4>
               <p className="text-lg text-gray-400 text-center">
                 Concevoir des plateformes digitales sur mesure, alliant design moderne et performance, pour offrir une expérience utilisateur optimale.
@@ -119,13 +137,57 @@ export default function Features() {
             {/* 3rd item */}
             <div className="relative flex flex-col items-center transform transition-transform duration-300 hover:scale-105 focus:scale-105 active:scale-105" data-aos="fade-up" data-aos-delay="200" data-aos-anchor="[data-aos-id-blocks]">
               <svg className="w-16 h-16 mb-4" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                <rect className="fill-current text-purple-600" width="64" height="64" rx="32" />
+                <rect className="fill-current text-purple-600" width="64" height="64" rx="32">
+                  <animate
+                    attributeName="rx"
+                    values="32;16;32"
+                    dur="2s"
+                    repeatCount="indefinite" />
+                </rect>
+
                 <g transform="translate(21 21)" strokeLinecap="square" strokeWidth="2" fill="none" fillRule="evenodd">
-                  <ellipse className="stroke-current text-purple-300" cx="11" cy="11" rx="5.5" ry="11" />
-                  <path className="stroke-current text-purple-100" d="M11 0v22M0 11h22" />
-                  <circle className="stroke-current text-purple-100" cx="11" cy="11" r="11" />
+
+                  <ellipse className="stroke-current text-purple-300" cx="11" cy="11" rx="5.5" ry="11">
+                    <animate
+                      attributeName="rx"
+                      values="5.5;7.5;5.5"
+                      dur="2s"
+                      repeatCount="indefinite" />
+                    <animate
+                      attributeName="ry"
+                      values="11;8;11"
+                      dur="2s"
+                      repeatCount="indefinite" />
+                  </ellipse>
+
+                  <path className="stroke-current text-purple-100" d="M11 0v22">
+                    <animateTransform
+                      attributeName="transform"
+                      type="translate"
+                      values="0,0; 0,5; 0,0"
+                      dur="2s"
+                      repeatCount="indefinite" />
+                  </path>
+
+                  <path className="stroke-current text-purple-100" d="M0 11h22">
+                    <animateTransform
+                      attributeName="transform"
+                      type="translate"
+                      values="0,0; 5,0; 0,0"
+                      dur="2s"
+                      repeatCount="indefinite" />
+                  </path>
+
+                  <circle className="stroke-current text-purple-100" cx="11" cy="11" r="11">
+                    <animate
+                      attributeName="r"
+                      values="11;14;11"
+                      dur="2s"
+                      repeatCount="indefinite" />
+                  </circle>
                 </g>
               </svg>
+
               <h4 className="h4 mb-2">Référencement SEO</h4>
               <p className="text-lg text-gray-400 text-center">
                 Optimiser votre visibilité en ligne pour vous positionner en tête des résultats de recherche et attirer plus de trafic qualifié.
