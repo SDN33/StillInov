@@ -87,6 +87,8 @@ export default function Hero() {
           overflow: hidden;
           height: 1.5em;
           margin: 0 0.5em;
+          font-size: 3.5rem;
+
         }
 
         .animated-text span {
