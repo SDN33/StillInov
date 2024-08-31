@@ -17,7 +17,7 @@ export default function Newsletter() {
 
             {/* CTA content */}
             <div className="mb-6 lg:mr-16 lg:mb-0 text-center lg:text-left lg:w-1/2">
-              <h3 className="h3 text-black mb-2">Restons en contact !</h3>
+              <h3 className="h3 text-[#485b51] mb-2">Restons en contact !</h3>
               <p className="text-gray-200 text-lg">Inscrivez-vous à notre newsletter pour recevoir les meilleures actualités en avant-première.</p>
             </div>
 
