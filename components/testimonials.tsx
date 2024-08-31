@@ -80,8 +80,6 @@ export default function Testimonials() {
                 </p>
               </div>
 
-              <br />
-
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
                 <div className="flex flex-col items-center max-w-sm hover:scale-110 transition transform duration-200">
                   <div className="icon-wrapper p-4 rounded-full mb-4 bg-[#485b51] hover:bg-[#f15e4b] hover:scale-110 transition transform duration-200" style={{ fill: "#485b51" }}>
