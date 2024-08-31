@@ -88,6 +88,8 @@ export default function Hero() {
           height: 1.5em;
           margin: 0 0.5em;
           font-size: 3.5rem;
+          background: rgb(243,115,53);
+          background: radial-gradient(circle, rgba(243,115,53,1) 0%, rgba(241,94,75,1) 35%, rgba(144,231,211,1) 100%);
 
         }
 
