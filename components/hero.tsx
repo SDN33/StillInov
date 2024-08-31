@@ -1,8 +1,19 @@
 'use client';
-
 import React from 'react';
 import VideoThumb from '@/public/images/hero-image-01.jpg';
 import ModalVideo from '@/components/modal-video';
+
+const RocketSVG = () => (
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M12 2L5 22H19L12 2Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+  </svg>
+);
+
+const StarSVG = () => (
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+  </svg>
+);
 
 export default function Hero() {
   return (
@@ -19,11 +30,15 @@ export default function Hero() {
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
             <h1 className="h1 mb-4 flex flex-col items-center" data-aos="fade-up">
               <span className="block w-full text-center main-title">Agence Digitale</span>
-              <span className="animated-text text-center">
-                <span className="font-innovative">Innovante</span>
-                <span className="font-ambitious">Ambicieuse</span>
-                <span className="font-creative">Créative</span>
-              </span>
+              <div className="animated-text-container">
+                <RocketSVG />
+                <span className="animated-text text-center">
+                  <span className="font-innovative">Innovante</span>
+                  <span className="font-ambitious">Ambicieuse</span>
+                  <span className="font-creative">Créative</span>
+                </span>
+                <StarSVG />
+              </div>
             </h1>
             <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">Donnez vie à vos ambitions digitales et transformez vos idées en réalité.</p>
             <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
@@ -44,7 +59,8 @@ export default function Hero() {
             thumbAlt="Modal video thumbnail"
             video="/videos/video.mp4"
             videoWidth={1920}
-            videoHeight={1080} />
+            videoHeight={1080}
+          />
         </div>
       </div>
 
@@ -64,11 +80,18 @@ export default function Hero() {
           letter-spacing: 2px;
         }
 
+        .animated-text-container {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
         .animated-text {
           display: inline-block;
           vertical-align: top;
           overflow: hidden;
           height: 1.5em;
+          margin: 0 0.5em;
         }
 
         .animated-text span {

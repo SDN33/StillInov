@@ -36,7 +36,7 @@ const ContactForm: React.FC = () => {
           <div className="mb-8 text-center">
             <h3 className="text-2xl font-semibold text-purple-600 mb-2">Contactez-nous</h3>
             <p className="text-gray-700">
-              Envoyez-nous un message, nous serons ravis de vous répondre.
+              Envoyez-nous un message, nous serons ravis de vous répondre dans les plus brefs délais. 🚀
             </p>
           </div>
 
