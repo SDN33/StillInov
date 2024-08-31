@@ -44,7 +44,7 @@ const CookieBanner = () => {
       <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center">
         <p className="text-sm mb-4 sm:mb-0 sm:mr-4 text-center sm:text-left">
           Nous utilisons des cookies pour améliorer votre expérience sur notre site.
-          Acceptez-vous l'utilisation de cookies ? 🍪
+          <strong>Acceptez-vous l'utilisation de cookies ? 🍪</strong>
         </p>
         <div className="flex space-x-4">
           <button
