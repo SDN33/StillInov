@@ -75,44 +75,27 @@ export default function Features() {
                 <rect className="fill-current text-purple-600" width="64" height="64" rx="32">
                   <animate
                     attributeName="rx"
-                    values="32;16;32"
+                    values="32;28;32"
                     dur="2s"
                     repeatCount="indefinite" />
                 </rect>
 
-                <ellipse cx="32" cy="32" rx="20" ry="12" fill="#C4B5FD" className="stroke-current text-purple-300" strokeWidth="2">
-                  <animate
-                    attributeName="rx"
-                    values="20;25;20"
+                <path className="stroke-current text-purple-100" strokeWidth="2" strokeLinecap="square" d="M21 23h22v18H21z" fill="none" fillRule="evenodd">
+                  <animateTransform
+                    attributeName="transform"
+                    type="scale"
+                    values="1;1.1;1"
                     dur="2s"
                     repeatCount="indefinite" />
-                  <animate
-                    attributeName="ry"
-                    values="12;8;12"
-                    dur="2s"
-                    repeatCount="indefinite" />
-                </ellipse>
+                </path>
 
-                <circle cx="32" cy="32" r="8" fill="#7C3AED" className="stroke-current text-purple-100" strokeWidth="2">
+                <path className="stroke-current text-purple-300" d="M26 28h12M26 32h12M26 36h5" strokeWidth="2" strokeLinecap="square">
                   <animate
-                    attributeName="r"
-                    values="8;12;8"
+                    attributeName="stroke-width"
+                    values="2;3;2"
                     dur="2s"
                     repeatCount="indefinite" />
-                </circle>
-
-                <circle cx="35" cy="29" r="3" fill="#EDE9FE">
-                  <animate
-                    attributeName="cx"
-                    values="35;29;35"
-                    dur="2s"
-                    repeatCount="indefinite" />
-                  <animate
-                    attributeName="cy"
-                    values="29;35;29"
-                    dur="2s"
-                    repeatCount="indefinite" />
-                </circle>
+                </path>
 
                 <polygon
                   className="fill-current text-purple-300"
@@ -126,6 +109,7 @@ export default function Features() {
                     repeatCount="indefinite" />
                 </polygon>
               </svg>
+
 
 
               <h4 className="h4 mb-2">Site web et Application</h4>
