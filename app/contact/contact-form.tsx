@@ -10,6 +10,8 @@ const ContactForm: React.FC = () => {
             <h3 className="text-2xl font-semibold text-[#f15e4b] mb-2">Contactez-nous</h3>
             <p className="text-gray-700">
               Envoyez-nous un message, nous serons ravis de vous répondre dans les plus brefs délais. 🚀
+              <br /> Vous pouvez également nous contacter par email à <a href="mailto:stillinovagency@gmail.com " className="text-[#f15e4b]"> Stillinovagency@gmail.com</a>.
+
             </p>
           </div>
 
@@ -29,6 +31,21 @@ const ContactForm: React.FC = () => {
                 className="w-full mt-1 p-3 border border-gray-300 rounded-md shadow-sm focus:ring-[#485b51] focus:border-[#485b51]"
                 placeholder="Votre email…"
                 aria-label="Votre email…"
+                required
+              />
+            </div>
+
+            <div>
+              <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+                Votre nom
+              </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                className="w-full mt-1 p-3 border border-gray-300 rounded-md shadow-sm focus:ring-[#485b51] focus:border-[#485b51]"
+                placeholder="Votre nom…"
+                aria-label="Votre nom…"
                 required
               />
             </div>
