@@ -22,7 +22,12 @@ export const metadata = {
     title: 'Still-Inov Agency | Agence de Communication & Marketing Digitale - Développement Web, SEO & Réseaux Sociaux',
     description: 'Still-Inov, votre partenaire en communication digitale, offre des services personnalisés de création, design, et développement web pour transformer vos idées en réalité.',
   },
+    // Ajout de la balise favicon
+  icons: {
+    icon: '/favicon.ico', // Assurez-vous que le fichier favicon.ico est bien à cet emplacement dans votre projet
+  },
 };
+
 
 
 import Hero from '@/components/hero'
