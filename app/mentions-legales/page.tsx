@@ -33,7 +33,7 @@ export const metadata = {
 
 
 
-const MentionsLegalesPage: React.FC = () => {
+const ContactPage: React.FC = () => {
   return (
     <div>
       <MentionsLegales />
@@ -42,4 +42,4 @@ const MentionsLegalesPage: React.FC = () => {
   );
 };
 
-export default MentionsLegalesPage;
+export default ContactPage;
