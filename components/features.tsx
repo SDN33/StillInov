@@ -84,11 +84,9 @@ export default function Features() {
 
           {/* Call to Action Button */}
           <a
-            className="btn text-white w-full mt-4 mb-4 sm:w-auto sm:mb-0"
+            className="btn text-white w-full mt-4 mb-4 sm:w-auto sm:mb-0 hover:bg-[#d14c3d] shadow"
             href="/contact"
             style={{ backgroundColor: '#f15e4b' }}
-            onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#d14c3d')}
-            onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#f15e4b')}
           >
             Planifier un appel téléphonique 📞
           </a>
