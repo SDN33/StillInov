@@ -79,6 +79,13 @@ export default function MobileMenu() {
               Contactez-nous
             </Link>
           </li>
+          <li>
+            <Link
+              href="/blog"
+              className="flex font-medium w-full text-[#f15e4b] hover:text-gray-200 py-2 justify-center" onClick={() => setMobileNavOpen(false)}>
+              Blog
+            </Link>
+          </li>
         </ul>
       </nav>
     </div>

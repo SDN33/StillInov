@@ -34,6 +34,9 @@ export default function Header() {
               <li>
                 <Link href="/contact" className="font-medium text-white hover:text-gray-300 px-5 py-3 flex items-center transition duration-150 ease-in-out">Contactez-nous</Link>
               </li>
+              <li>
+                <Link href="/blog" className="font-medium text-white hover:text-gray-300 px-5 py-3 flex items-center transition duration-150 ease-in-out">Blog</Link>
+              </li>
             </ul>
           </nav>
 
