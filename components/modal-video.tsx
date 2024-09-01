@@ -1,8 +1,8 @@
-import { useState, useRef, Fragment } from 'react'
-import type { StaticImageData } from 'next/image'
-import { Dialog, Transition } from '@headlessui/react'
-import Image from 'next/image'
-import unePetitePresentation from '/mnt/data/Une petite.png'  // Importation de l'image
+import { useState, useRef, Fragment } from 'react';
+import type { StaticImageData } from 'next/image';
+import { Dialog, Transition } from '@headlessui/react';
+import Image from 'next/image';
+import unePetitePresentation from '@/public/images/fleche.png'; // Importation de l'image
 
 interface ModalVideoProps {
   thumb: StaticImageData

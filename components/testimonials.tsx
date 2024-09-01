@@ -75,7 +75,7 @@ export default function Testimonials() {
               <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
                 <h2 className="h2 mb-4">Chez Still-Inov Agency,</h2>
                 <p className="text-lg text-gray-400">
-                  Nous croyons que chaque projet est unique, c'est pourquoi nous offrons des solutions personnalisées adaptées à vos besoins spécifiques.
+                  nous croyons que chaque projet est unique, c'est pourquoi nous offrons des solutions personnalisées adaptées à vos besoins spécifiques.
                 </p>
               </div>
 
