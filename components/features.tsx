@@ -186,7 +186,7 @@ export default function Features() {
           </div>
           <br />
           <a
-            className="btn text-white w-full mb-4 sm:w-auto sm:mb-0"
+            className="btn text-white w-full mt-4 mb-4 sm:w-auto sm:mb-0"
             href="/contact"
             style={{ backgroundColor: '#f15e4b' }}
             onMouseEnter={e => e.currentTarget.style.backgroundColor = '#d14c3d'}
