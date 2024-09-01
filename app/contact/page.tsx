@@ -2,6 +2,7 @@
 // app/contact/page.tsx
 import React from 'react';
 import ContactForm from './contact-form';
+import Footer from '@/components/ui/footer';
 
 
 export const metadata = {
@@ -36,6 +37,7 @@ const ContactPage: React.FC = () => {
   return (
     <div>
       <ContactForm />
+      <Footer />
     </div>
   );
 };
