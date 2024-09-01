@@ -1,12 +1,11 @@
-'use client';
-import React, { useState } from 'react';
 import { useRouter } from 'next/router';
+import React, { useState } from 'react';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 
-export default function Features() {
+const Features = () => {
   const [startDate, setStartDate] = useState<Date | null>(null);
-  const [showCalendar, setShowCalendar] = useState(false);
+  const [showCalendar, setShowCalendar] = useState<boolean>(false);
   const router = useRouter();
 
   const handleScheduleCall = () => {
