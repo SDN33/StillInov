@@ -41,7 +41,7 @@ export default function Newsletter() {
 
         .bg-custom-orange {
           background: rgb(243,115,53);
-          background: radial-gradient(circle, rgba(243,115,53,1) 0%, rgba(241,94,75,1) 35%, rgba(4,28,23,1) 100%);
+          background: radial-gradient(circle, rgba(243,115,53,1) 0%, rgba(241,94,75,1) 35%, rgba(144,231,211,1) 100%);
         }
 
         .text-gray-200 {
