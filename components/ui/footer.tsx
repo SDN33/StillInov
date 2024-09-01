@@ -39,7 +39,7 @@ export default function Footer() {
                 />
               </a>
             </Link>
-            <Link href="https://www.linkedin.com/company/stillinov" passHref>
+            <Link href="https://www.linkedin.com/company/still-inov-agency" passHref>
               <a target="_blank" rel="noopener noreferrer">
                 <Image
                   src="/images/linkedin.png"
