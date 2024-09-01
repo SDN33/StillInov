@@ -112,8 +112,6 @@ export default function Testimonials() {
               </div>
               <br /><br />
               <p className="text-lg text-white-400 text-center">
-                Que vous ayez un petit budget ou de grandes ambitions, nous nous engageons à optimiser chaque aspect de votre projet pour vous offrir le meilleur résultat possible.
-                <br /><br />
                 L'équipe Still-Inov Agency 🤝
               </p>
             </div>
