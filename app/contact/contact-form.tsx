@@ -11,7 +11,6 @@ const ContactForm: React.FC = () => {
             <p className="text-gray-700">
               Envoyez-nous un message, nous serons ravis de vous répondre dans les plus brefs délais. 🚀
               <br /><br /> Vous pouvez également nous contacter par email à <a href="mailto:stillinovagency@gmail.com " className="text-[#f15e4b] hover:text-[#485b51]"> Stillinovagency@gmail.com</a>.
-
             </p>
           </div>
 
@@ -28,7 +27,7 @@ const ContactForm: React.FC = () => {
                 type="email"
                 id="email"
                 name="email"
-                className="w-full mt-1 p-3 border border-gray-300 rounded-md shadow-sm focus:ring-[#485b51] focus:border-[#485b51]"
+                className="w-full mt-1 p-3 border border-gray-300 rounded-md shadow-sm focus:ring-[#485b51] focus:border-[#485b51] text-black"  // Ajout de text-black
                 placeholder="Votre email…"
                 aria-label="Votre email…"
                 required
@@ -43,7 +42,7 @@ const ContactForm: React.FC = () => {
                 type="text"
                 id="name"
                 name="name"
-                className="w-full mt-1 p-3 border border-gray-300 rounded-md shadow-sm focus:ring-[#485b51] focus:border-[#485b51]"
+                className="w-full mt-1 p-3 border border-gray-300 rounded-md shadow-sm focus:ring-[#485b51] focus:border-[#485b51] text-black"  // Ajout de text-black
                 placeholder="Votre nom…"
                 aria-label="Votre nom…"
                 required
@@ -57,7 +56,7 @@ const ContactForm: React.FC = () => {
               <textarea
                 id="message"
                 name="message"
-                className="w-full mt-1 p-3 border border-gray-700 rounded-md shadow-sm focus:ring-[#485b51] focus:border-[#485b51]"
+                className="w-full mt-1 p-3 border border-gray-700 rounded-md shadow-sm focus:ring-[#485b51] focus:border-[#485b51] text-black"  // Ajout de text-black
                 placeholder="Votre message…"
                 aria-label="Votre message…"
                 rows={4}
