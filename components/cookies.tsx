@@ -39,9 +39,9 @@ const CookieBanner = () => {
   if (!showBanner) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 bg-gradient-to-b from-[#f37335] via-[#f15e4b] to-[#90e7d3] text-white p-4 shadow-lg z-50">
+    <div className="fixed bottom-0 left-0 right-0 bg-[#485b51e6] text-white p-4 shadow-lg z-50">
       <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center">
-        <p className="text-black-600 text-sm mb-4 sm:mb-0 sm:mr-4 text-center sm:text-left">
+        <p className="text-sm mb-4 sm:mb-0 sm:mr-4 text-center sm:text-left">
           Nous utilisons des cookies pour améliorer votre expérience sur notre site.
           <br /><strong> Acceptez-vous l'utilisation de cookies ? 🍪</strong>
         </p>
