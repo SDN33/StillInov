@@ -1,4 +1,3 @@
-import Head from 'next/head';
 
 export const metadata = {
   title: 'Still-Inov Agency | Agence de Communication & Marketing Digitale - Développement Web, SEO & Réseaux Sociaux',
@@ -29,12 +28,6 @@ export const metadata = {
     icon: '/favicon.ico',
   },
 };
-
-<Head>
-  <link rel="icon" href="/favicon.ico" />
-</Head>
-
-
 
 import Hero from '@/components/hero'
 import Features from '@/components/features'
