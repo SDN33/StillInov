@@ -1,6 +1,6 @@
-import React from 'react'
-import Link from 'next/link'
-import Image from 'next/image'
+import React from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -11,7 +11,7 @@ export default function Footer() {
         <div className="flex justify-between items-center">
 
           {/* 1st block */}
-          <div className="flex items-center">
+          <div className="flex flex-col items-center">
             {/* Logo */}
             <Link href="/" passHref>
               <a className="inline-block">
@@ -22,6 +22,12 @@ export default function Footer() {
                   height={40}
                   layout="intrinsic"
                 />
+              </a>
+            </Link>
+            {/* Lien vers les mentions légales */}
+            <Link href="/mentions-legales" passHref>
+              <a className="text-sm text-gray-500 hover:text-gray-300 mt-2">
+                Mentions légales
               </a>
             </Link>
           </div>
@@ -72,5 +78,5 @@ export default function Footer() {
 
       </div>
     </footer>
-  )
+  );
 }
