@@ -48,7 +48,7 @@ const CookieBanner = () => {
         <div className="flex space-x-4">
           <button
             onClick={handleAccept}
-            className="px-4 py-2 bg-white text-[#485b51] rounded hover:bg-gray-600 hover:text-[#485b51] transition duration-300 ease-in-out"
+            className="px-4 py-2 bg-white text-[#485b51] rounded hover:bg-gray-600 hover:text-[white] transition duration-300 ease-in-out"
           >
             Accepter
           </button>
