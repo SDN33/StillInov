@@ -185,8 +185,15 @@ export default function Features() {
 
           </div>
           <br />
-          <button> <a className="btn text-white bg-[#485b51] hover:bg-gray-800 w-full sm:w-auto sm:ml-4" href="/">Devis gratuit</a></button>
-          <button> <a className="btn text-white bg-[#485b51] hover:bg-gray-800 w-full sm:w-auto sm:ml-4" href="/contact">Planifier un appel</a></button>
+          <a
+            className="btn text-white w-full mb-4 sm:w-auto sm:mb-0"
+            href="/contact"
+            style={{ backgroundColor: '#f15e4b' }}
+            onMouseEnter={e => e.currentTarget.style.backgroundColor = '#d14c3d'}
+            onMouseLeave={e => e.currentTarget.style.backgroundColor = '#f15e4b'}
+          >
+            Planifier un appel téléphonique 📞
+          </a>
         </div>
       </div>
     </section>
