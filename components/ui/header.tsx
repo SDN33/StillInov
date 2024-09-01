@@ -32,10 +32,10 @@ export default function Header() {
                 <Link href="https://www.stillinov.com/#about" className="font-medium text-white hover:text-gray-300 px-5 py-3 flex items-center transition duration-150 ease-in-out">Qui sommes-nous ?</Link>
               </li>
               <li>
-                <Link href="/contact" className="font-medium text-white hover:text-gray-300 px-5 py-3 flex items-center transition duration-150 ease-in-out">Contactez-nous</Link>
+                <Link href="/blog" className="font-medium text-white hover:text-gray-300 px-5 py-3 flex items-center transition duration-150 ease-in-out">Blog</Link>
               </li>
               <li>
-                <Link href="/blog" className="font-medium text-white hover:text-gray-300 px-5 py-3 flex items-center transition duration-150 ease-in-out">Blog</Link>
+                <Link href="/contact" className="font-medium text-white hover:text-gray-300 px-5 py-3 flex items-center transition duration-150 ease-in-out">Contactez-nous</Link>
               </li>
             </ul>
           </nav>
