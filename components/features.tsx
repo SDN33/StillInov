@@ -184,6 +184,9 @@ export default function Features() {
             </div>
 
           </div>
+          <br />
+          <button> <a className="btn text-white bg-[#485b51] hover:bg-gray-800 w-full sm:w-auto sm:ml-4" href="/">Devis gratuit</a></button>
+          <button> <a className="btn text-white bg-[#485b51] hover:bg-gray-800 w-full sm:w-auto sm:ml-4" href="/contact">Planifier un appel</a></button>
         </div>
       </div>
     </section>
