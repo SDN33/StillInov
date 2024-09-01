@@ -1,5 +1,5 @@
 
-// app/blog/page.tsx
+// app/contact/page.tsx
 import React from 'react';
 import Blog from './blog';
 import Footer from '@/components/ui/footer';
@@ -33,7 +33,7 @@ export const metadata = {
 
 
 
-const BlogPage: React.FC = () => {
+const ContactPage: React.FC = () => {
   return (
     <div>
       <Blog />
@@ -42,4 +42,4 @@ const BlogPage: React.FC = () => {
   );
 };
 
-export default BlogPage;
+export default ContactPage;
