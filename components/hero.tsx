@@ -2,7 +2,7 @@
 import React from 'react';
 import VideoThumb from '@/public/images/hero-image-01.jpg';
 import ModalVideo from '@/components/modal-video';
-import UnePetitePresentation from '@/public/images/fleche.png'; // Importer l'image
+
 
 export default function Hero() {
   return (
@@ -47,22 +47,16 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Modal video avec l'image en bas à gauche */}
-          <div className="relative inline-block">
-            <ModalVideo
-              thumb={VideoThumb}
-              thumbWidth={1024}
-              thumbHeight={576}
-              thumbAlt="Modal video thumbnail"
-              video="/videos/video.mp4"
-              videoWidth={1920}
-              videoHeight={1080}
-            />
-            {/* Image en bas à gauche du thumbnail */}
-            <div className="absolute bottom-0 left-0 mb-2 ml-2">
-              <img src={UnePetitePresentation.src} alt="Une petite présentation ?" width={150} height={50} />
-            </div>
-          </div>
+          {/* Modal video */}
+          <ModalVideo
+            thumb={VideoThumb}
+            thumbWidth={1024}
+            thumbHeight={576}
+            thumbAlt="Modal video thumbnail"
+            video="/videos/video.mp4"
+            videoWidth={1920}
+            videoHeight={1080}
+          />
         </div>
       </div>
 
