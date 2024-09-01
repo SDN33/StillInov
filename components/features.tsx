@@ -186,7 +186,7 @@ export default function Features() {
           </div>
           <br />
           <a
-            className="btn text-white w-full mt-4 mb-4 sm:w-auto sm:mb-0 bg-[#f15e4b] hover:bg-[#d14c3d] shadow"
+            className="btn text-white w-full mt-4 mb-4 sm:w-auto sm:mb-0 bg-[#485b51] hover:bg-[#d14c3d] shadow"
             href="/contact"
           >
             Planifier un appel téléphonique 📞
