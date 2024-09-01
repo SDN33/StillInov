@@ -29,6 +29,8 @@ export default function PageIllustration() {
         height="320"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.2)'}
+        onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'}
       >
         <defs>
           <linearGradient
