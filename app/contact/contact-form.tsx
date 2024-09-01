@@ -7,7 +7,7 @@ const ContactForm: React.FC = () => {
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
         <div className="bg-white rounded-lg shadow-lg p-6 md:p-8">
           <div className="mb-8 text-center">
-            <h3 className="text-2xl font-semibold text-[#f15e4b] mb-2">Contactez-nous</h3>
+            <h3 className="text-2xl font-semibold text-[#485b51] mb-2">Contactez-nous</h3>
             <p className="text-gray-700">
               Envoyez-nous un message, nous serons ravis de vous répondre dans les plus brefs délais. 🚀
               <br /> Vous pouvez également nous contacter par email à <a href="mailto:stillinovagency@gmail.com " className="text-[#f15e4b] hover:text-[#485b51]"> Stillinovagency@gmail.com</a>.
