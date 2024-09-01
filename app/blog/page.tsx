@@ -1,12 +1,12 @@
 
-// app/ml/page.tsx
+// app/blog/page.tsx
 import React from 'react';
-import MentionsLegales from './mentions-legales';
+import Blog from './blog';
 import Footer from '@/components/ui/footer';
 
 
 export const metadata = {
-  title: 'Still-Inov Agency | Mentions Légales',
+  title: 'Still-Inov Agency | Blog - Découvrez nos articles',
   description: 'StillInov, votre partenaire en communication digitale, offre des services personnalisés de création, design, et développement web pour transformer vos idées en réalité, quel que soit votre budget.',
   keywords: 'communication digitale, création site web, design graphique, développement web, SEO, marketing digital, agence web, solutions personnalisées, agence communication digitale, audit marketing, référencement SEO, SEA, stratégies digitales,faire pub insta, faire pub facebook, faire pub google, faire audit',
   openGraph: {
@@ -33,13 +33,13 @@ export const metadata = {
 
 
 
-const MentionsLegalesPage: React.FC = () => {
+const BlogPage: React.FC = () => {
   return (
     <div>
-      <MentionsLegales />
+      <Blog />
       <Footer />
     </div>
   );
 };
 
-export default MentionsLegalesPage;
+export default BlogPage;

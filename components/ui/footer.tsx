@@ -30,6 +30,11 @@ export default function Footer() {
                 Mentions légales
               </a>
             </Link>
+            <Link href="/Blog" passHref>
+              <a className="text-sm text-gray-500 hover:text-gray-300 mt-2">
+                Blog
+              </a>
+            </Link>
           </div>
 
           {/* Social links */}
