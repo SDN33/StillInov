@@ -14,8 +14,8 @@ export default function Header() {
               <Image
                 src="/images/logo.png"
                 alt="Stillinov logo"
-                width={290}
-                height={90}
+                width={285}
+                height={85}
                 quality={100}
                 priority
               />
