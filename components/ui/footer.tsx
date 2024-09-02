@@ -39,7 +39,7 @@ export default function Footer() {
 
           {/* Social links */}
           <div className="flex space-x-4">
-            <Link href="https://www.instagram.com/stillinov" passHref>
+            <Link href="https://www.instagram.com/stillinovagency" passHref>
               <a target="_blank" rel="noopener noreferrer">
                 <Image
                   src="/images/instagram.webp"
