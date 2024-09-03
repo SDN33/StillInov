@@ -205,7 +205,7 @@ const Features: React.FC = () => {
           <br /><br />
           <br />
           <p className="text-lg text-gray-400 text-center">
-            Vous souhaitez en savoir plus sur nos services et discuter de votre projet ?<br />Planifiez un appel téléphonique gratuit avec notre équipe dès aujourd'hui.
+            <strong>Vous souhaitez en savoir plus sur nos services et discuter de votre projet ?</strong><br />Planifiez un appel téléphonique gratuit avec notre équipe dès aujourd'hui.
           </p>
           <a
             className="btn text-center w-full mt-4 mb-4 sm:w-auto sm:mb-0 shadow mx-auto flex justify-center"
