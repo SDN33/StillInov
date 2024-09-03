@@ -204,7 +204,7 @@ const Features: React.FC = () => {
           </div>
           <br /><br />
           <br />
-          <p className="text-lg text-[#f15e4b] text-center">
+          <p className="text-lg text-green-600 text-center">
             Vous souhaitez en savoir plus sur nos services et discuter de votre projet ?<br />Planifiez un appel téléphonique gratuit avec notre équipe dès aujourd'hui.
           </p>
           <a
