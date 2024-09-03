@@ -204,7 +204,7 @@ const Features: React.FC = () => {
           </div>
           <br /><br />
           <br />
-          <p className="text-lg text-gray-400 text-center">
+          <p className="text-lg text-white text-center">
             <strong>Vous souhaitez en savoir plus sur nos services et discuter de votre projet ?</strong>
           </p>
           <a
