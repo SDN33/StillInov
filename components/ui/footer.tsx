@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className="bg-gray-900 py-8">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="flex justify-between items-center">
+        <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/" passHref>
