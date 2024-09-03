@@ -3,10 +3,10 @@ import React, { useState } from 'react';
 const Features: React.FC = () => {
   const [isHovered, setIsHovered] = useState<boolean>(false);
 
-  const customButtonStyle: React.CSSProperties = {
+  const buttonStyle: React.CSSProperties = {
     background: isHovered
-      ? 'rgba(255, 255, 255, 0.8)'
-      : 'radial-gradient(circle, rgba(243, 115, 53, 1) 0%, rgba(241, 94, 75, 1) 35%, rgba(144, 231, 211, 1) 100%)',
+      ? 'rgba(255, 255, 255, 0.8)'  // Couleur du fond au survol
+      : 'radial-gradient(circle, rgba(243,115,53,1) 0%, rgba(241,94,75,1) 35%, rgba(144,231,211,1) 100%)',
     color: isHovered ? 'black' : 'white',
     padding: '10px 20px',
     border: 'none',
@@ -203,9 +203,9 @@ const Features: React.FC = () => {
           </div>
           <br /><br />
           <a
-            className="btn text-center text-white w-full mt-8 mb-4 sm:w-auto sm:mb-0 shadow mx-auto flex justify-center"
+            className="btn text-center w-full mt-8 mb-4 sm:w-auto sm:mb-0 shadow mx-auto flex justify-center"
             href="https://calendly.com/stillinovagency/30min"
-            style={customButtonStyle}
+            style={buttonStyle}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
@@ -215,4 +215,6 @@ const Features: React.FC = () => {
       </div>
     </section>
   );
-}
+};
+
+export default Features;
