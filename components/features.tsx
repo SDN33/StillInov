@@ -205,7 +205,7 @@ const Features: React.FC = () => {
           <br /><br />
           <br />
           <p className="text-lg text-gray-400 text-center">
-            <strong>Vous souhaitez en savoir plus sur nos services et discuter de votre projet ?</strong><br />Planifiez un appel téléphonique gratuit avec notre équipe dès aujourd'hui.
+            <strong>Vous souhaitez en savoir plus sur nos services et discuter de votre projet ?</strong>
           </p>
           <a
             className="btn text-center w-full mt-4 mb-4 sm:w-auto sm:mb-0 shadow mx-auto flex justify-center"
@@ -214,7 +214,7 @@ const Features: React.FC = () => {
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
-            Planifier un appel téléphonique 📞
+            Planifiez un appel téléphonique gratuit 📞
           </a>
         </div>
       </div>
