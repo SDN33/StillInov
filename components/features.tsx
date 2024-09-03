@@ -204,13 +204,9 @@ const Features: React.FC = () => {
           </div>
           <br /><br />
           <br />
-          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <div className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-green-600 bg-green-200 rounded-full mb-4">
-              <p>
-                 Vous souhaitez en savoir plus sur nos services et discuter de votre projet ?<br />Planifiez un appel téléphonique gratuit avec notre équipe dès aujourd'hui.
-              </p>
-            </div>
-          </div>
+          <p className="text-lg text-[#f15e4b] text-center">
+            Vous souhaitez en savoir plus sur nos services et discuter de votre projet ?<br />Planifiez un appel téléphonique gratuit avec notre équipe dès aujourd'hui.
+          </p>
           <a
             className="btn text-center w-full mt-8 mb-4 sm:w-auto sm:mb-0 shadow mx-auto flex justify-center"
             href="https://calendly.com/stillinovagency/30min"
