@@ -11,9 +11,6 @@ export default function Hero() {
       ? 'rgba(255, 255, 255, 0.8)'
       : 'radial-gradient(circle, rgba(243,115,53,1) 0%, rgba(241,94,75,1) 35%, rgba(144,231,211,1) 100%)',
     color: isHovered ? 'black' : 'white',
-    padding: '10px 20px',
-    border: 'none',
-    borderRadius: '5px',
     cursor: 'pointer',
     transition: 'background-color 0.3s ease, color 0.3s ease',
     textAlign: 'center',
