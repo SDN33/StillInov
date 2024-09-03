@@ -1,10 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-export default function Features() {
-  const customButtonStyle = {
-    background: 'rgb(243,115,53)',
-    backgroundImage: 'radial-gradient(circle, rgba(243,115,53,1) 0%, rgba(241,94,75,1) 35%, rgba(144,231,211,1) 100%)',
+const Features: React.FC = () => {
+  const [isHovered, setIsHovered] = useState<boolean>(false);
+
+  const customButtonStyle: React.CSSProperties = {
+    background: isHovered
+      ? 'rgba(255, 255, 255, 0.8)'
+      : 'radial-gradient(circle, rgba(243, 115, 53, 1) 0%, rgba(241, 94, 75, 1) 35%, rgba(144, 231, 211, 1) 100%)',
+    color: isHovered ? 'black' : 'white',
+    padding: '10px 20px',
+    border: 'none',
+    borderRadius: '5px',
+    cursor: 'pointer',
+    transition: 'background-color 0.3s ease, color 0.3s ease',
+    textAlign: 'center',
   };
+
   return (
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6" id="features">
@@ -192,9 +203,11 @@ export default function Features() {
           </div>
           <br /><br />
           <a
-            className="btn text-center text-white w-full mt-8 mb-4 sm:w-auto sm:mb-0 hover:bg-gray-800 shadow mx-auto flex justify-center"
+            className="btn text-center text-white w-full mt-8 mb-4 sm:w-auto sm:mb-0 shadow mx-auto flex justify-center"
             href="https://calendly.com/stillinovagency/30min"
             style={customButtonStyle}
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
           >
             Planifier un appel téléphonique 📞
           </a>
