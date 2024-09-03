@@ -1,15 +1,34 @@
 'use client';
-import React from 'react';
+import React, { useState } from 'react';
 import VideoThumb from '@/public/images/hero-image-01.jpg';
 import ModalVideo from '@/components/modal-video';
 
-
 export default function Hero() {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const buttonStyle: React.CSSProperties = {
+    background: isHovered
+      ? 'rgba(255, 255, 255, 0.8)'
+      : 'radial-gradient(circle, rgba(243,115,53,1) 0%, rgba(241,94,75,1) 35%, rgba(144,231,211,1) 100%)',
+    color: isHovered ? 'black' : 'white',
+    padding: '10px 20px',
+    border: 'none',
+    borderRadius: '5px',
+    cursor: 'pointer',
+    transition: 'background-color 0.3s ease, color 0.3s ease',
+    textAlign: 'center',
+  };
+
   return (
-    <section>
+    <section className="relative overflow-hidden">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
         {/* Illustration behind hero content */}
-        <div className="absolute left-0 bottom-0 -ml-20 hidden lg:block pointer-events-none" aria-hidden="true" data-aos="fade-up" data-aos-delay="400">
+        <div
+          className="absolute left-0 bottom-0 -ml-20 hidden lg:block pointer-events-none"
+          aria-hidden="true"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        >
           {/* SVG code remains the same */}
         </div>
 
@@ -27,22 +46,25 @@ export default function Hero() {
                 </span>
               </div>
             </h1>
-            <br />
-            <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">Donnez vie à vos ambitions digitales et transformez vos idées en réalité.</p>
+            <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">
+              Donnez vie à vos ambitions digitales et transformez vos idées en réalité.
+            </p>
             <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
               <div data-aos="fade-up" data-aos-delay="400">
                 <a
                   className="btn text-white w-full mb-4 sm:w-auto sm:mb-0"
                   href="/contact"
-                  style={{ backgroundColor: '#f15e4b' }}
-                  onMouseEnter={e => e.currentTarget.style.backgroundColor = '#d14c3d'}
-                  onMouseLeave={e => e.currentTarget.style.backgroundColor = '#f15e4b'}
+                  style={buttonStyle}
+                  onMouseEnter={() => setIsHovered(true)}
+                  onMouseLeave={() => setIsHovered(false)}
                 >
                   Contactez-nous
                 </a>
               </div>
               <div data-aos="fade-up" data-aos-delay="600">
-                <a className="btn text-white bg-[#485b51] hover:bg-gray-800 w-full sm:w-auto sm:ml-4" href="#features">Voir plus</a>
+                <a className="btn text-white bg-[#485b51] hover:bg-gray-800 w-full sm:w-auto sm:ml-4" href="#features">
+                  Voir plus
+                </a>
               </div>
             </div>
           </div>
@@ -98,26 +120,13 @@ export default function Hero() {
           padding: 0.2em 0.5em;
         }
 
-        .font-innovative {
-          font-family: 'Orbitron', sans-serif;
-        }
-        .font-ambitious {
-          font-family: 'Permanent Marker', cursive;
-        }
-        .font-creative {
-          font-family: 'Permanent Marker', cursive;
-        }
+        .font-innovative { font-family: 'Orbitron', sans-serif; }
+        .font-ambitious, .font-creative { font-family: 'Permanent Marker', cursive; }
 
         @keyframes spin {
-          0%, 33% {
-            transform: translateY(0);
-          }
-          38%, 66% {
-            transform: translateY(-100%);
-          }
-          71%, 100% {
-            transform: translateY(-200%);
-          }
+          0%, 33% { transform: translateY(0); }
+          38%, 66% { transform: translateY(-100%); }
+          71%, 100% { transform: translateY(-200%); }
         }
       `}</style>
     </section>
