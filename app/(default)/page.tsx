@@ -2,7 +2,7 @@
 export const metadata = {
   title: 'Still-Inov Agency | Agence de Communication & Marketing Digitale - Développement Web, SEO & Réseaux Sociaux',
   description: 'Still-Inov, votre partenaire en communication digitale, offre des services personnalisés de création, design, et développement web pour transformer vos idées en réalité, quel que soit votre budget.',
-  keywords: 'communication digitale, création site web, design graphique, développement web, SEO, marketing digital, agence web, solutions personnalisées, agence communication digitale, audit marketing, référencement SEO, SEA, stratégies digitales,faire pub insta, faire pub facebook, faire pub google, faire audit',
+  keywords: 'communication digitale, création site web, design graphique, développement web, SEO, marketing digital, agence web, agence marketing bordeaux, agence communication bordeaux , agence communication digitale, audit marketing, référencement SEO, SEA, stratégies digitales,faire pub insta, faire pub facebook, faire pub google, faire audit',
   openGraph: {
     title: 'Still-Inov Agency | Agence de Communication & Marketing Digitale',
     description: 'Découvrez comment Still-Inov transforme vos idées en projets digitaux réussis grâce à des solutions personnalisées adaptées à vos besoins et à votre budget.',
