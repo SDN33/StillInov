@@ -22,7 +22,7 @@ export default function Hero() {
               <div className="animated-text-container">
                 <span className="animated-text text-center">
                   <span className="font-innovative">Innovante</span>
-                  <span className="font-ambitious">Ambicieuse</span>
+                  <span className="font-ambitious">Ambitieuse</span>
                   <span className="font-creative">Créative</span>
                 </span>
               </div>
