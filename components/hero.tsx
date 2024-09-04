@@ -3,6 +3,7 @@ import React from 'react';
 import VideoThumb from '@/public/images/hero-image-01.jpg';
 import ModalVideo from '@/components/modal-video';
 
+
 export default function Hero() {
   return (
     <section>
@@ -31,14 +32,17 @@ export default function Hero() {
             <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
               <div data-aos="fade-up" data-aos-delay="400">
                 <a
-                  className="btnhero text-white w-full mb-4 sm:w-auto sm:mb-0"
+                  className="btn text-white w-full mb-4 sm:w-auto sm:mb-0"
                   href="/contact"
+                  style={{ backgroundColor: '#f15e4b' }}
+                  onMouseEnter={e => e.currentTarget.style.backgroundColor = '#d14c3d'}
+                  onMouseLeave={e => e.currentTarget.style.backgroundColor = '#f15e4b'}
                 >
                   Contactez-nous
                 </a>
               </div>
               <div data-aos="fade-up" data-aos-delay="600">
-                <a className="btnSeeMore text-white w-full sm:w-auto sm:ml-4" href="#features">Voir plus</a>
+                <a className="btn text-white bg-[#485b51] hover:bg-gray-800 w-full sm:w-auto sm:ml-4" href="#features">Voir plus</a>
               </div>
             </div>
           </div>
@@ -102,38 +106,6 @@ export default function Hero() {
         }
         .font-creative {
           font-family: 'Permanent Marker', cursive;
-        }
-
-        .btnhero {
-          display: inline-block;
-          text-align: center;
-          color: white;
-          text-decoration: none;
-          padding: 10px 20px;
-          border-radius: 5px;
-          background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
-          background-size: 200% auto;
-          background-position: left center;
-          transition: background-position 0.5s ease;
-        }
-
-        .btnhero:hover {
-          background-position: right center;
-        }
-
-        .btnSeeMore {
-          display: inline-block;
-          text-align: center;
-          color: white;
-          text-decoration: none;
-          padding: 10px 20px;
-          border-radius: 5px;
-          background-color: #2d6a4f; /* Vert foncé */
-          transition: background-color 0.3s ease;
-        }
-
-        .btnSeeMore:hover {
-          background-color: #1b4f3d; /* Vert encore plus foncé pour le hover */
         }
 
         @keyframes spin {
