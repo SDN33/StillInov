@@ -2,6 +2,7 @@
 import React from 'react';
 import VideoThumb from '@/public/images/hero-image-01.jpg';
 import ModalVideo from '@/components/modal-video';
+import './css/style.css'; // Assure-toi que ce fichier CSS est importé si nécessaire
 
 
 export default function Hero() {
@@ -31,15 +32,12 @@ export default function Hero() {
             <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">Donnez vie à vos ambitions digitales et transformez vos idées en réalité.</p>
             <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
               <div data-aos="fade-up" data-aos-delay="400">
-                <a
-                  className="btn text-white w-full mb-4 sm:w-auto sm:mb-0"
-                  href="/contact"
-                  style={{ backgroundColor: '#f15e4b' }}
-                  onMouseEnter={e => e.currentTarget.style.backgroundColor = '#d14c3d'}
-                  onMouseLeave={e => e.currentTarget.style.backgroundColor = '#f15e4b'}
-                >
-                  Contactez-nous
-                </a>
+              <a
+                className="btnhero text-white w-full mb-4 sm:w-auto sm:mb-0"
+                href="/contact"
+              >
+                Contactez-nous
+              </a>
               </div>
               <div data-aos="fade-up" data-aos-delay="600">
                 <a className="btn text-white bg-[#485b51] hover:bg-gray-800 w-full sm:w-auto sm:ml-4" href="#features">Voir plus</a>
