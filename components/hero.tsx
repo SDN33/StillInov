@@ -9,9 +9,7 @@ export default function Hero() {
     textAlign: 'center',
     color: 'white',
     textDecoration: 'none',
-    padding: '10px 20px',
-    borderRadius: '5px',
-    backgroundImage: 'linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%)',
+    backgroundImage: 'linear-gradient(to right, #f6d365 0%, #fda085 51%, #f15e4b 100%)',
     backgroundSize: '200% auto',
     backgroundPosition: 'left center',
     transition: 'background-position 0.5s ease'
