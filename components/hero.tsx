@@ -2,10 +2,25 @@
 import React from 'react';
 import VideoThumb from '@/public/images/hero-image-01.jpg';
 import ModalVideo from '@/components/modal-video';
-import '../styles/style.css';
-
 
 export default function Hero() {
+  const buttonStyle: React.CSSProperties = {
+    display: 'inline-block',
+    textAlign: 'center',
+    color: 'white',
+    textDecoration: 'none',
+    padding: '10px 20px',
+    borderRadius: '5px',
+    backgroundImage: 'linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%)',
+    backgroundSize: '200% auto',
+    backgroundPosition: 'left center',
+    transition: 'background-position 0.5s ease'
+  };
+
+  const buttonHoverStyle = {
+    backgroundPosition: 'right center'
+  };
+
   return (
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
@@ -32,12 +47,15 @@ export default function Hero() {
             <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">Donnez vie à vos ambitions digitales et transformez vos idées en réalité.</p>
             <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
               <div data-aos="fade-up" data-aos-delay="400">
-              <a
-                className="btnhero text-white w-full mb-4 sm:w-auto sm:mb-0"
-                href="/contact"
-              >
-                Contactez-nous
-              </a>
+                <a
+                  style={buttonStyle}
+                  onMouseEnter={(e) => (e.currentTarget.style.backgroundPosition = 'right center')}
+                  onMouseLeave={(e) => (e.currentTarget.style.backgroundPosition = 'left center')}
+                  className="text-white w-full mb-4 sm:w-auto sm:mb-0"
+                  href="/contact"
+                >
+                  Contactez-nous
+                </a>
               </div>
               <div data-aos="fade-up" data-aos-delay="600">
                 <a className="btn text-white bg-[#485b51] hover:bg-gray-800 w-full sm:w-auto sm:ml-4" href="#features">Voir plus</a>
