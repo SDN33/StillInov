@@ -13,7 +13,7 @@ const Features: React.FC = () => {
     border: 'none',
     borderRadius: '5px',
     cursor: 'pointer',
-    transition: 'background-color 0.3s ease, color 0.3s ease',
+    transition: 'background-color 0.5s ease, color 0.5s ease',
     textAlign: 'center',
   };
 
