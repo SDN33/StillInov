@@ -48,6 +48,5 @@ export default function Home() {
       <Cookies />
       <Analytics  />
       <SpeedInsights />
-
     </>)
 }
