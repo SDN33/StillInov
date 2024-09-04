@@ -2,7 +2,7 @@
 import React from 'react';
 import VideoThumb from '@/public/images/hero-image-01.jpg';
 import ModalVideo from '@/components/modal-video';
-import './css/style.css'; // Assure-toi que ce fichier CSS est importé si nécessaire
+import '../styles/style.css';
 
 
 export default function Hero() {
