@@ -33,7 +33,6 @@ export default function Home() {
         <script type="application/ld+json">
         {`
           {
-            "@context": "https://schema.org",
             "@type": "Organization",
             "name": "Still-Inov Agency",
             "url": "https://www.stillinov.com",
