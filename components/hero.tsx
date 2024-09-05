@@ -35,7 +35,7 @@ export default function Hero() {
                   className="btn text-white w-full mb-4 sm:w-auto sm:mb-0"
                   href="/contact"
                   style={{ backgroundColor: '#f15e4b' }}
-                  onMouseEnter={e => e.currentTarget.style.backgroundColor = 'bg-gray-800'}
+                  onMouseEnter={e => e.currentTarget.style.backgroundColor = '#2d3748'}
                   onMouseLeave={e => e.currentTarget.style.backgroundColor = '#f15e4b'}
                 >
                   Contactez-nous
