@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Avatar01 from '@/public/images/avatar01.jpg';
+import Avatar01 from '@/public/images/avatar01.png';
 import Avatar02 from '@/public/images/avatar02.jpg';
 
 const TeamMember = ({ image, name, role, description, linkedinUrl }: { image: string, name: string, role: string, description: string, linkedinUrl: string }) => (
