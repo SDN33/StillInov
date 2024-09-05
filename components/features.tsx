@@ -6,7 +6,7 @@ const Features: React.FC = () => {
 
   const buttonStyle: React.CSSProperties = {
     background: isHovered
-      ? 'hover:bg-gray-800' // Couleur plus sombre au survol
+      ? 'hover:gray-800' // Couleur plus sombre au survol
       : 'radial-gradient(circle, rgba(243,115,53,1) 0%, rgba(241,94,75,1) 35%, rgba(144,231,211,1) 100%)',
     color: isHovered ? 'black' : 'white',
     padding: '10px 20px',
