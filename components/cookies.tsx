@@ -54,7 +54,7 @@ const CookieBanner = () => {
           </button>
           <button
             onClick={handleRefuse}
-            className="px-4 py-2 bg-transparent border border-white rounded hover:bg-gray-600 hover:text-[white] transition duration-300 ease-in-out"
+            className="px-4 py-2 bg-transparent border border-white rounded hover:bg-gray-600 hover:text-[black] transition duration-300 ease-in-out"
           >
             Refuser
           </button>
