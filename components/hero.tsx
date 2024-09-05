@@ -42,7 +42,7 @@ export default function Hero() {
                 </a>
               </div>
               <div data-aos="fade-up" data-aos-delay="600">
-                <a className="btn text-white bg-[#485b51] hover:bg-gray-900 w-full sm:w-auto sm:ml-4" href="#features">Voir plus</a>
+                <a className="btn text-white bg-[#485b51] hover:bg-gray-800 w-full sm:w-auto sm:ml-4" href="#features">Voir plus</a>
               </div>
             </div>
           </div>
