@@ -60,11 +60,11 @@ export default function Footer() {
                 />
               </a>
             </Link>
-            <Link href="https://www.facebook.com/stillinov" passHref>
+            <Link href="https://www.threads.net/@stillinovagency" passHref>
               <a target="_blank" rel="noopener noreferrer">
                 <Image
-                  src="/images/facebook.png"
-                  alt="Facebook"
+                  src="/images/facebook.webp"
+                  alt="Threads"
                   width={24}
                   height={24}
                   layout="intrinsic"
