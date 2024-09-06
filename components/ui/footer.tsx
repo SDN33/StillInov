@@ -3,10 +3,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export default function Footer() {
-
-  const CurrentYear: React.FC = () => {
-    // Obtenez l'année actuelle
-    const currentYear = new Date().getFullYear();
+  // Obtenez l'année actuelle
+  const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-gray-900 py-8">
@@ -81,7 +79,7 @@ export default function Footer() {
 
         {/* Bottom area */}
         <div className="text-center text-gray-500 text-sm mt-4">
-          &copy; {currentYear} © StillInov.com. Tous droits réservés.
+          &copy; {currentYear} StillInov.com. Tous droits réservés.
         </div>
       </div>
     </footer>
