@@ -77,7 +77,7 @@ const RdvIcon: React.FC = () => {
               <h2 className="text-xl font-bold mb-4 text-center">Pourquoi planifier un appel ?</h2>
               <p className="mb-4 text-center">
                 Pour nous chaque client bénéficie d'une attention particulière et d'un suivi personnalisé.
-                <br />Nous vous offrons un appel de présentation de 15 minutes gratuit pour discuter de vos besoins et vous expliquer comment nous pouvons vous aider à atteindre vos objectifs. 🚀
+                <br />Nous vous offrons un appel de présentation de 15 minutes gratuit avec Laura, notre Digital Business Developer, pour discuter de vos besoins et vous expliquer comment nous pouvons vous aider à atteindre vos objectifs. 🚀
               </p>
               <a
                 href="https://calendly.com/stillinovagency/30min"
