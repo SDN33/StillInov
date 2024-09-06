@@ -34,7 +34,7 @@ const RdvIcon: React.FC = () => {
         <>
           {/* Overlay */}
           <div
-            className="fixed inset-0 bg-gray-900 bg-opacity-50 z-50"
+            className="fixed inset-0 bg-gray-900 bg-opacity-50 z-1"
             onClick={handleClosePopup}
           />
 
