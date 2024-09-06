@@ -32,9 +32,9 @@ export default function Footer() {
                 Mentions légales
               </a>
             </Link>
-            <Link href="/blog" passHref>
+            <Link href="https://calendly.com/stillinovagency/30min" passHref>
               <a className="text-sm text-gray-500 hover:text-gray-300">
-                Blog
+                Planifiez un appel
               </a>
             </Link>
             <Link href="/contact" passHref>
@@ -42,9 +42,9 @@ export default function Footer() {
                 Contactez-nous
               </a>
             </Link>
-            <Link href="https://calendly.com/stillinovagency/30min" passHref>
+            <Link href="/blog" passHref>
               <a className="text-sm text-gray-500 hover:text-gray-300">
-                Planifiez un appel
+                Blog
               </a>
             </Link>
           </div>
