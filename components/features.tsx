@@ -28,7 +28,7 @@ const Features: React.FC = () => {
               Atteignez des objectifs qui comptent
             </div>
             <h2 className="h2 mb-4">
-              Une solution complète pour renforcer votre empreinte numérique.
+              Une solution complète pour renforcer votre empreinte numérique
             </h2>
             <p className="text-xl text-gray-400">
               De la création de sites web optimisés et attractifs à la gestion des réseaux sociaux, en passant par des stratégies de marketing digital personnalisées,<br /> nous donnons vie à vos ambitions digitales.
