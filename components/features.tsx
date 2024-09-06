@@ -216,6 +216,12 @@ const Features: React.FC = () => {
           >
             Planifiez un appel téléphonique gratuit 📞
           </a>
+          <a
+            className="text-lg text-gray-400 text-center"
+            href="https://calendly.com"
+          >
+             <em>powered by Calendly</em>
+          </a>
         </div>
       </div>
     </section>
