@@ -37,7 +37,19 @@ export default function Footer() {
                 Blog
               </a>
             </Link>
+            <Link href="/contact" passHref>
+              <a className="text-sm text-gray-500 hover:text-gray-300">
+                Contactez-nous
+              </a>
+            </Link>
+            <Link href="https://calendly.com/stillinovagency/30min" passHref>
+              <a className="text-sm text-gray-500 hover:text-gray-300">
+                Planifiez un appel
+              </a>
+            </Link>
           </div>
+
+
 
           {/* Social links */}
           <div className="flex space-x-4">
