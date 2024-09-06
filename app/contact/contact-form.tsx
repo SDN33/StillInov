@@ -11,7 +11,6 @@ const ContactForm: React.FC = () => {
             <p className="text-gray-700">
               Envoyez-nous un message, nous serons ravis de vous répondre dans les plus brefs délais. 🚀
               <br /><br /> Vous pouvez également nous contacter par email à <a href="mailto:stillinovagency@gmail.com " className="text-[#f15e4b] hover:text-[#485b51]"> Stillinovagency@gmail.com</a>.
-              <br />Besoin d'un devis ? planifions un rendez-vous pour discuter de votre projet. <a href="https://calendly.com/stillinovagency/30min" className="text-[#f15e4b] hover:text-[#485b51]">&gt;ici&lt;</a>
             </p>
           </div>
 
