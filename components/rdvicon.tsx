@@ -1,13 +1,25 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const RdvIcon: React.FC = () => {
   const [isHovered, setIsHovered] = useState(false);
   const [isPopupOpen, setIsPopupOpen] = useState(false);
 
+  // Function to open the popup
   const handleOpenPopup = () => setIsPopupOpen(true);
+  // Function to close the popup
   const handleClosePopup = () => setIsPopupOpen(false);
+
+  useEffect(() => {
+    // Set a timer to open the popup after 20 seconds
+    const timer = setTimeout(() => {
+      setIsPopupOpen(true);
+    }, 20000); // 20 seconds
+
+    // Clean up the timer if the component is unmounted
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <div className="relative">
@@ -34,12 +46,12 @@ const RdvIcon: React.FC = () => {
         <>
           {/* Overlay */}
           <div
-            className="fixed inset-0 bg-gray-900 bg-opacity-50 z-1"
+            className="fixed inset-0 bg-gray-900 bg-opacity-50 z-10"
             onClick={handleClosePopup}
           />
 
           {/* Popup Content */}
-          <div className="fixed inset-0 flex items-center justify-center z-60">
+          <div className="fixed inset-0 flex items-center justify-center z-20">
             <div className="bg-gray-600 text-white p-6 rounded-lg shadow-lg relative w-full max-w-md">
               <button
                 onClick={handleClosePopup}
@@ -48,9 +60,9 @@ const RdvIcon: React.FC = () => {
               >
                 &times;
               </button>
-              <h2 className="text-xl font-bold mb-4 text-center">Pourquoi plannifier un appel ?</h2>
+              <h2 className="text-xl font-bold mb-4 text-center">Pourquoi planifier un appel ?</h2>
               <p className="mb-4 text-center">
-                Pour nous chaque client benificie d'une attention particulière et d'un suivi personnalisé.
+                Pour nous chaque client bénéficie d'une attention particulière et d'un suivi personnalisé.
                 <br />Nous vous offrons un appel de présentation de 15 minutes gratuit pour discuter de vos besoins et vous expliquer comment nous pouvons vous aider à atteindre vos objectifs. 🚀
               </p>
               <a
