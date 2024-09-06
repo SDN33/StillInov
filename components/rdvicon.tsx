@@ -48,9 +48,10 @@ const RdvIcon: React.FC = () => {
               >
                 &times;
               </button>
-              <h2 className="text-xl font-bold mb-4">Pourquoi un appel ?</h2>
+              <h2 className="text-xl font-bold mb-4">Pourquoi plannifier un appel ?</h2>
               <p className="mb-4">
-                Nous vous offrons un appel de présentation de 15 minutes gratuit pour discuter de vos besoins et vous expliquer comment nous pouvons vous aider à atteindre vos objectifs.
+                Pour nous chaque client benificie d'une attention particulière et d'un suivi personnalisé.
+                Nous vous offrons un appel de présentation de 15 minutes gratuit pour discuter de vos besoins et vous expliquer comment nous pouvons vous aider à atteindre vos objectifs. 🚀
               </p>
               <a
                 href="https://calendly.com/stillinovagency/30min"
