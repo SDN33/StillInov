@@ -18,7 +18,7 @@ export default function Hero() {
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
             <h1 className="h1 mb-4 flex flex-col items-center" data-aos="fade-up">
-              <span className="block w-full text-center main-title">Agence de Communication Digitale</span>
+              <span className="block w-full text-center main-title">Agence de Marketing Digitale</span>
               <div className="animated-text-container">
                 <span className="animated-text text-center">
                   <span className="font-innovative">Innovante</span>
