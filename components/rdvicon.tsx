@@ -75,7 +75,7 @@ const RdvIcon: React.FC = () => {
               >
                 &times;
               </button>
-              <h2 className="text-xl font-bold mb-4 text-center">Pourquoi planifier un appel ?</h2>
+              <h2 className="text-xl font-bold mb-2 text-center">Pourquoi planifier un appel ?</h2>
               <p className="mb-2 text-center">
                 Pour nous chaque client bénéficie d'une attention particulière et d'un suivi personnalisé.
                 <br /><br />
