@@ -1,5 +1,3 @@
-"use client";
-
 import React, { useState, useEffect } from 'react';
 
 const RdvIcon: React.FC = () => {
@@ -21,6 +19,22 @@ const RdvIcon: React.FC = () => {
     return () => clearTimeout(timer);
   }, []);
 
+  useEffect(() => {
+    // Set an interval to trigger bounce animation every 5 seconds
+    const bounceInterval = setInterval(() => {
+      const icon = document.querySelector('.bounce-icon');
+      if (icon) {
+        icon.classList.add('animate-bounce');
+        setTimeout(() => {
+          icon.classList.remove('animate-bounce');
+        }, 2000); // Duration of the bounce animation
+      }
+    }, 5000); // Every 5 seconds
+
+    // Clean up the interval if the component is unmounted
+    return () => clearInterval(bounceInterval);
+  }, []);
+
   return (
     <div className="relative">
       {/* Floating Icon Button */}
@@ -28,7 +42,7 @@ const RdvIcon: React.FC = () => {
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
         onClick={handleOpenPopup}
-        className="fixed bottom-4 right-4 md:bottom-6 md:right-6 p-3 rounded-full shadow-lg text-white bg-gradient-to-br from-orange-400 via-red-500 to-teal-400 flex items-center justify-center hover:scale-150 transition-transform duration-300"
+        className="bounce-icon fixed bottom-4 right-4 md:bottom-6 md:right-6 p-3 rounded-full shadow-lg text-white bg-gradient-to-br from-orange-400 via-red-500 to-teal-400 flex items-center justify-center hover:scale-150 transition-transform duration-300"
         aria-label="Contactez-nous"
       >
         <span className="text-4xl font-bold">Si</span>
@@ -82,6 +96,24 @@ const RdvIcon: React.FC = () => {
           </div>
         </>
       )}
+
+      <style jsx>{`
+        @keyframes bounce {
+          0%, 20%, 50%, 80%, 100% {
+            transform: translateY(0);
+          }
+          40% {
+            transform: translateY(-30px);
+          }
+          60% {
+            transform: translateY(-15px);
+          }
+        }
+
+        .animate-bounce {
+          animation: bounce 2s infinite;
+        }
+      `}</style>
     </div>
   );
 };
