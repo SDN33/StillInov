@@ -42,8 +42,8 @@ export default function AboutUs() {
       <div className="py-12 md:py-20 border-t border-gray-800">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="text-center pb-12 md:pb-20">
-            <h2 className="h2 font-bold mb-4">Notre équipe</h2>
-            <p className="text-lg text-gray-400">Découvrez les visages derrière notre agence.<br />Une équipe qualifiée et dévouée à votre succès 🏆</p>
+            <h2 className="h2 font-bold mb-4">Découvrez notre équipe</h2>
+            <p className="text-lg text-gray-400">Une équipe qualifiée et dévouée à votre succès 🏆</p>
           </div>
 
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-2 items-start">
