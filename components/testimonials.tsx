@@ -121,6 +121,8 @@ export default function Testimonials() {
           </div>
         </div>
       </div>
+      <script src="https://widget.trustmary.com/ZVh0Xu1q0"></script>
     </section>
+
   );
 }
