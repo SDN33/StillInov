@@ -32,6 +32,7 @@ import Newsletter from '@/components/newsletter'
 import Testimonials from '@/components/testimonials'
 import AboutUs from '@/components/quisommesnous'
 import Cookies from '@/components/cookies'
+import Rdvicon from '@/components/rdvicon'
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
@@ -46,6 +47,7 @@ export default function Home() {
       <Testimonials />
       <Newsletter />
       <Cookies />
+      <Rdvicon />
       <Analytics  />
       <SpeedInsights />
     </>)
