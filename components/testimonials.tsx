@@ -18,7 +18,7 @@ export default function Testimonials() {
           <div className="max-w-sm mx-auto grid gap-8 lg:grid-cols-3 lg:gap-6 items-start lg:max-w-none">
 
             {/* 1st testimonial */}
-            <div className="flex flex-col h-full p-6 bg-gray-800 transform transition-transform duration-300 hover:scale-105" data-aos="fade-up">
+            <div className="group flex flex-col h-full p-6 bg-gray-800 transition-transform transform duration-200 hover:scale-110" data-aos="fade-up">
               <div>
                 <div className="relative inline-flex flex-col mb-4">
                   <Image className="rounded-full" src={TestimonialImage01} width={48} height={48} alt="Testimonial 01" />
@@ -34,7 +34,7 @@ export default function Testimonials() {
             </div>
 
             {/* 2nd testimonial */}
-            <div className="flex flex-col h-full p-6 bg-gray-800 transform transition-transform duration-300 hover:scale-105" data-aos="fade-up" data-aos-delay="200">
+            <div className="group flex flex-col h-full p-6 bg-gray-800 transition-transform transform duration-200 hover:scale-110" data-aos="fade-up" data-aos-delay="200">
               <div>
                 <div className="relative inline-flex flex-col mb-4">
                   <Image className="rounded-full" src={TestimonialImage02} width={48} height={48} alt="Testimonial 02" />
@@ -50,7 +50,7 @@ export default function Testimonials() {
             </div>
 
             {/* 3rd testimonial */}
-            <div className="flex flex-col h-full p-6 bg-gray-800 transform transition-transform duration-300 hover:scale-105" data-aos="fade-up" data-aos-delay="400">
+            <div className="group flex flex-col h-full p-6 bg-gray-800 transition-transform transform duration-200 hover:scale-110" data-aos="fade-up" data-aos-delay="400">
               <div>
                 <div className="relative inline-flex flex-col mb-4">
                   <Image className="rounded-full" src={TestimonialImage03} width={48} height={48} alt="Testimonial 03" />
@@ -64,9 +64,9 @@ export default function Testimonials() {
                 <cite className="text-gray-200 not-italic">Cédric Césarini</cite> - <a className="text-[#f15e4b] hover:text-gray-200 transition duration-150 ease-in-out" href="https://www.facebook.com/bewinebegles">Be Wine Bègles</a>
               </div>
             </div>
-
           </div>
-          <br /><br />
+          <br />
+          <br />
           {/* Additional Information */}
           <div className="bg-gray-900 py-16">
             <div className="container mx-auto px-4">
