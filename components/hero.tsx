@@ -1,17 +1,56 @@
 'use client';
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import VideoThumb from '@/public/images/hero-image-01.jpg';
 import ModalVideo from '@/components/modal-video';
 
 export default function Hero() {
+  const [isScrolling, setIsScrolling] = useState(true);
+  const scrollContainerRef = useRef<HTMLElement | null>(null);
+  const timeoutRef = useRef<null | NodeJS.Timeout>(null);
+
+  const startScrolling = () => {
+    if (scrollContainerRef.current) {
+      (scrollContainerRef.current as HTMLElement).scrollLeft += 2;
+    }
+  };
+
+  const handleUserScroll = () => {
+    setIsScrolling(false);
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
+    timeoutRef.current = setTimeout(() => {
+      setIsScrolling(true);
+    }, 2000);
+  };
+
+  useEffect(() => {
+    let scrollInterval: NodeJS.Timeout | undefined;
+    if (isScrolling) {
+      scrollInterval = setInterval(startScrolling, 20);
+    }
+    return () => {
+      if (scrollInterval) {
+        clearInterval(scrollInterval);
+      }
+    };
+  }, [isScrolling]);
+
+  useEffect(() => {
+    const scrollContainer = scrollContainerRef.current as HTMLElement;
+    if (scrollContainer) {
+      scrollContainer.addEventListener('scroll', handleUserScroll);
+    }
+    return () => {
+      if (scrollContainer) {
+        scrollContainer.removeEventListener('scroll', handleUserScroll);
+      }
+    };
+  }, []);
+
   return (
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
-        {/* Illustration behind hero content */}
-        <div className="absolute left-0 bottom-0 -ml-20 hidden lg:block pointer-events-none" aria-hidden="true" data-aos="fade-up" data-aos-delay="400">
-          {/* SVG code remains the same */}
-        </div>
-
         {/* Hero content */}
         <div className="relative pt-32 pb-10 md:pt-40 md:pb-16">
           {/* Section header */}
@@ -27,7 +66,9 @@ export default function Hero() {
               </div>
             </h1>
             <br />
-            <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">Donnez vie à vos ambitions digitales et transformez vos idées en réalité.</p>
+            <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">
+              Donnez vie à vos ambitions digitales et transformez vos idées en réalité.
+            </p>
             <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
               <div data-aos="fade-up" data-aos-delay="400">
                 <a
@@ -44,8 +85,6 @@ export default function Hero() {
                 <a className="btn text-white bg-[#485b51] hover:bg-gray-800 w-full sm:w-auto sm:ml-4" href="#features">Voir plus</a>
               </div>
             </div>
-
-
           </div>
 
           {/* Modal video */}
@@ -65,7 +104,8 @@ export default function Hero() {
             {/* Left icon */}
             <div className="text-gray-400 mr-2 cursor-pointer text-lg">&lt;</div>
 
-            <div className="overflow-x-auto whitespace-nowrap flex items-center">
+            <div ref={scrollContainerRef as React.RefObject<HTMLDivElement>} className="overflow-x-auto whitespace-nowrap flex items-center">
+              {/* Keywords go here */}
               <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#f15e4b] rounded-full mb-4">SEO</span>
               <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#485b51] rounded-full mb-4">Publicité Digitale</span>
               <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#f15e4b] rounded-full mb-4">Audit</span>
@@ -85,7 +125,6 @@ export default function Hero() {
               <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#f15e4b] rounded-full mb-4">Google Analytics</span>
               <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#485b51] rounded-full mb-4">Google Ads</span>
               <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#f15e4b] rounded-full mb-4">Facebook Ads</span>
-
             </div>
 
             {/* Right icon */}
