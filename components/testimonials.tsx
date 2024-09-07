@@ -93,7 +93,7 @@ export default function Testimonials() {
               <div className="border-t border-gray-800 mb-16"></div>
 
                         <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-                <h2 className="h2 mb-4">Pourquoi Still-inov Agency ?</h2>
+                <h2 className="h2 mb-4">Pourquoi Still-inov ?</h2>
                 <p className="text-lg text-gray-400">
                   Nous croyons que chaque projet est unique, c'est pourquoi nous offrons des solutions personnalisées adaptées à vos besoins spécifiques.
                 </p>
