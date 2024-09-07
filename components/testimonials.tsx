@@ -69,7 +69,7 @@ export default function Testimonials() {
             </div>
           </div>
           <br />
-          <div className="text-center mx-auto align-items-center">
+          <div className="text-center mx-auto align-items-center mt-2">
             <a
               href={url}
               target="_blank"
