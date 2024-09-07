@@ -10,7 +10,7 @@ export default function Hero() {
 
   const startScrolling = () => {
     if (scrollContainerRef.current) {
-      (scrollContainerRef.current as HTMLElement).scrollLeft += 2;
+      (scrollContainerRef.current as HTMLElement).scrollLeft += 10;
     }
   };
 
