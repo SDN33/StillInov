@@ -2,7 +2,6 @@
 import React from 'react';
 import VideoThumb from '@/public/images/hero-image-01.jpg';
 import ModalVideo from '@/components/modal-video';
-import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/solid';
 
 export default function Hero() {
   return (
@@ -49,7 +48,7 @@ export default function Hero() {
             {/* Keywords Section */}
             <div className="flex items-center justify-center mt-4">
               {/* Left icon */}
-              <ChevronLeftIcon className="h-6 w-6 text-gray-400 mr-2 cursor-pointer" />
+              <div className="text-gray-400 mr-2 cursor-pointer text-xl">&lt;</div>
 
               <div className="overflow-x-auto whitespace-nowrap flex items-center">
                 <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#f15e4b] rounded-full mb-4">SEO</span>
@@ -63,7 +62,7 @@ export default function Hero() {
               </div>
 
               {/* Right icon */}
-              <ChevronRightIcon className="h-6 w-6 text-gray-400 ml-2 cursor-pointer" />
+              <div className="text-gray-400 ml-2 cursor-pointer text-xl">&gt;</div>
             </div>
 
           </div>
