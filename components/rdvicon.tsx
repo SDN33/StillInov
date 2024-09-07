@@ -80,7 +80,7 @@ const RdvIcon: React.FC = () => {
                 Pour nous chaque client bénéficie d'une attention particulière et d'un suivi personnalisé.
                 <br /><br />
               </p>
-              <p className="mb-4 text-center text-[#f15e4b]">
+              <p className="mb-4 text-center text-[#f15e4b] text-sm">
               <em>Nous vous offrons un appel de présentation<br />de 15 minutes gratuit avec notre Digital Business Developer, pour discuter de vos besoins et vous expliquer comment nous pouvons vous aider à atteindre vos objectifs. 🚀</em>
               </p>
               <a
