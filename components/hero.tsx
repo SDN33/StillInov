@@ -44,7 +44,8 @@ export default function Hero() {
                 <a className="btn text-white bg-[#485b51] hover:bg-gray-800 w-full sm:w-auto sm:ml-4" href="#features">Voir plus</a>
               </div>
             </div>
-
+            <br />
+            
             {/* Keywords Section */}
             <div className="overflow-x-auto whitespace-nowrap mt-4">
               <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-green-600 bg-green-200 rounded-full mb-4">SEO</span>
