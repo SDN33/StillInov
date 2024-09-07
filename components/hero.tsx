@@ -45,25 +45,6 @@ export default function Hero() {
               </div>
             </div>
 
-            {/* Keywords Section */}
-            <div className="flex items-center justify-center mt-4">
-              {/* Left icon */}
-              <div className="text-gray-400 mr-2 cursor-pointer text-xl">&lt;</div>
-
-              <div className="overflow-x-auto whitespace-nowrap flex items-center">
-                <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#f15e4b] rounded-full mb-4">SEO</span>
-                <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#485b51] rounded-full mb-4">Publicité Digitale</span>
-                <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#f15e4b] rounded-full mb-4">Audit</span>
-                <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#485b51] rounded-full mb-4">Site Web</span>
-                <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#f15e4b] rounded-full mb-4">Application Mobile</span>
-                <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#485b51] rounded-full mb-4">Identitée visuelle</span>
-                <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#f15e4b] rounded-full mb-4">Formation Canva</span>
-                <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#485b51] rounded-full mb-4">Coaching Marketing digital</span>
-              </div>
-
-              {/* Right icon */}
-              <div className="text-gray-400 ml-2 cursor-pointer text-xl">&gt;</div>
-            </div>
 
           </div>
 
@@ -77,6 +58,28 @@ export default function Hero() {
             videoWidth={1920}
             videoHeight={1080}
           />
+
+          <br />
+          <br />
+          {/* Keywords Section */}
+          <div className="flex items-center justify-center mt-4">
+            {/* Left icon */}
+            <div className="text-gray-400 mr-2 cursor-pointer text-xl">&lt;</div>
+
+            <div className="overflow-x-auto whitespace-nowrap flex items-center">
+              <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#f15e4b] rounded-full mb-4">SEO</span>
+              <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#485b51] rounded-full mb-4">Publicité Digitale</span>
+              <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#f15e4b] rounded-full mb-4">Audit</span>
+              <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#485b51] rounded-full mb-4">Site Web</span>
+              <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#f15e4b] rounded-full mb-4">Application Mobile</span>
+              <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#485b51] rounded-full mb-4">Identitée visuelle</span>
+              <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#f15e4b] rounded-full mb-4">Formation Canva</span>
+              <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#485b51] rounded-full mb-4">Coaching Marketing digital</span>
+            </div>
+
+            {/* Right icon */}
+            <div className="text-gray-400 ml-2 cursor-pointer text-xl">&gt;</div>
+          </div>
         </div>
       </div>
 
