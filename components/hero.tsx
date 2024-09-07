@@ -3,7 +3,6 @@ import React from 'react';
 import VideoThumb from '@/public/images/hero-image-01.jpg';
 import ModalVideo from '@/components/modal-video';
 
-
 export default function Hero() {
   return (
     <section>
@@ -45,6 +44,19 @@ export default function Hero() {
                 <a className="btn text-white bg-[#485b51] hover:bg-gray-800 w-full sm:w-auto sm:ml-4" href="#features">Voir plus</a>
               </div>
             </div>
+
+            {/* Keywords Section */}
+            <div className="overflow-x-auto whitespace-nowrap mt-4">
+              <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-green-600 bg-green-200 rounded-full mb-4">SEO</span>
+              <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-green-600 bg-green-200 rounded-full mb-4">Publicité Digitale</span>
+              <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-green-600 bg-green-200 rounded-full mb-4">Audit</span>
+              <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-green-600 bg-green-200 rounded-full mb-4">Site Web</span>
+              <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-green-600 bg-green-200 rounded-full mb-4">Application Mobile</span>
+              <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-green-600 bg-green-200 rounded-full mb-4">Identitée visuelle</span>
+              <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-green-600 bg-green-200 rounded-full mb-4">Formation Canva</span>
+              <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-green-600 bg-green-200 rounded-full mb-4">Coaching Marketing digital</span>
+            </div>
+
           </div>
 
           {/* Modal video */}
@@ -118,6 +130,15 @@ export default function Hero() {
           71%, 100% {
             transform: translateY(-200%);
           }
+        }
+
+        .overflow-x-auto::-webkit-scrollbar {
+          display: none;
+        }
+
+        .overflow-x-auto {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
         }
       `}</style>
     </section>
