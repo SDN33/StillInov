@@ -2,6 +2,7 @@
 import React from 'react';
 import VideoThumb from '@/public/images/hero-image-01.jpg';
 import ModalVideo from '@/components/modal-video';
+import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/solid';
 
 export default function Hero() {
   return (
@@ -44,18 +45,25 @@ export default function Hero() {
                 <a className="btn text-white bg-[#485b51] hover:bg-gray-800 w-full sm:w-auto sm:ml-4" href="#features">Voir plus</a>
               </div>
             </div>
-            <br />
-            
+
             {/* Keywords Section */}
-            <div className="overflow-x-auto whitespace-nowrap mt-4">
-              <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-green-600 bg-green-200 rounded-full mb-4">SEO</span>
-              <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-green-600 bg-green-200 rounded-full mb-4">Publicité Digitale</span>
-              <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-green-600 bg-green-200 rounded-full mb-4">Audit</span>
-              <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-green-600 bg-green-200 rounded-full mb-4">Site Web</span>
-              <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-green-600 bg-green-200 rounded-full mb-4">Application Mobile</span>
-              <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-green-600 bg-green-200 rounded-full mb-4">Identitée visuelle</span>
-              <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-green-600 bg-green-200 rounded-full mb-4">Formation Canva</span>
-              <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-green-600 bg-green-200 rounded-full mb-4">Coaching Marketing digital</span>
+            <div className="flex items-center justify-center mt-4">
+              {/* Left icon */}
+              <ChevronLeftIcon className="h-6 w-6 text-gray-400 mr-2 cursor-pointer" />
+
+              <div className="overflow-x-auto whitespace-nowrap flex items-center">
+                <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#f15e4b] rounded-full mb-4">SEO</span>
+                <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#485b51] rounded-full mb-4">Publicité Digitale</span>
+                <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#f15e4b] rounded-full mb-4">Audit</span>
+                <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#485b51] rounded-full mb-4">Site Web</span>
+                <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#f15e4b] rounded-full mb-4">Application Mobile</span>
+                <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#485b51] rounded-full mb-4">Identitée visuelle</span>
+                <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#f15e4b] rounded-full mb-4">Formation Canva</span>
+                <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#485b51] rounded-full mb-4">Coaching Marketing digital</span>
+              </div>
+
+              {/* Right icon */}
+              <ChevronRightIcon className="h-6 w-6 text-gray-400 ml-2 cursor-pointer" />
             </div>
 
           </div>
