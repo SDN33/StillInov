@@ -69,6 +69,8 @@ export default function Testimonials() {
             </div>
           </div>
           <br />
+
+          {/* Btn avis google */}
           <div className="text-center mx-auto align-items-center mt-2">
             <a
               href={url}

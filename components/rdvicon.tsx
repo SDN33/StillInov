@@ -4,9 +4,28 @@ import React, { useState, useEffect } from 'react';
 const RdvIcon: React.FC = () => {
   const [isHovered, setIsHovered] = useState(false);
   const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const [showScrollTop, setShowScrollTop] = useState(false);
 
   // Function to toggle the popup
   const handleTogglePopup = () => setIsPopupOpen(prev => !prev);
+
+  // Function to scroll to the top
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  useEffect(() => {
+    // Show/Hide Scroll to Top button based on scroll position
+    const handleScroll = () => {
+      setShowScrollTop(window.scrollY > 200);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   useEffect(() => {
     // Set a timer to open the popup after 20 seconds
@@ -36,6 +55,30 @@ const RdvIcon: React.FC = () => {
 
   return (
     <div className="relative">
+      {/* Scroll to Top Button */}
+      {showScrollTop && (
+        <button
+          onClick={scrollToTop}
+          className="fixed bottom-20 right-4 md:bottom-24 md:right-6 p-3 rounded-full shadow-lg text-white bg-gradient-to-br from-teal-400 to-orange-400 flex items-center justify-center transition-transform duration-300 hover:scale-125"
+          aria-label="Scroll to Top"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6 animate-bounce-on-click"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth="2"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M5 15l7-7 7 7"
+            />
+          </svg>
+        </button>
+      )}
+
       {/* Floating Icon Button */}
       <button
         onMouseEnter={() => setIsHovered(true)}
@@ -114,6 +157,24 @@ const RdvIcon: React.FC = () => {
 
         .animate-bounce {
           animation: bounce 2s infinite;
+        }
+
+        @keyframes ripple {
+          0% {
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+          }
+          100% {
+            box-shadow: 0 0 0 15px rgba(0, 0, 0, 0);
+          }
+        }
+
+        .animate-bounce-on-click {
+          transition: transform 0.2s;
+        }
+
+        .animate-bounce-on-click:active {
+          transform: scale(1.2);
+          animation: ripple 0.4s;
         }
       `}</style>
     </div>
