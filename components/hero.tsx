@@ -60,7 +60,6 @@ export default function Hero() {
           />
 
           <br />
-          <br />
           {/* Keywords Section */}
           <div className="flex items-center justify-center mt-4">
             {/* Left icon */}
@@ -86,6 +85,7 @@ export default function Hero() {
               <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#f15e4b] rounded-full mb-4">Google Analytics</span>
               <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#485b51] rounded-full mb-4">Google Ads</span>
               <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#f15e4b] rounded-full mb-4">Facebook Ads</span>
+
             </div>
 
             {/* Right icon */}
