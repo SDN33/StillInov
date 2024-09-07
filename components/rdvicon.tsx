@@ -119,7 +119,7 @@ const RdvIcon: React.FC = () => {
               <h2 className="text-xl font-bold mb-2 text-center">Bénéficiez d'un appel gratuit !</h2>
               <p className="mb-2 text-center">
                 Pour nous chaque client bénéficie d'une attention particulière et d'un suivi personnalisé.
-                <br /><br />
+                <br />
               </p>
               <p className="mb-4 text-center text-[#f15e4b] text-sm">
               <em>Nous vous offrons un appel de présentation<br />de 15 minutes gratuit avec notre Digital Business Developer, pour discuter de vos besoins et vous expliquer comment nous pouvons vous aider à atteindre vos objectifs. 🚀</em>
