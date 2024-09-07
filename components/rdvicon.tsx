@@ -55,39 +55,28 @@ const RdvIcon: React.FC = () => {
 
   return (
     <div className="relative">
-      {/* Scroll to Top Button */}
-      {showScrollTop && (
-        <button
-          onClick={scrollToTop}
-          className="fixed bottom-20 right-4 md:bottom-24 md:right-6 p-3 rounded-full shadow-lg text-white bg-gradient-to-br from-teal-400 to-orange-400 flex items-center justify-center transition-transform duration-300 hover:scale-125"
-          aria-label="Scroll to Top"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6 animate-bounce-on-click"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            strokeWidth="2"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M5 15l7-7 7 7"
-            />
-          </svg>
-        </button>
-      )}
-
-      {/* Floating Icon Button */}
+      {/* Scroll to Top and Popup Icon */}
       <button
+        onClick={scrollToTop}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
-        onClick={handleTogglePopup}
-        className={`bounce-icon fixed bottom-4 right-4 md:bottom-6 md:right-6 p-3 rounded-full shadow-lg text-white bg-gradient-to-br from-orange-400 via-red-500 to-teal-400 flex items-center justify-center hover:scale-150 transition-transform duration-300 ${isPopupOpen ? 'z-30' : ''}`}
-        aria-label="Contactez-nous"
+        className={`bounce-icon fixed bottom-20 right-4 md:bottom-24 md:right-6 p-3 rounded-full shadow-lg text-white bg-gradient-to-br from-teal-400 to-orange-400 flex items-center justify-center hover:scale-150 transition-transform duration-300 ${isPopupOpen ? 'z-30' : ''}`}
+        aria-label="Scroll to Top and Contact Us"
+        onDoubleClick={handleTogglePopup}
       >
-        <span className="text-4xl font-bold">Si</span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-8 w-8 animate-bounce-on-click"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+        >
+          <g strokeLinecap="round" strokeLinejoin="round">
+            <path d="M5 15l7-7 7 7" />
+            <text x="6" y="20" fontSize="10" fill="currentColor">Si</text>
+          </g>
+        </svg>
       </button>
 
       {/* Tooltip */}
