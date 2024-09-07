@@ -4,77 +4,7 @@ import VideoThumb from '@/public/images/hero-image-01.jpg';
 import ModalVideo from '@/components/modal-video';
 
 export default function Hero() {
-
-  <style jsx>{`
-    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee&family=Orbitron&family=Pacifico&family=Permanent+Marker&family=Roboto+Mono&display=swap');
-
-    .h1 {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-
-    .main-title {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 3rem;
-      letter-spacing: 2px;
-    }
-
-    .animated-text-container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .animated-text {
-      display: inline-block;
-      vertical-align: top;
-      overflow: hidden;
-      height: 1.5em;
-      font-size: 3.5rem;
-    }
-
-    .animated-text span {
-      display: block;
-      height: 100%;
-      animation: spin 10s infinite;
-      font-size: 4rem;
-      padding: 0.2em 0.5em;
-    }
-
-    .font-innovative {
-      font-family: 'Orbitron', sans-serif;
-    }
-    .font-ambitious {
-      font-family: 'Permanent Marker', cursive;
-    }
-    .font-creative {
-      font-family: 'Permanent Marker', cursive;
-    }
-
-    @keyframes spin {
-      0%, 33% {
-        transform: translateY(0);
-      }
-      38%, 66% {
-        transform: translateY(-100%);
-      }
-      71%, 100% {
-        transform: translateY(-200%);
-      }
-    }
-
-    .overflow-x-auto::-webkit-scrollbar {
-      display: none;
-    }
-
-    .overflow-x-auto {
-      -ms-overflow-style: none;
-      scrollbar-width: none;
-    }
-  `}</style>
-
+  
   return (
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
