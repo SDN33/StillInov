@@ -19,7 +19,7 @@ const Features: React.FC = () => {
 
   return (
     <section>
-      <div className="max-w-6xl mx-auto px-4 sm:px-6" id="features">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 mt-[-1rem]" id="features">
         <div className="py-10 md:py-11">
 
           {/* Section header */}

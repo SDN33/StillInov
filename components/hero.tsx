@@ -1,5 +1,5 @@
 'use client';
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState, useCallback } from 'react';
 import VideoThumb from '@/public/images/hero-image-01.jpg';
 import ModalVideo from '@/components/modal-video';
 
@@ -7,35 +7,53 @@ export default function Hero() {
   const [isScrolling, setIsScrolling] = useState(true);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const lastScrollTimeRef = useRef<number>(0);
+  const scrollSpeedRef = useRef<number>(1);
 
-  const scrollAmount = 1; /* Adjust the scroll amount for faster scrolling */
+  const scrollAmount = 0.5; // Ajustez cette valeur pour modifier la vitesse de base
+  const maxScrollSpeed = 1.5; // Vitesse maximale de défilement
+  const accelerationFactor = 1.02; // Facteur d'accélération
+  const decelerationFactor = 0.98; // Facteur de décélération
 
-  const startScrolling = () => {
+  const startScrolling = useCallback(() => {
     if (scrollContainerRef.current) {
       const scrollContainer = scrollContainerRef.current;
-      scrollContainer.scrollLeft += scrollAmount;
+      const currentTime = performance.now();
+      const timeDiff = currentTime - lastScrollTimeRef.current;
 
-      // Check if the end of the scroll is reached
-      if (scrollContainer.scrollLeft >= scrollContainer.scrollWidth - scrollContainer.clientWidth) {
-        scrollContainer.scrollLeft = 0; // Reset to start
+      // Ajuster la vitesse de défilement en fonction du temps écoulé
+      if (timeDiff > 16.67) { // 60 FPS
+        scrollSpeedRef.current *= decelerationFactor;
+      } else {
+        scrollSpeedRef.current = Math.min(scrollSpeedRef.current * accelerationFactor, maxScrollSpeed);
       }
+
+      scrollContainer.scrollLeft += scrollAmount * scrollSpeedRef.current;
+
+      // Vérifier si la fin du défilement est atteinte
+      if (scrollContainer.scrollLeft >= scrollContainer.scrollWidth - scrollContainer.clientWidth) {
+        scrollContainer.scrollLeft = 0; // Réinitialiser au début
+      }
+
+      lastScrollTimeRef.current = currentTime;
 
       if (isScrolling) {
         requestAnimationFrame(startScrolling);
       }
     }
-  };
+  }, [isScrolling]);
 
-  const handleUserScroll = () => {
+  const handleUserScroll = useCallback(() => {
     setIsScrolling(false);
     if (timeoutRef.current) {
       clearTimeout(timeoutRef.current);
     }
     timeoutRef.current = setTimeout(() => {
       setIsScrolling(true);
-      startScrolling(); // Resume scrolling when inactivity detected
+      scrollSpeedRef.current = 1; // Réinitialiser la vitesse
+      startScrolling(); // Reprendre le défilement après détection d'inactivité
     }, 3000);
-  };
+  }, [startScrolling]);
 
   useEffect(() => {
     if (isScrolling) {
@@ -46,7 +64,7 @@ export default function Hero() {
         clearTimeout(timeoutRef.current);
       }
     };
-  }, [isScrolling]);
+  }, [isScrolling, startScrolling]);
 
   useEffect(() => {
     const scrollContainer = scrollContainerRef.current;
@@ -58,7 +76,7 @@ export default function Hero() {
         scrollContainer.removeEventListener('scroll', handleUserScroll);
       }
     };
-  }, []);
+  }, [handleUserScroll]);
 
   return (
     <section>
@@ -114,7 +132,7 @@ export default function Hero() {
           {/* Keywords Section */}
           <div data-aos="fade-up" data-aos-delay="600" className="flex items-center justify-center mt-4" >
             {/* Left icon */}
-            <div className="text-gray-400 mr-2 cursor-pointer text-lg mt-[-0.3rem]">&lt;</div>
+            <div className="text-gray-400 mr-2 cursor-pointer text-lg mt-[-0.5rem]">&lt;</div>
 
             <div ref={scrollContainerRef} className="overflow-x-auto whitespace-nowrap flex items-center">
               {/* Keywords go here */}
