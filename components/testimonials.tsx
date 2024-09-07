@@ -5,7 +5,7 @@ import TestimonialImage03 from '@/public/images/testimonial-03.jpg';
 
 export default function Testimonials() {
 
-  const url = "https://g.page/r/CU9t7nJ6QjR9EBA/review";
+  const url = "https://g.co/kgs/RPvEuDM";
 
   return (
     <section>
