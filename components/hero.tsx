@@ -5,12 +5,24 @@ import ModalVideo from '@/components/modal-video';
 
 export default function Hero() {
   const [isScrolling, setIsScrolling] = useState(true);
-  const scrollContainerRef = useRef<HTMLElement | null>(null);
-  const timeoutRef = useRef<null | NodeJS.Timeout>(null);
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+
+  const scrollAmount = 2; // Adjust the scroll amount for faster scrolling
 
   const startScrolling = () => {
     if (scrollContainerRef.current) {
-      (scrollContainerRef.current as HTMLElement).scrollLeft += 10;
+      const scrollContainer = scrollContainerRef.current;
+      scrollContainer.scrollLeft += scrollAmount;
+
+      // Check if the end of the scroll is reached
+      if (scrollContainer.scrollLeft >= scrollContainer.scrollWidth - scrollContainer.clientWidth) {
+        scrollContainer.scrollLeft = 0; // Reset to start
+      }
+
+      if (isScrolling) {
+        requestAnimationFrame(startScrolling);
+      }
     }
   };
 
@@ -21,23 +33,23 @@ export default function Hero() {
     }
     timeoutRef.current = setTimeout(() => {
       setIsScrolling(true);
+      startScrolling(); // Resume scrolling when inactivity detected
     }, 2000);
   };
 
   useEffect(() => {
-    let scrollInterval: NodeJS.Timeout | undefined;
     if (isScrolling) {
-      scrollInterval = setInterval(startScrolling, 20);
+      requestAnimationFrame(startScrolling);
     }
     return () => {
-      if (scrollInterval) {
-        clearInterval(scrollInterval);
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
       }
     };
   }, [isScrolling]);
 
   useEffect(() => {
-    const scrollContainer = scrollContainerRef.current as HTMLElement;
+    const scrollContainer = scrollContainerRef.current;
     if (scrollContainer) {
       scrollContainer.addEventListener('scroll', handleUserScroll);
     }
@@ -104,7 +116,7 @@ export default function Hero() {
             {/* Left icon */}
             <div className="text-gray-400 mr-2 cursor-pointer text-lg">&lt;</div>
 
-            <div ref={scrollContainerRef as React.RefObject<HTMLDivElement>} className="overflow-x-auto whitespace-nowrap flex items-center">
+            <div ref={scrollContainerRef} className="overflow-x-auto whitespace-nowrap flex items-center">
               {/* Keywords go here */}
               <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#f15e4b] rounded-full mb-4">SEO</span>
               <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#485b51] rounded-full mb-4">Publicité Digitale</span>
