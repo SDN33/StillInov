@@ -12,7 +12,7 @@ const MentionsLegales: React.FC = () => {
             <div className="space-y-6 text-gray-700">
               <div>
                 <h2 className="text-2xl font-semibold mb-4">1. Informations générales</h2>
-                <p>Le site web <strong>Still-Inov Agency</strong> est édité par Dei-negri Stéphane, dont le siège social est situé à Saint-Caprais de Bordeaux, France. Numéro de siret : 80865768800020.</p>
+                <p>Le site web <strong>Still-inov Agency</strong> est édité par Dei-negri Stéphane, dont le siège social est situé à Saint-Caprais de Bordeaux, France. Numéro de siret : 80865768800020.</p>
               </div>
 
               <div>
@@ -22,7 +22,7 @@ const MentionsLegales: React.FC = () => {
 
               <div>
                 <h2 className="text-2xl font-semibold mb-4">3. Propriété intellectuelle</h2>
-                <p>Le contenu du site est protégé par les droits d'auteur et est la propriété exclusive de Still-Inov Agency. Toute reproduction est interdite.</p>
+                <p>Le contenu du site est protégé par les droits d'auteur et est la propriété exclusive de Still-inov Agency. Toute reproduction est interdite.</p>
               </div>
 
               <div>
@@ -41,12 +41,12 @@ const MentionsLegales: React.FC = () => {
 
               <div>
                 <h2 className="text-2xl font-semibold mb-4">6. Contact</h2>
-                <p>Pour toute question, veuillez nous contacter à l'adresse email suivante : <a href="mailto:stillinovagency@gmail.com" className="text-blue-600">contact@stillinov.com</a>.</p>
+                <p>Pour toute question, veuillez nous contacter à l'adresse email suivante : <a href="mailto:stillinovagency@gmail.com" className="text-blue-600">Stillinovagency@gmail.com</a>.</p>
               </div>
 
               <div>
                 <h2 className="text-2xl font-semibold mb-4">7. Crédits</h2>
-                <p>Le site a été réalisé par Still-Inov Agency.</p>
+                <p>Le site a été réalisé par Still-inov Agency.</p>
               </div>
 
             </div>
