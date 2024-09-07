@@ -81,7 +81,7 @@ const RdvIcon: React.FC = () => {
                 <br /><br />
               </p>
               <p className="mb-4 text-center text-[#f15e4b]">
-              <em>Nous vous offrons un appel de présentation de 15 minutes gratuit avec notre Digital Business Developer, pour discuter de vos besoins et vous expliquer comment nous pouvons vous aider à atteindre vos objectifs. 🚀</em>
+              <em>Nous vous offrons un appel de présentation<br />de 15 minutes gratuit avec notre Digital Business Developer, pour discuter de vos besoins et vous expliquer comment nous pouvons vous aider à atteindre vos objectifs. 🚀</em>
               </p>
               <a
                 href="https://calendly.com/stillinovagency/30min"
