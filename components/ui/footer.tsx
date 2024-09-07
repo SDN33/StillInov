@@ -91,7 +91,7 @@ export default function Footer() {
 
         {/* Bottom area */}
         <div className="text-center text-gray-500 text-sm mt-4">
-          &copy; {currentYear} StillInov.com. Tous droits réservés.
+          &copy; {currentYear} Stillinov.com - Tous droits réservés.
         </div>
       </div>
     </footer>
