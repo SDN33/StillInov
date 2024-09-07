@@ -75,6 +75,17 @@ export default function Hero() {
               <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#485b51] rounded-full mb-4">Identitée visuelle</span>
               <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#f15e4b] rounded-full mb-4">Formation Canva</span>
               <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#485b51] rounded-full mb-4">Coaching Marketing digital</span>
+              <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#f15e4b] rounded-full mb-4">Stratégie Marketing</span>
+              <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#485b51] rounded-full mb-4">Community Management</span>
+              <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#f15e4b] rounded-full mb-4">Référencement</span>
+              <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#485b51] rounded-full mb-4">E-commerce</span>
+              <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#f15e4b] rounded-full mb-4">Marketing de contenu</span>
+              <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#485b51] rounded-full mb-4">Emailing</span>
+              <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#f15e4b] rounded-full mb-4">Réseaux sociaux</span>
+              <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#485b51] rounded-full mb-4">Marketing Automation</span>
+              <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#f15e4b] rounded-full mb-4">Google Analytics</span>
+              <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#485b51] rounded-full mb-4">Google Ads</span>
+              <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#f15e4b] rounded-full mb-4">Facebook Ads</span>
             </div>
 
             {/* Right icon */}
