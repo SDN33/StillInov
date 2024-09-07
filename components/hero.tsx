@@ -8,7 +8,7 @@ export default function Hero() {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
-  const scrollAmount = 1; // Adjust the scroll amount for faster scrolling
+  const scrollAmount = 0.7; // Adjust the scroll amount for faster scrolling
 
   const startScrolling = () => {
     if (scrollContainerRef.current) {
