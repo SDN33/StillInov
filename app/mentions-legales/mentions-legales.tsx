@@ -33,12 +33,22 @@ const MentionsLegales: React.FC = () => {
               <div>
                 <h2 className="text-2xl font-semibold mb-4">5. Cookies</h2>
                 <p>Ce site utilise des cookies pour améliorer l'expérience utilisateur. En continuant à naviguer sur ce site, vous acceptez l'utilisation des cookies.</p>
+                <br />
+                <p>Nous collectons ces données afin de nous permettre de traiter votre demande conformément à la Politique de Confidentialité accessible ici : Politique de confidentialité. Vous bénéficiez d’un droit d'accès, de rectification, de directives post-mortem et de portabilité et, pour des motifs légitimes, de suppression, de limitation et d'opposition des données personnelles vous concernant en nous contactant ici : Politique de confidentialité. Vous pouvez introduire à tout moment une réclamation auprès de la CNIL : https://www.cnil.fr. Nous vous informons de l'existence de la liste d'opposition au démarchage téléphonique "Bloctel", sur laquelle vous pouvez vous inscrire ici : https://www.bloctel.gouv.fr.</p>
+                <br />
+                <p>Nous collectons ces données afin de nous permettre de traiter votre demande conformément à la Politique de Confidentialité accessible ici . Vous bénéficiez d’un droit d'accès, de rectification, de directives post-mortem et de portabilité et, pour des motifs légitimes, de suppression, de limitation et d'opposition des données personnelles vous concernant en nous contactant ici : Politique de confidentialité. Vous pouvez introduire à tout moment une réclamation auprès de la CNIL : https://www.cnil.fr. Nous vous informons de l'existence de la liste d'opposition au démarchage téléphonique "Bloctel", sur laquelle vous pouvez vous inscrire ici : https://www.bloctel.gouv.fr.</p>
               </div>
 
               <div>
                 <h2 className="text-2xl font-semibold mb-4">6. Contact</h2>
                 <p>Pour toute question, veuillez nous contacter à l'adresse email suivante : <a href="mailto:stillinovagency@gmail.com" className="text-blue-600">contact@stillinov.com</a>.</p>
               </div>
+
+              <div>
+                <h2 className="text-2xl font-semibold mb-4">7. Crédits</h2>
+                <p>Le site a été réalisé par Still-Inov Agency.</p>
+              </div>
+
             </div>
           </div>
         </div>
