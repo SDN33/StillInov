@@ -114,7 +114,7 @@ export default function Hero() {
           {/* Keywords Section */}
           <div data-aos="fade-up" data-aos-delay="600" className="flex items-center justify-center mt-4" >
             {/* Left icon */}
-            <div className="text-gray-400 mr-2 cursor-pointer text-lg">&lt;</div>
+            <div className="text-gray-400 mr-2 cursor-pointer text-lg mt-[-0.3rem]">&lt;</div>
 
             <div ref={scrollContainerRef} className="overflow-x-auto whitespace-nowrap flex items-center">
               {/* Keywords go here */}
@@ -140,7 +140,7 @@ export default function Hero() {
             </div>
 
             {/* Right icon */}
-            <div className="text-gray-400 ml-2 cursor-pointer text-xl">&gt;</div>
+            <div className="text-gray-400 ml-2 cursor-pointer text-xl mt-[-0.3rem]">&gt;</div>
           </div>
         </div>
       </div>
