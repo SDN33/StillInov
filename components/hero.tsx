@@ -7,7 +7,14 @@ export default function Hero() {
   return (
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
+        {/* Illustration behind hero content */}
+        <div className="absolute left-0 bottom-0 -ml-20 hidden lg:block pointer-events-none" aria-hidden="true" data-aos="fade-up" data-aos-delay="400">
+          {/* SVG code remains the same */}
+        </div>
+
+        {/* Hero content */}
         <div className="relative pt-32 pb-10 md:pt-40 md:pb-16">
+          {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
             <h1 className="h1 mb-4 flex flex-col items-center" data-aos="fade-up">
               <span className="block w-full text-center main-title">Agence de Marketing Digitale</span>
@@ -37,8 +44,11 @@ export default function Hero() {
                 <a className="btn text-white bg-[#485b51] hover:bg-gray-800 w-full sm:w-auto sm:ml-4" href="#features">Voir plus</a>
               </div>
             </div>
+
+
           </div>
 
+          {/* Modal video */}
           <ModalVideo
             thumb={VideoThumb}
             thumbWidth={1024}
@@ -51,18 +61,34 @@ export default function Hero() {
 
           <br />
           <br />
-
-          {/* Section des mots-clés */}
-          <div className="flex items-center justify-center mt-4 overflow-x-auto">
+          {/* Keywords Section */}
+          <div className="flex items-center justify-center mt-4">
+            {/* Left icon */}
             <div className="text-gray-400 mr-2 cursor-pointer text-xl">&lt;</div>
 
-            <div className="overflow-x-auto whitespace-nowrap flex items-center animate-scroll">
+            <div className="overflow-x-auto whitespace-nowrap flex items-center">
               <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#f15e4b] rounded-full mb-4">SEO</span>
               <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#485b51] rounded-full mb-4">Publicité Digitale</span>
               <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#f15e4b] rounded-full mb-4">Audit</span>
-              {/* Ajoutez plus de mots-clés ici */}
+              <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#485b51] rounded-full mb-4">Site Web</span>
+              <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#f15e4b] rounded-full mb-4">Application Mobile</span>
+              <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#485b51] rounded-full mb-4">Identitée visuelle</span>
+              <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#f15e4b] rounded-full mb-4">Formation Canva</span>
+              <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#485b51] rounded-full mb-4">Coaching Marketing digital</span>
+              <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#f15e4b] rounded-full mb-4">Stratégie Marketing</span>
+              <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#485b51] rounded-full mb-4">Community Management</span>
+              <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#f15e4b] rounded-full mb-4">Référencement</span>
+              <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#485b51] rounded-full mb-4">E-commerce</span>
+              <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#f15e4b] rounded-full mb-4">Marketing de contenu</span>
+              <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#485b51] rounded-full mb-4">Emailing</span>
+              <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#f15e4b] rounded-full mb-4">Réseaux sociaux</span>
+              <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#485b51] rounded-full mb-4">Marketing Automation</span>
+              <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#f15e4b] rounded-full mb-4">Google Analytics</span>
+              <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#485b51] rounded-full mb-4">Google Ads</span>
+              <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#f15e4b] rounded-full mb-4">Facebook Ads</span>
             </div>
 
+            {/* Right icon */}
             <div className="text-gray-400 ml-2 cursor-pointer text-xl">&gt;</div>
           </div>
         </div>
@@ -128,18 +154,13 @@ export default function Hero() {
           }
         }
 
-        .animate-scroll {
-          display: flex;
-          animation: scroll 20s linear infinite;
+        .overflow-x-auto::-webkit-scrollbar {
+          display: none;
         }
 
-        @keyframes scroll {
-          0% {
-            transform: translateX(100%);
-          }
-          100% {
-            transform: translateX(-100%);
-          }
+        .overflow-x-auto {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
         }
       `}</style>
     </section>
