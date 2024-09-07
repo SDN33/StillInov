@@ -63,7 +63,7 @@ export default function Hero() {
           {/* Keywords Section */}
           <div className="flex items-center justify-center mt-4">
             {/* Left icon */}
-            <div className="text-gray-400 mr-2 cursor-pointer text-xl">&lt;</div>
+            <div className="text-gray-400 mr-2 cursor-pointer text-lg">&lt;</div>
 
             <div className="overflow-x-auto whitespace-nowrap flex items-center">
               <span className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-white bg-[#f15e4b] rounded-full mb-4">SEO</span>
