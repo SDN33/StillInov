@@ -34,7 +34,7 @@ export default function Hero() {
     timeoutRef.current = setTimeout(() => {
       setIsScrolling(true);
       startScrolling(); // Resume scrolling when inactivity detected
-    }, 2000);
+    }, 3000);
   };
 
   useEffect(() => {
