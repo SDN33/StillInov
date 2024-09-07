@@ -61,7 +61,7 @@ export default function Hero() {
 
           <br />
           {/* Keywords Section */}
-          <div className="flex items-center justify-center mt-4">
+          <div data-aos="fade-up" data-aos-delay="600" className="flex items-center justify-center mt-4" >
             {/* Left icon */}
             <div className="text-gray-400 mr-2 cursor-pointer text-lg">&lt;</div>
 
