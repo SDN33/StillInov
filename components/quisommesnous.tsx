@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Avatar01 from '@/public/images/avatar01.png';
 import Avatar02 from '@/public/images/avatar02.png';
+import LinkedInLogo from '@/public/images/linkedin.png'; // Import the LinkedIn logo
 
 const TeamMember = ({ image, name, role, description, linkedinUrl }: { image: string, name: string, role: string, description: string, linkedinUrl: string }) => (
   <div className="flex flex-col items-center bg-gray-800 p-6 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105">
@@ -54,6 +55,7 @@ export default function AboutUs() {
         </div>
       </div>
       <a className="flex justify-center items-center text-white bg-[#0A66C2] hover:bg-[#004182] rounded-full w-48 h-10 font-semibold mx-auto align-items-center" href="https://www.linkedin.com/company/still-inov" target="_blank" rel="noopener noreferrer">
+        <Image src={LinkedInLogo} width={20} height={20} alt="LinkedIn" className="mr-2" />
         Follow on LinkedIn
       </a>
     </section>
