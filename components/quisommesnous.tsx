@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Avatar01 from '@/public/images/avatar01.png';
 import Avatar02 from '@/public/images/avatar02.png';
-import LinkedInLogo from '@/public/images/linkedin.webp'; // Import the LinkedIn logo
+import LinkedInLogo from '@/public/images/llinkedin.webp'; // Import the LinkedIn logo
 
 const TeamMember = ({ image, name, role, description, linkedinUrl }: { image: string, name: string, role: string, description: string, linkedinUrl: string }) => (
   <div className="flex flex-col items-center bg-gray-800 p-6 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105">
