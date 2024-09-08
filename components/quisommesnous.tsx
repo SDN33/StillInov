@@ -53,7 +53,6 @@ export default function AboutUs() {
           </div>
         </div>
       </div>
-      <br />
       <a className="flex justify-center items-center text-white bg-[#0A66C2] hover:bg-[#004182] rounded-full w-48 h-10 font-semibold mx-auto align-items-center" href="https://www.linkedin.com/company/still-inov" target="_blank" rel="noopener noreferrer">
         Follow on LinkedIn
       </a>
