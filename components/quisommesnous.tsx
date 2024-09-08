@@ -5,7 +5,7 @@ import Avatar02 from '@/public/images/avatar02.png';
 const TeamMember = ({ image, name, role, description, linkedinUrl }: { image: string, name: string, role: string, description: string, linkedinUrl: string }) => (
   <div className="flex flex-col items-center bg-gray-800 p-6 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105">
     <div className="relative mb-4">
-      <a href={linkedinUrl} target="_blank" rel="noopener noreferrer">
+      <a href={linkedinUrl} target="_blank" rel="noopener noreferrer" aria-label={`LinkedIn de ${name}`}>
         <Image className="rounded-full" src={image} width={96} height={96} alt={`Photo de ${name}`} />
       </a>
       <svg className={`absolute top-0 right-0 -mr-3 w-6 h-5 fill-current ${name === "Stéphane Dei-negri" ? "text-[#f15e4b]" : "text-[#485b51]"}`} viewBox="0 0 24 20" xmlns="http://www.w3.org/2000/svg">
@@ -53,6 +53,10 @@ export default function AboutUs() {
           </div>
         </div>
       </div>
+      <br />
+      <a className="flex justify-center items-center text-white bg-[#0A66C2] hover:bg-[#004182] rounded-full w-48 h-10 font-semibold" href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=stephane-dn" target="_blank" rel="noopener noreferrer">
+        Follow on LinkedIn
+      </a>
     </section>
   );
 }
