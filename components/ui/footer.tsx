@@ -67,7 +67,7 @@ export default function Footer() {
             <Link href="https://www.linkedin.com/company/still-inov-agency" passHref>
               <a target="_blank" rel="noopener noreferrer">
                 <Image
-                  src="/images/llinkedin.webp"
+                  src="/images/linkedin.png"
                   alt="LinkedIn"
                   width={24}
                   height={24}
