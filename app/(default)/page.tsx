@@ -1,10 +1,10 @@
 
 export const metadata = {
-  title: 'Still-inov Agency | Agence de Communication & Marketing Digitale - Développement Web, SEO & Réseaux Sociaux | Bordeaux',
-  description: 'Still-inov, votre partenaire en communication & marketing digital, vous offre des services personnalisés de création, design, et développement web pour transformer vos idées en réalité, quel que soit votre budget.',
+  title: 'Still-inov Agency | Agence de Marketing & Communication Digitale - Développement Web, SEO & Réseaux Sociaux | Bordeaux',
+  description: 'Still-inov, votre partenaire en marketing & communication digitale, vous offre des services personnalisés de création, design, et développement web pour transformer vos idées en réalité, quel que soit votre budget.',
   keywords: 'communication digitale, création site web, design graphique, développement web, SEO, marketing digital, agence web, agence marketing bordeaux, agence communication bordeaux , agence communication digitale, audit marketing, référencement SEO, SEA, stratégies digitales,faire pub insta, faire pub facebook, faire pub google, faire audit, agence digitale bordeaux, agence web bordeaux, agence marketing bordeaux',
   openGraph: {
-    title: 'Still-inov Agency | Agence de Communication & Marketing Digitale | Bordeaux',
+    title: 'Still-inov Agency | Agence de Marketing & Communication Digitale | Bordeaux',
     description: 'Découvrez comment Still-inov transforme vos idées en projets digitaux réussis grâce à des solutions personnalisées adaptées à vos besoins et à votre budget.',
     url: 'https://www.stillinov.com',
     type: 'website',
@@ -13,14 +13,14 @@ export const metadata = {
         url: 'https://www.stillinov.com/images/banner.png', // Assurez-vous d'avoir une image dédiée pour Open Graph
         width: 1200,
         height: 630,
-        alt: 'Still-inov Agency - Agence de Communication & Marketing Digitale',
+        alt: 'Still-inov Agency - Agence de Marketing & Communication Digitale | Bordeaux',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
     site: '@StillInov',
-    title: 'Still-inov Agency | Agence de Communication & Marketing Digitale - Développement Web, SEO & Réseaux Sociaux',
+    title: 'Still-inov Agency | Agence de Marketing & Communication Digitale | Bordeaux',
     description: 'Still-inov, votre partenaire en communication digitale, offre des services personnalisés de création, design, et développement web pour transformer vos idées en réalité.',
   },
 
