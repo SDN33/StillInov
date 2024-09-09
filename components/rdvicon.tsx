@@ -121,7 +121,7 @@ const RdvIcon: React.FC = () => {
               </button>
               <h2 className="text-xl font-bold mb-2 text-center">Bénéficiez d'un appel gratuit !</h2>
               <br />
-              <div className="relative mb-4">
+              <div className="relative mb-4 mx-auto align-middle">
                   <a>
                     <Image className="rounded-full" src={Support} width={150} height={150} alt={`Photo de SAV`} />
                   </a>
