@@ -52,10 +52,15 @@ export default function AboutUs() {
             ))}
           </div>
         </div>
-        <a href="https://www.sortlist.com/agency/still-inov-agency" className="inline-block w-52 h-15 mt-6 mx-auto items-center justify-center">
-          <img src="https://core.sortlist.com//_/apps/core/images/badges-fr/badge-flag-white-dark-xl.svg" alt="flag" className="w-full h-full object-cover" />
-        </a>
+
+        {/* Centering the badge */}
+        <div className="flex justify-center mt-12">
+          <a href="https://www.sortlist.com/agency/still-inov-agency" className="w-52 h-15">
+            <img src="https://core.sortlist.com//_/apps/core/images/badges-fr/badge-flag-white-dark-xl.svg" alt="flag" className="w-full h-full object-cover" />
+          </a>
+        </div>
       </div>
     </section>
   );
 }
+
