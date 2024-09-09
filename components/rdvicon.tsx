@@ -121,7 +121,7 @@ const RdvIcon: React.FC = () => {
               </button>
               <h2 className="text-xl font-bold mb-2 text-center">Bénéficiez d'un appel gratuit !</h2>
               <br />
-              <div className="flex flex-col items-center bg-gray-800 p-6 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105">
+              <div className="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105">
               <div className="relative mb-4">
                   <a>
                     <Image className="rounded-full" src={Support} width={96} height={96} alt={`Photo de SAV`} />
@@ -131,7 +131,6 @@ const RdvIcon: React.FC = () => {
                   </svg>
                 </div>
               </div>
-              <br />
               <p className="mb-2 text-center">
                 Pour nous chaque client bénéficie d'une attention particulière et d'un suivi personnalisé.
                 <br />
