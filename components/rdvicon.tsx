@@ -135,7 +135,7 @@ const RdvIcon: React.FC = () => {
               </p>
               <a
                 href="https://calendly.com/stillinovagency/30min"
-                className="btn text-center w-full mt-4 bg-gradient-to-br from-orange-400 via-red-500 to-teal-400 text-white py-2 px-4 rounded"
+                className="btn text-center w-full mt-4 bg-gradient-to-br from-orange-400 via-red-500 to-teal-400 text-white py-2 px-4 rounded hover:from-orange-500 hover:via-red-600 hover:to-teal-500"
                 onClick={handleTogglePopup}
               >
                 Planifiez un appel téléphonique
