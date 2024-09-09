@@ -1,10 +1,7 @@
 'use client';
 import React, { useState, useEffect } from 'react';
-
 import Image from 'next/image';
 import Support from '@/public/images/support.png';
-
-
 
 const RdvIcon: React.FC = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -26,19 +23,12 @@ const RdvIcon: React.FC = () => {
     };
 
     window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   useEffect(() => {
     // Set a timer to open the popup after 20 seconds
-    const timer = setTimeout(() => {
-      setIsPopupOpen(true);
-    }, 20000); // 20 seconds
-
-    // Clean up the timer if the component is unmounted
+    const timer = setTimeout(() => setIsPopupOpen(true), 20000); // 20 seconds
     return () => clearTimeout(timer);
   }, []);
 
@@ -48,13 +38,10 @@ const RdvIcon: React.FC = () => {
       const icon = document.querySelector('.bounce-icon');
       if (icon) {
         icon.classList.add('animate-bounce');
-        setTimeout(() => {
-          icon.classList.remove('animate-bounce');
-        }, 2000); // Duration of the bounce animation
+        setTimeout(() => icon.classList.remove('animate-bounce'), 2000); // Duration of the bounce animation
       }
     }, 5000); // Every 5 seconds
 
-    // Clean up the interval if the component is unmounted
     return () => clearInterval(bounceInterval);
   }, []);
 
@@ -64,7 +51,7 @@ const RdvIcon: React.FC = () => {
       {showScrollTop && (
         <button
           onClick={scrollToTop}
-          className="bounce-icon fixed bottom-20 right-4 md:bottom-24 md:right-6 p-3 rounded-full shadow-lg text-white bg-gradient-to-br from-teal-400 to-orange-400 flex items-center justify-center transition-transform duration-300 hover:scale-125 "
+          className="bounce-icon fixed bottom-20 right-4 md:bottom-24 md:right-6 p-3 rounded-full shadow-lg text-white bg-gradient-to-br from-teal-400 to-orange-400 flex items-center justify-center transition-transform duration-300 hover:scale-125"
           aria-label="Scroll to Top"
         >
           <svg
@@ -75,11 +62,7 @@ const RdvIcon: React.FC = () => {
             stroke="currentColor"
             strokeWidth="2"
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M5 15l7-7 7 7"
-            />
+            <path strokeLinecap="round" strokeLinejoin="round" d="M5 15l7-7 7 7" />
           </svg>
         </button>
       )}
@@ -126,16 +109,16 @@ const RdvIcon: React.FC = () => {
               </h2>
               <br />
               <div className="relative mb-4 mx-auto flex justify-center items-center">
-                  <a>
-                    <Image className="rounded-full" src={Support} width={150} height={150} alt={`Photo de SAV`} />
-                  </a>
+                <a>
+                  <Image className="rounded-full" src={Support} width={150} height={150} alt={`Photo de SAV`} />
+                </a>
               </div>
               <p className="mb-2 text-center">
                 Pour nous chaque client bénéficie d'une attention particulière et d'un suivi personnalisé.
                 <br />
               </p>
               <p className="mb-4 text-center text-[#f15e4b] text-sm">
-              <em>Nous vous offrons un appel de présentation<br />de 15 minutes gratuit avec notre Digital Business Developer, pour discuter de vos besoins et vous expliquer comment nous pouvons vous aider à atteindre vos objectifs. 🚀</em>
+                <em>Nous vous offrons un appel de présentation<br />de 15 minutes gratuit avec notre Digital Business Developer, pour discuter de vos besoins et vous expliquer comment nous pouvons vous aider à atteindre vos objectifs. 🚀</em>
               </p>
               <a
                 href="https://calendly.com/stillinovagency/30min"
@@ -148,7 +131,7 @@ const RdvIcon: React.FC = () => {
                 className="text-sm text-gray-400 text-center mx-auto flex justify-center mt-2"
                 href="https://calendly.com"
               >
-                 <em>powered by Calendly</em>
+                <em>powered by Calendly</em>
               </a>
             </div>
           </div>
