@@ -126,7 +126,6 @@ const RdvIcon: React.FC = () => {
                     <Image className="rounded-full" src={Support} width={150} height={150} alt={`Photo de SAV`} />
                   </a>
               </div>
-              <br />
               <p className="mb-2 text-center">
                 Pour nous chaque client bénéficie d'une attention particulière et d'un suivi personnalisé.
                 <br />
