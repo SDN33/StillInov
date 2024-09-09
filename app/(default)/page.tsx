@@ -1,54 +1,72 @@
+import dynamic from 'next/dynamic';
+import Head from 'next/head';
+import Hero from '@/components/hero';
+import Features from '@/components/features';
+import AboutUs from '@/components/quisommesnous';
+import Cookies from '@/components/cookies';
+import Rdvicon from '@/components/rdvicon';
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
-export const metadata = {
-  title: 'Still-inov Agency | Agence de Marketing & Communication Digitale - Développement Web, SEO & Réseaux Sociaux | Bordeaux',
-  description: 'Still-inov, votre partenaire en marketing & communication digitale, vous offre des services personnalisés de création, design, et développement web pour transformer vos idées en réalité, quel que soit votre budget.',
-  keywords: 'communication digitale, création site web, design graphique, développement web, SEO, marketing digital, agence web, agence marketing bordeaux, agence communication bordeaux , agence communication digitale, audit marketing, référencement SEO, SEA, stratégies digitales,faire pub insta, faire pub facebook, faire pub google, faire audit, agence digitale bordeaux, agence web bordeaux, agence marketing bordeaux',
-  openGraph: {
-    title: 'Still-inov Agency | Agence de Marketing & Communication Digitale | Bordeaux',
-    description: 'Découvrez comment Still-inov transforme vos idées en projets digitaux réussis grâce à des solutions personnalisées adaptées à vos besoins et à votre budget.',
-    url: 'https://www.stillinov.com',
-    type: 'website',
-    images: [
-      {
-        url: 'https://www.stillinov.com/images/banner.png', // Assurez-vous d'avoir une image dédiée pour Open Graph
-        width: 1200,
-        height: 630,
-        alt: 'Still-inov Agency - Agence de Marketing & Communication Digitale | Bordeaux',
-      },
-    ],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    site: '@StillInov',
-    title: 'Still-inov Agency | Agence de Marketing & Communication Digitale | Bordeaux',
-    description: 'Still-inov, votre partenaire en communication digitale, offre des services personnalisés de création, design, et développement web pour transformer vos idées en réalité.',
-  },
-
-};
-
-import Hero from '@/components/hero'
-import Features from '@/components/features'
-import Newsletter from '@/components/newsletter'
-import Testimonials from '@/components/testimonials'
-import AboutUs from '@/components/quisommesnous'
-import Cookies from '@/components/cookies'
-import Rdvicon from '@/components/rdvicon'
-import { Analytics } from "@vercel/analytics/react"
-import { SpeedInsights } from "@vercel/speed-insights/next"
-
+// Lazy load Testimonials and Newsletter
+const Testimonials = dynamic(() => import('@/components/testimonials'));
+const Newsletter = dynamic(() => import('@/components/newsletter'), {
+  ssr: false,
+});
 
 export default function Home() {
   return (
     <>
+      <Head>
+        {/* Primary Meta Tags */}
+        <title>Still-inov Agency | Agence de Marketing & Communication Digitale - Développement Web, SEO & Réseaux Sociaux | Bordeaux</title>
+        <meta name="description" content="Still-inov, votre partenaire en marketing & communication digitale, vous offre des services personnalisés de création, design, et développement web pour transformer vos idées en réalité, quel que soit votre budget." />
+        <meta name="keywords" content="communication digitale, création site web, design graphique, développement web, SEO, marketing digital, agence web, agence marketing bordeaux, agence communication bordeaux , agence communication digitale, audit marketing, référencement SEO, SEA, stratégies digitales,faire pub insta, faire pub facebook, faire pub google, faire audit, agence digitale bordeaux, agence web bordeaux, agence marketing bordeaux" />
+        <meta name="author" content="Still-inov Agency" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://www.stillinov.com" />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:title" content="Still-inov Agency | Agence de Marketing & Communication Digitale | Bordeaux" />
+        <meta property="og:description" content="Découvrez comment Still-inov transforme vos idées en projets digitaux réussis grâce à des solutions personnalisées adaptées à vos besoins et à votre budget." />
+        <meta property="og:url" content="https://www.stillinov.com" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://www.stillinov.com/images/banner.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Still-inov Agency - Agence de Marketing & Communication Digitale | Bordeaux" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@StillInov" />
+        <meta name="twitter:title" content="Still-inov Agency | Agence de Marketing & Communication Digitale | Bordeaux" />
+        <meta name="twitter:description" content="Still-inov, votre partenaire en communication digitale, offre des services personnalisés de création, design, et développement web pour transformer vos idées en réalité." />
+        <meta name="twitter:image" content="https://www.stillinov.com/images/banner.png" />
+
+        {/* Trustmary Script */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function (w,d,s,o,r,js,fjs) {
+              w[r]=w[r]||function() {(w[r].q = w[r].q || []).push(arguments)}
+              w[r]('app', 'A71Xi8H3Lw');
+              if(d.getElementById(o)) return;
+              js = d.createElement(s), fjs = d.getElementsByTagName(s)[0];
+              js.id = o; js.src = 'https://embed.trustmary.com/embed.js';
+              js.async = 1; fjs.parentNode.insertBefore(js, fjs);
+            }(window, document, 'script', 'trustmary-embed', 'tmary'));`
+          }}
+        />
+      </Head>
       <Hero />
       <Features />
       <AboutUs />
       <Testimonials />
-      <script src="https://widget.trustmary.com/ZVh0Xu1q0"></script>
       <Newsletter />
       <Cookies />
       <Rdvicon />
-      <Analytics  />
+      <Analytics />
       <SpeedInsights />
-    </>)
+    </>
+  );
 }
