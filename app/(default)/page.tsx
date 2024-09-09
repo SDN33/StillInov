@@ -44,19 +44,10 @@ export default function Home() {
         <meta name="twitter:description" content="Still-inov, votre partenaire en communication digitale, offre des services personnalisés de création, design, et développement web pour transformer vos idées en réalité." />
         <meta name="twitter:image" content="https://www.stillinov.com/images/banner.png" />
 
-        {/* Trustmary Script */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `(function (w,d,s,o,r,js,fjs) {
-              w[r]=w[r]||function() {(w[r].q = w[r].q || []).push(arguments)}
-              w[r]('app', 'A71Xi8H3Lw');
-              if(d.getElementById(o)) return;
-              js = d.createElement(s), fjs = d.getElementsByTagName(s)[0];
-              js.id = o; js.src = 'https://embed.trustmary.com/embed.js';
-              js.async = 1; fjs.parentNode.insertBefore(js, fjs);
-            }(window, document, 'script', 'trustmary-embed', 'tmary'));`
-          }}
-        />
+        {/* Favicon */}
+        <link rel="icon" href="/favicon.ico" />
+        
+
       </Head>
       <Hero />
       <Features />
