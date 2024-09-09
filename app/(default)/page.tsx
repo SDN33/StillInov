@@ -46,7 +46,6 @@ export default function Home() {
 
         {/* Favicon */}
         <link rel="icon" href="/favicon.ico" />
-        
 
       </Head>
       <Hero />
