@@ -52,6 +52,9 @@ export default function AboutUs() {
             ))}
           </div>
         </div>
+        <a href="https://www.sortlist.com/agency/still-inov-agency" className="inline-block w-52 h-15 mt-6">
+          <img src="https://core.sortlist.com//_/apps/core/images/badges-fr/badge-flag-white-dark-xl.svg" alt="flag" className="w-full h-full object-cover" />
+        </a>
       </div>
     </section>
   );
