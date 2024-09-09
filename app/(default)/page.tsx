@@ -44,6 +44,7 @@ export default function Home() {
       <Features />
       <AboutUs />
       <Testimonials />
+      <script src="https://widget.trustmary.com/ZVh0Xu1q0"></script>
       <Newsletter />
       <Cookies />
       <Rdvicon />
