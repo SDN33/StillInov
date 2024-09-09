@@ -4,6 +4,8 @@ import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Support from '@/public/images/support.png';
 
+
+
 const RdvIcon: React.FC = () => {
   const [isHovered, setIsHovered] = useState(false);
   const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -119,7 +121,9 @@ const RdvIcon: React.FC = () => {
               >
                 &times;
               </button>
-              <h2 className="text-xl font-bold mb-2 text-center">Bénéficiez d'un appel gratuit !</h2>
+              <h2 className="text-xl font-bold mb-2 text-center">
+                Bénéficiez d'un appel <span className="animate-scale">g</span><span className="animate-scale">r</span><span className="animate-scale">a</span><span className="animate-scale">t</span><span className="animate-scale">u</span><span className="animate-scale">i</span><span className="animate-scale">t</span> !
+              </h2>
               <br />
               <div className="relative mb-4 mx-auto flex justify-center items-center">
                   <a>
@@ -185,6 +189,30 @@ const RdvIcon: React.FC = () => {
           transform: scale(1.2);
           animation: ripple 0.4s;
         }
+
+        @keyframes scaleUpDown {
+          0%, 100% {
+            transform: scale(1);
+          }
+          50% {
+            transform: scale(1.5);
+          }
+        }
+
+        .animate-scale span {
+          display: inline-block;
+          animation: scaleUpDown 1s infinite;
+        }
+
+        .animate-scale span:nth-child(1) { animation-delay: 0s; }
+        .animate-scale span:nth-child(2) { animation-delay: 0.1s; }
+        .animate-scale span:nth-child(3) { animation-delay: 0.2s; }
+        .animate-scale span:nth-child(4) { animation-delay: 0.3s; }
+        .animate-scale span:nth-child(5) { animation-delay: 0.4s; }
+        .animate-scale span:nth-child(6) { animation-delay: 0.5s; }
+        .animate-scale span:nth-child(7) { animation-delay: 0.6s; }
+        .animate-scale span:nth-child(8) { animation-delay: 0.7s; }
+        .animate-scale span:nth-child(9) { animation-delay: 0.8s; }
       `}</style>
     </div>
   );
