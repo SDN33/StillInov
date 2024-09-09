@@ -54,7 +54,7 @@ export default function AboutUs() {
         </div>
 
         {/* Centering the badge */}
-        <div className="flex justify-center mt-12">
+        <div className="flex justify-center mt-10">
           <a href="https://www.sortlist.com/agency/still-inov-agency" className="w-52 h-15">
             <img src="https://core.sortlist.com//_/apps/core/images/badges-fr/badge-flag-white-dark-xl.svg" alt="flag" className="w-full h-full object-cover" />
           </a>
@@ -63,4 +63,3 @@ export default function AboutUs() {
     </section>
   );
 }
-
