@@ -1,6 +1,6 @@
 export const metadata: Metadata = {
   title: 'Still-inov Agency | Agence de Marketing & Communication Digitale à Bordeaux - Développement Web, SEO, Réseaux Sociaux',
-  description: 'Still-inov, votre expert en marketing et communication digitale à Bordeaux. Offrant des services personnalisés de création, design, et développement web, SEO, et gestion des réseaux sociaux pour booster votre présence en ligne et transformer vos idées en réalité.',
+  description: 'Still-inov, votre expert en marketing et communication digitale à Bordeaux. Offrant des services personnalisés de création, design et développement web, SEO, et gestion des réseaux sociaux pour booster votre présence en ligne et transformer vos idées en réalité.',
   keywords: 'communication digitale Bordeaux, création site web Bordeaux, design graphique Bordeaux, développement web Bordeaux, SEO Bordeaux, marketing digital Bordeaux, agence web Bordeaux, agence marketing Bordeaux, agence communication Bordeaux, agence digitale Bordeaux, référencement SEO Bordeaux, SEA Bordeaux, stratégies digitales Bordeaux, publicité Instagram Bordeaux, publicité Facebook Bordeaux, publicité Google Bordeaux, audit marketing Bordeaux, transformation digitale Bordeaux',
   authors: {
     name: 'Still-inov Agency',
