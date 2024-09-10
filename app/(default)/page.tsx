@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@StillInov',
     title: 'Still-inov Agency | Agence de Marketing & Communication Digitale à Bordeaux',
-    description: 'Still-inov, votre partenaire à Bordeaux pour la communication digitale, vous offre des services de création, design, développement web et SEO pour donner vie à vos projets.',
+    description: 'Still-inov, votre partenaire à Bordeaux pour le marketing digital, vous offre des services de création, design, développement web et SEO pour donner vie à vos projets.',
     images: 'https://www.stillinov.com/images/banner.png',
   },
   additionalMeta: {
