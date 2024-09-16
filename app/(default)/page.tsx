@@ -38,7 +38,7 @@ export interface Metadata {
 export const metadata: Metadata = {
   title: 'Still-inov Agency | Agence de Marketing & Communication Digitale à Bordeaux - Développement Web, SEO, Réseaux Sociaux',
   description: 'Still-inov, votre expert en marketing et communication digitale à Bordeaux...',
-  keywords: 'communication digitale Bordeaux, création site web Bordeaux, etc.',
+  keywords: 'communication digitale Bordeaux, création site web Bordeaux, design graphique Bordeaux, développement web Bordeaux, SEO Bordeaux, marketing digital Bordeaux, agence web Bordeaux, solutions personnalisées Bordeaux, agence communication digitale Bordeaux, audit marketing Bordeaux, référencement SEO Bordeaux, SEA Bordeaux, stratégies digitales Bordeaux, faire pub insta Bordeaux, faire pub facebook Bordeaux, faire pub google Bordeaux, faire audit Bordeaux',
   authors: {
     name: 'Still-inov Agency',
   },
