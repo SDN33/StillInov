@@ -12,13 +12,6 @@ interface OGMetadata {
   type: string;
 }
 
-// Import de la police locale
-const oxygen = localFont({
-  src: "./fonts/Oxygen.ttf",
-  variable: "--font-oxygen",
-  weight: "300 700",
-});
-
 // Déclaration des métadonnées
 export const metadata: Metadata & { og: OGMetadata; twitter: { card: string; title: string; description: string; image: string } } = {
   title: "Canva Pro Gratuit | Rejoignez la Communauté de Canva en France",
@@ -85,7 +78,7 @@ export default function RootLayout() {
           }}
         />
       </head>
-      <body className={`${oxygen.variable} antialiased`}>
+      <body>
         {/* Ajout du DotLottie Player */}
         <Script
           src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
