@@ -55,6 +55,7 @@ export default function PageIllustration() {
         height="786"
         viewBox="0 0 982 786"
         fill="none"
+        z-index="-1"
       >
         <path
           fillRule="evenodd"
