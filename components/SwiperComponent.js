@@ -35,7 +35,7 @@ const SwiperComponent = ({ serviceData }) => {
       }}
       pagination={{ clickable: true }}
       navigation={true}
-      className="mySwiper"
+      className="mySwiper -z-0"
     >
       {serviceData.map((service, index) => (
         <SwiperSlide key={index}>
