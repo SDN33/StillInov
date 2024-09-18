@@ -38,9 +38,9 @@ export default function Testimonials() {
               modifier: 1,
               slideShadows: true,
             }}
-            pagination={{ clickable: true }}
+            pagination={false}
             navigation={false}
-            autoplay={{ delay: 2500 }} // Défilement toutes les 2,5 secondes
+            autoplay={{ delay: 3500 }} // Défilement toutes les 2,5 secondes
             modules={[EffectCoverflow, Pagination, Navigation, Autoplay]} // Activer les modules ici
             className="mySwiper -z-10" // Appliquer le z-index le plus bas
           >
@@ -104,19 +104,11 @@ export default function Testimonials() {
               className="inline-flex items-center px-4 py-2 text-black bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors duration-200"
             >
               <Image src={Googlelogo} width={20} height={20} alt="Google logo" />
-              <span> Consulter les avis Google</span>
+              <span>  Consulter les avis Google</span>
             </a>
           </div>
         </div>
       </div>
-
-      <style jsx>{`
-        .swiper-pagination {
-          bottom: 10px !important; /* Ajuste la distance depuis le bas si nécessaire */
-          z-index: 10; /* Assure-toi que la pagination est au-dessus des diapositives */
-          position: absolute !important; /* Assure que la pagination est positionnée relativement au Swiper */
-        }
-      `}</style>
     </section>
   );
 }
