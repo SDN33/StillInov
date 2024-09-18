@@ -38,10 +38,46 @@ export default function Header() {
                 <Link href="/contact" className="font-medium text-white hover:text-gray-300 px-5 py-3 flex items-center transition duration-150 ease-in-out">Contactez-nous</Link>
               </li>
             </ul>
+
+            {/* Social links */}
+            <div className="flex space-x-4 ml-4">
+              <Link href="https://www.instagram.com/stillinovagency" passHref>
+                <a target="_blank" rel="noopener noreferrer">
+                  <Image
+                    src="/images/instagram.webp"
+                    alt="Instagram"
+                    width={24}
+                    height={24}
+                    layout="intrinsic"
+                  />
+                </a>
+              </Link>
+              <Link href="https://www.linkedin.com/company/still-inov-agency" passHref>
+                <a target="_blank" rel="noopener noreferrer">
+                  <Image
+                    src="/images/linkedin.png"
+                    alt="LinkedIn"
+                    width={24}
+                    height={24}
+                    layout="intrinsic"
+                  />
+                </a>
+              </Link>
+              <Link href="https://www.threads.net/@stillinovagency" passHref>
+                <a target="_blank" rel="noopener noreferrer">
+                  <Image
+                    src="/images/facebook.webp"
+                    alt="Threads"
+                    width={24}
+                    height={24}
+                    layout="intrinsic"
+                  />
+                </a>
+              </Link>
+            </div>
           </nav>
 
           <MobileMenu />
-
         </div>
       </div>
     </header>
