@@ -117,6 +117,7 @@ export default function Home() {
       <Features />
       <AboutUs />
       <Testimonials />
+      <Engagements />
       <Newsletter />
       <Cookies />
       <Rdvicon />
