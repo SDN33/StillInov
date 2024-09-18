@@ -1,6 +1,5 @@
 'use client';
 import React, { useState, useEffect } from 'react';
-
 import Image from 'next/image';
 import Support from '@/public/images/support.png';
 
@@ -62,7 +61,7 @@ const RdvIcon: React.FC = () => {
       {showScrollTop && (
         <button
           onClick={scrollToTop}
-          className="bounce-icon fixed bottom-20 right-4 md:bottom-24 md:right-6 p-3 rounded-full shadow-lg text-white bg-gradient-to-br from-teal-400 to-orange-400 flex items-center justify-center transition-transform duration-300 hover:scale-125 "
+          className="bounce-icon fixed bottom-20 right-4 md:bottom-24 md:right-6 p-3 rounded-full shadow-lg text-white bg-gradient-to-br from-teal-400 to-orange-400 flex items-center justify-center transition-transform duration-300 hover:scale-125 z-50"
           aria-label="Scroll to Top"
         >
           <svg
@@ -87,7 +86,7 @@ const RdvIcon: React.FC = () => {
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
         onClick={handleTogglePopup}
-        className={`bounce-icon fixed bottom-4 right-4 md:bottom-6 md:right-6 p-3 rounded-full shadow-lg text-white bg-gradient-to-br from-orange-400 via-red-500 to-teal-400 flex items-center justify-center hover:scale-150 transition-transform duration-300 ${isPopupOpen ? 'z-30' : ''}`}
+        className={`bounce-icon fixed bottom-4 right-4 md:bottom-6 md:right-6 p-3 rounded-full shadow-lg text-white bg-gradient-to-br from-orange-400 via-red-500 to-teal-400 flex items-center justify-center hover:scale-150 transition-transform duration-300 ${isPopupOpen ? 'z-50' : 'z-40'}`}
         aria-label="Contactez-nous"
       >
         <span className="text-4xl font-bold">Si</span>
@@ -95,7 +94,7 @@ const RdvIcon: React.FC = () => {
 
       {/* Tooltip */}
       {isHovered && !isPopupOpen && (
-        <div className="absolute bottom-14 right-1/2 transform translate-x-1/2 bg-gray-800 text-white text-xs rounded py-1 px-2 shadow-lg whitespace-nowrap hidden md:block">
+        <div className="absolute bottom-14 right-1/2 transform translate-x-1/2 bg-gray-800 text-white text-xs rounded py-1 px-2 shadow-lg whitespace-nowrap hidden md:block z-50">
           Bénéficiez d'un appel de présentation de 15 min gratuit
         </div>
       )}
@@ -105,12 +104,12 @@ const RdvIcon: React.FC = () => {
         <>
           {/* Overlay */}
           <div
-            className="fixed inset-0 bg-gray-900 bg-opacity-50 z-10"
+            className="fixed inset-0 bg-gray-900 bg-opacity-50 z-40"
             onClick={handleTogglePopup}
           />
 
           {/* Popup Content */}
-          <div className="fixed inset-0 flex items-center justify-center z-20">
+          <div className="fixed inset-0 flex items-center justify-center z-50">
             <div className="bg-gray-800 text-white p-6 rounded-lg shadow-lg relative w-full max-w-md">
               <button
                 onClick={handleTogglePopup}
@@ -122,16 +121,16 @@ const RdvIcon: React.FC = () => {
               <h2 className="text-xl font-bold mb-2 text-center">Bénéficiez d'un appel gratuit !</h2>
               <br />
               <div className="relative mb-4 mx-auto flex justify-center items-center">
-                  <a>
-                    <Image className="rounded-full" src={Support} width={150} height={150} alt={`Photo de SAV`} />
-                  </a>
+                <a>
+                  <Image className="rounded-full" src={Support} width={150} height={150} alt={`Photo de SAV`} />
+                </a>
               </div>
               <p className="mb-2 text-center">
                 Pour nous chaque client bénéficie d'une attention particulière et d'un suivi personnalisé.
                 <br />
               </p>
               <p className="mb-4 text-center text-[#f15e4b] text-sm">
-              <em>Nous vous offrons un appel de présentation<br />de 15 minutes gratuit avec notre Digital Business Developer, pour discuter de vos besoins et vous expliquer comment nous pouvons vous aider à atteindre vos objectifs. 🚀</em>
+                <em>Nous vous offrons un appel de présentation<br />de 15 minutes gratuit avec notre Digital Business Developer, pour discuter de vos besoins et vous expliquer comment nous pouvons vous aider à atteindre vos objectifs. 🚀</em>
               </p>
               <a
                 href="https://calendly.com/stillinovagency/30min"
