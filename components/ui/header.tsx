@@ -14,8 +14,8 @@ export default function Header() {
               <Image
                 src="/images/logo.png"
                 alt="Stillinov logo"
-                width={270}
-                height={70}
+                width={280}
+                height={80}
                 quality={100}
                 priority
               />
@@ -23,20 +23,9 @@ export default function Header() {
           </div>
 
           {/* Social links and hamburger menu */}
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-4 ml-auto">
             {/* Social links */}
             <div className="hidden md:flex space-x-4">
-              <Link href="https://www.instagram.com/stillinovagency" passHref>
-                <a target="_blank" rel="noopener noreferrer">
-                  <Image
-                    src="/images/instagram.webp"
-                    alt="Instagram"
-                    width={24}
-                    height={24}
-                    layout="intrinsic"
-                  />
-                </a>
-              </Link>
               <Link href="https://www.linkedin.com/company/still-inov-agency" passHref>
                 <a target="_blank" rel="noopener noreferrer">
                   <Image
@@ -48,6 +37,19 @@ export default function Header() {
                   />
                 </a>
               </Link>
+              
+              <Link href="https://www.instagram.com/stillinovagency" passHref>
+                <a target="_blank" rel="noopener noreferrer">
+                  <Image
+                    src="/images/instagram.webp"
+                    alt="Instagram"
+                    width={24}
+                    height={24}
+                    layout="intrinsic"
+                  />
+                </a>
+              </Link>
+
               <Link href="https://www.threads.net/@stillinovagency" passHref>
                 <a target="_blank" rel="noopener noreferrer">
                   <Image
@@ -61,8 +63,10 @@ export default function Header() {
               </Link>
             </div>
 
-            {/* Hamburger menu */}
-            <MobileMenu />
+            {/* Hamburger menu (visible on both mobile and desktop) */}
+            <div className="md:flex">
+              <MobileMenu />
+            </div>
           </div>
         </div>
       </div>
