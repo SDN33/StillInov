@@ -104,6 +104,7 @@ import AboutUs from '@/components/quisommesnous';
 import Testimonials from '@/components/testimonials';
 import Newsletter from '@/components/newsletter';
 import Cookies from '@/components/cookies';
+import Engagements from '@/components/engagements';
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
@@ -116,6 +117,7 @@ export default function Home() {
       <Features />
       <AboutUs />
       <Testimonials />
+      <Engagements />
       <Newsletter />
       <Cookies />
       <Rdvicon />
