@@ -53,22 +53,22 @@ export default function Footer() {
 
           {/* Social links */}
           <div className="flex space-x-4">
-            <Link href="https://www.instagram.com/stillinovagency" passHref>
+          <Link href="https://www.linkedin.com/company/still-inov-agency" passHref>
               <a target="_blank" rel="noopener noreferrer">
                 <Image
-                  src="/images/instagram.webp"
-                  alt="Instagram"
+                  src="/images/linkedin.png"
+                  alt="LinkedIn"
                   width={24}
                   height={24}
                   layout="intrinsic"
                 />
               </a>
             </Link>
-            <Link href="https://www.linkedin.com/company/still-inov-agency" passHref>
+            <Link href="https://www.instagram.com/stillinovagency" passHref>
               <a target="_blank" rel="noopener noreferrer">
                 <Image
-                  src="/images/linkedin.png"
-                  alt="LinkedIn"
+                  src="/images/instagram.webp"
+                  alt="Instagram"
                   width={24}
                   height={24}
                   layout="intrinsic"

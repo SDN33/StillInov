@@ -14,33 +14,18 @@ export default function Header() {
               <Image
                 src="/images/logo.png"
                 alt="Stillinov logo"
-                width={280}
-                height={80}
+                width={270}
+                height={70}
                 quality={100}
                 priority
               />
             </Link>
           </div>
 
-          {/* Navigation */}
-          <nav className="hidden md:flex md:grow">
-            <ul className="flex grow justify-end flex-wrap items-center">
-              <li>
-                <Link href="https://www.stillinov.com/#features" className="font-medium text-white hover:text-gray-300 px-5 py-3 flex items-center transition duration-150 ease-in-out">Services</Link>
-              </li>
-              <li>
-                <Link href="https://www.stillinov.com/#about" className="font-medium text-white hover:text-gray-300 px-5 py-3 flex items-center transition duration-150 ease-in-out">Qui sommes-nous ?</Link>
-              </li>
-              <li>
-                <Link href="/blog" className="font-medium text-white hover:text-gray-300 px-5 py-3 flex items-center transition duration-150 ease-in-out">Blog</Link>
-              </li>
-              <li>
-                <Link href="/contact" className="font-medium text-white hover:text-gray-300 px-5 py-3 flex items-center transition duration-150 ease-in-out">Contactez-nous</Link>
-              </li>
-            </ul>
-
+          {/* Social links and hamburger menu */}
+          <div className="flex items-center space-x-4">
             {/* Social links */}
-            <div className="flex space-x-4 ml-4">
+            <div className="hidden md:flex space-x-4">
               <Link href="https://www.instagram.com/stillinovagency" passHref>
                 <a target="_blank" rel="noopener noreferrer">
                   <Image
@@ -75,9 +60,10 @@ export default function Header() {
                 </a>
               </Link>
             </div>
-          </nav>
 
-          <MobileMenu />
+            {/* Hamburger menu */}
+            <MobileMenu />
+          </div>
         </div>
       </div>
     </header>
