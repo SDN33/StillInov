@@ -10,6 +10,7 @@ import Image from 'next/image';
 import TestimonialImage01 from '@/public/images/testimonial-01.png';
 import TestimonialImage02 from '@/public/images/testimonial-02.jpg';
 import TestimonialImage03 from '@/public/images/testimonial-03.jpg';
+import Googlelogo from '@/public/images/googlelogo.webp';
 
 export default function Testimonials() {
   const url = "https://g.co/kgs/RPvEuDM";
@@ -102,9 +103,7 @@ export default function Testimonials() {
               rel="noopener noreferrer"
               className="inline-flex items-center px-4 py-2 text-black bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors duration-200"
             >
-              <svg className="w-5 h-5 mr-2" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                <path fill="#4285F4" d="M23.49 12.27c1.32-.69 2.44-1.8 3.04-3.27-1.21-1.13-2.64-2.01-4.28-2.53-2.07-1.48-4.69-2.34-7.44-2.34-5.41 0-9.79 4.38-9.79 9.79 0 2.46.93 4.69 2.47 6.43-2.73-1.49-5.05-3.57-6.98-6.12-2.71 4.68-1.45 11.2 2.95 15.29-2.48-.09-4.83-.71-7-1.78.09 2.64 1.01 5.14 2.58 7.11 2.1-2.8 4.97-4.76 8.37-6.27-.69 1.57-1.18 3.21-1.44 4.9-.65.49-1.41.95-2.26 1.37 2.58-.56 4.93-1.52 7.1-2.71zM12 20.29c.06-1.01.25-2 1.05-2.72 1.25-1.01 3.07-.87 4.1.21.76-.67 1.57-1.38 2.39-2.11-.55-1.38-1.23-2.67-2.03-3.79-1.17-1.61-2.77-2.85-4.56-3.59-2.26-.99-4.87-1.29-7.27-.98-1.67.19-3.22.71-4.59 1.36-.6-.72-1.26-1.41-2-2.03 1.23-2.62 3.54-4.51 6.24-5.9 2.73-1.38 5.73-1.73 8.63-.9 2.77.67 5.31 2.31 7.19 4.56-.09-.24-.18-.47-.29-.71-2.45-4.66-7.13-8.49-12.64-10.29-.77-.32-1.64-.57-2.46-.68-.63-.07-1.25.03-1.85.2-3.44.49-6.92 2.15-9.16 4.66-.78.79-1.46 1.66-1.89 2.64-.42-.6-.83-1.23-1.29-1.84 3.44-5.42 9.53-8.7 15.48-9.4 1.42-.16 2.81.1 4.09.74 3.66 1.27 7.01 3.37 9.7 6.27.69.68 1.34 1.43 1.89 2.19 2.61 3.73 2.15 8.93-.56 12.02-1.43 1.38-3.29 2.34-5.37 2.55-2.39.24-4.86.18-7.31-.31-3.33-.63-6.59-2.22-9.36-4.49-.73-.6-1.4-1.27-2.09-1.95z"></path>
-              </svg>
+              <Image src={Googlelogo} width={5} height={5} alt="Google logo" />
               <span>Consulter les avis Google</span>
             </a>
           </div>
