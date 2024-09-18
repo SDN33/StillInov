@@ -88,7 +88,6 @@ export default function Testimonials() {
             </a>
           </div>
           <br />
-          <br />
         </div>
       </div>
     </section>
