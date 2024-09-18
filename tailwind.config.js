@@ -69,6 +69,9 @@ module.exports = {
       scale: {
         '98': '.98'
       },
+      zIndex: {
+        '-10': '-10', // Classe personnalisée pour un très bas z-index
+      },
     },
   },
   plugins: [
