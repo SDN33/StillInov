@@ -63,7 +63,7 @@ export default function Testimonials() {
                   <Image className="rounded-full" src={TestimonialImage02} width={48} height={48} alt="Testimonial 02" />
                 </div>
                 <blockquote className="text-lg text-gray-400 grow">
-                  — J'ai fait appel aux services artistiques de StillInov pour la création de mon podcast audio 'Super Humains'.
+                  — J'ai fait appel aux services artistiques de StillInov pour la création de mon podcast audio 'Super Humains'. Nous avons collaboré sur la création de l'identité visuelle et le résultat est tout simplement incroyable !
                 </blockquote>
                 <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
                   <cite className="text-gray-200 not-italic">Diandra Tchatchouang</cite> - <a className="text-[#485b51] hover:text-gray-200 transition duration-150 ease-in-out" href="https://open.spotify.com/show/0N3bfIgmeKqztwSshyA4Gz">Podcast "Super Humains"</a>
@@ -78,7 +78,8 @@ export default function Testimonials() {
                   <Image className="rounded-full" src={TestimonialImage03} width={48} height={48} alt="Testimonial 03" />
                 </div>
                 <blockquote className="text-lg text-gray-400 grow">
-                  — J'ai fait appel à l'agence pour concevoir l'intégralité de mon identité visuelle.
+                  — J'ai fait appel à l'agence pour concevoir l'intégralité de mon identité visuelle. Le résultat est à la hauteur de mes attentes, je recommande !
+
                 </blockquote>
                 <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
                   <cite className="text-gray-200 not-italic">Cédric Césarini</cite> - <a className="text-[#f15e4b] hover:text-gray-200 transition duration-150 ease-in-out" href="https://www.facebook.com/bewinebegles">Be Wine Bègles</a>
