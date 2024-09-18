@@ -22,52 +22,26 @@ export default function Header() {
             </Link>
           </div>
 
-          {/* Social links and hamburger menu */}
-          <div className="flex items-center space-x-4 ml-auto">
-            {/* Social links */}
-            <div className="hidden md:flex space-x-4">
-              <Link href="https://www.linkedin.com/company/still-inov-agency" passHref>
-                <a target="_blank" rel="noopener noreferrer">
-                  <Image
-                    src="/images/linkedin.png"
-                    alt="LinkedIn"
-                    width={24}
-                    height={24}
-                    layout="intrinsic"
-                  />
-                </a>
-              </Link>
+          {/* Navigation */}
+          <nav className="hidden md:flex md:grow">
+            <ul className="flex grow justify-end flex-wrap items-center">
+              <li>
+                <Link href="https://www.stillinov.com/#features" className="font-medium text-white hover:text-gray-300 px-5 py-3 flex items-center transition duration-150 ease-in-out">Services</Link>
+              </li>
+              <li>
+                <Link href="https://www.stillinov.com/#about" className="font-medium text-white hover:text-gray-300 px-5 py-3 flex items-center transition duration-150 ease-in-out">Qui sommes-nous ?</Link>
+              </li>
+              <li>
+                <Link href="/blog" className="font-medium text-white hover:text-gray-300 px-5 py-3 flex items-center transition duration-150 ease-in-out">Blog</Link>
+              </li>
+              <li>
+                <Link href="/contact" className="font-medium text-white hover:text-gray-300 px-5 py-3 flex items-center transition duration-150 ease-in-out">Contactez-nous</Link>
+              </li>
+            </ul>
+          </nav>
 
-              <Link href="https://www.instagram.com/stillinovagency" passHref>
-                <a target="_blank" rel="noopener noreferrer">
-                  <Image
-                    src="/images/instagram.webp"
-                    alt="Instagram"
-                    width={24}
-                    height={24}
-                    layout="intrinsic"
-                  />
-                </a>
-              </Link>
+          <MobileMenu />
 
-              <Link href="https://www.threads.net/@stillinovagency" passHref>
-                <a target="_blank" rel="noopener noreferrer">
-                  <Image
-                    src="/images/facebook.webp"
-                    alt="Threads"
-                    width={24}
-                    height={24}
-                    layout="intrinsic"
-                  />
-                </a>
-              </Link>
-            </div>
-
-            {/* Hamburger menu (always visible) */}
-            <div className="block">
-              <MobileMenu />
-            </div>
-          </div>
         </div>
       </div>
     </header>
