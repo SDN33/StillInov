@@ -37,7 +37,7 @@ export default function Header() {
                   />
                 </a>
               </Link>
-              
+
               <Link href="https://www.instagram.com/stillinovagency" passHref>
                 <a target="_blank" rel="noopener noreferrer">
                   <Image
@@ -63,8 +63,8 @@ export default function Header() {
               </Link>
             </div>
 
-            {/* Hamburger menu (visible on both mobile and desktop) */}
-            <div className="md:flex">
+            {/* Hamburger menu (always visible) */}
+            <div className="block">
               <MobileMenu />
             </div>
           </div>
