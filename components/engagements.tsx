@@ -1,6 +1,6 @@
-import React from 'react';
+import react from 'react';
+export default function Engagements() {
 
-const Engagements: React.FC = () => {
   return (
     <section>
       {/* Additional Information */}
@@ -61,4 +61,3 @@ const Engagements: React.FC = () => {
   );
 };
 
-export default Engagements;
