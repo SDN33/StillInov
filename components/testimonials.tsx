@@ -71,7 +71,7 @@ export default function Testimonials() {
                   — J'ai fait appel aux services artistiques de StillInov pour la création de mon podcast audio 'Super Humains'. Nous avons collaboré sur la création de l'identité visuelle et le résultat est tout simplement incroyable !
                 </blockquote>
                 <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
-                  <cite className="not-italic text-[#485b51]">Identité visuelle</cite>
+                  <cite className="not-italic text-[#485b51]">Identité Visuelle</cite>
                 </div>
               </div>
             </SwiperSlide>
@@ -87,7 +87,7 @@ export default function Testimonials() {
                   — J'ai fait appel à l'agence pour concevoir l'intégralité de mon identité visuelle. Le résultat est à la hauteur de mes attentes, je recommande !
                 </blockquote>
                 <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
-                  <cite className="text-[#485b51] not-italic">Identité visuelle</cite>
+                  <cite className="text-[#485b51] not-italic">Identité Visuelle</cite>
                 </div>
               </div>
             </SwiperSlide>
