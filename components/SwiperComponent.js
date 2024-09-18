@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
@@ -31,7 +33,7 @@ const SwiperComponent = ({ serviceData }) => {
         modifier: 1,
         slideShadows: true,
       }}
-      pagination={true}
+      pagination={{ clickable: true }}
       navigation={true}
       className="mySwiper"
     >
