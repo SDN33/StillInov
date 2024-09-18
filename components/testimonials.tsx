@@ -37,7 +37,7 @@ export default function Testimonials() {
               slideShadows: true,
             }}
             pagination={{ clickable: true }}
-            navigation={true}
+            navigation={false}
             modules={[EffectCoverflow, Pagination, Navigation]} // Activer les modules ici
             className="mySwiper"
           >
