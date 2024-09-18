@@ -96,11 +96,17 @@ export const metadata: Metadata = {
 
 
 
+// Import the components
 import Hero from '@/components/hero';
 import Features from '@/components/features';
 import Rdvicon from '@/components/rdvicon';
+import AboutUs from '@/components/quisommesnous';
+import Testimonials from '@/components/testimonials';
+import Newsletter from '@/components/newsletter';
+import Cookies from '@/components/cookies';
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+
 
 
 export default function Home() {
