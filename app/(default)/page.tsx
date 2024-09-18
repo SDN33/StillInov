@@ -96,18 +96,12 @@ export const metadata: Metadata = {
 
 
 
-import dynamic from 'next/dynamic';
 import Hero from '@/components/hero';
 import Features from '@/components/features';
 import Rdvicon from '@/components/rdvicon';
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
-// Lazy load non-critical components
-const AboutUs = dynamic(() => import('@/components/quisommesnous'));
-const Testimonials = dynamic(() => import('@/components/testimonials'));
-const Newsletter = dynamic(() => import('@/components/newsletter'));
-const Cookies = dynamic(() => import('@/components/cookies'));
 
 export default function Home() {
   return (
