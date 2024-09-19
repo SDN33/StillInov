@@ -48,7 +48,7 @@ export default function Testimonials() {
             <SwiperSlide>
               <div className="flex flex-col h-full p-6 bg-gray-800">
                 <div className="relative inline-flex flex-col mb-4">
-                  <Image className="rounded-full" src={TestimonialImage01} width={48} height={48} alt="Testimonial 01" />
+                  <Image className="rounded-full mb-2" src={TestimonialImage01} width={48} height={48} alt="Testimonial 01" />
                   <cite className="text-gray-200 not-italic">J.F Kitsadi</cite><a className="text-[#f15e4b] hover:text-gray-200 transition duration-150 ease-in-out" href="#0">SevenMates</a>
                 </div>
                 <blockquote className="text-lg text-gray-400 grow">
@@ -64,7 +64,7 @@ export default function Testimonials() {
             <SwiperSlide>
               <div className="flex flex-col h-full p-6 bg-gray-800">
                 <div className="relative inline-flex flex-col mb-4">
-                  <Image className="rounded-full" src={TestimonialImage02} width={48} height={48} alt="Testimonial 02" />
+                  <Image className="rounded-full mb-2" src={TestimonialImage02} width={48} height={48} alt="Testimonial 02" />
                   <cite className="text-gray-200 not-italic">Diandra Tchatchouang</cite><a className="text-[#f15e4b] hover:text-gray-200 transition duration-150 ease-in-out" href="https://open.spotify.com/show/0N3bfIgmeKqztwSshyA4Gz">Podcast "Super Humains"</a>
                 </div>
                 <blockquote className="text-lg text-gray-400 grow">
@@ -80,7 +80,7 @@ export default function Testimonials() {
             <SwiperSlide>
               <div className="flex flex-col h-full p-6 bg-gray-800">
                 <div className="relative inline-flex flex-col mb-4">
-                  <Image className="rounded-full" src={TestimonialImage03} width={48} height={48} alt="Testimonial 03" />
+                  <Image className="rounded-full mb-2" src={TestimonialImage03} width={48} height={48} alt="Testimonial 03" />
                   <cite className="text-gray-200 not-italic">Cédric Césarini</cite><a className="text-[#f15e4b] hover:text-gray-200 transition duration-150 ease-in-out" href="https://www.facebook.com/bewinebegles">Be Wine Bègles</a>
                 </div>
                 <blockquote className="text-lg text-gray-400 grow">
