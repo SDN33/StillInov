@@ -68,7 +68,7 @@ export default function Testimonials() {
                   <cite className="text-gray-200 not-italic">Diandra Tchatchouang</cite><a className="text-[#f15e4b] hover:text-gray-200 transition duration-150 ease-in-out" href="https://open.spotify.com/show/0N3bfIgmeKqztwSshyA4Gz">Podcast "Super Humains"</a>
                 </div>
                 <blockquote className="text-lg text-gray-400 grow">
-                  — J'ai fait appel aux services artistiques de StillInov pour la création de mon podcast audio 'Super Humains'. Nous avons collaboré sur la création de l'identité visuelle et le résultat est tout simplement incroyable, nous avons été relayés par plusieurs médias comme CNEWS et bein d'autres ! Grand merci à l'équipe Still-inov !
+                  — J'ai fait appel aux services artistiques de StillInov pour la création de mon podcast audio 'Super Humains'. Nous avons collaboré sur la création de l'identité visuelle et le résultat est tout simplement incroyable, nous avons été relayés par plusieurs médias comme CNEWS et bien d'autres, Grand merci à l'équipe Still-inov !
                 </blockquote>
                 <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
                   <cite className="not-italic text-[#485b51]">Identité Visuelle</cite>
@@ -84,7 +84,7 @@ export default function Testimonials() {
                   <cite className="text-gray-200 not-italic">Cédric Césarini</cite><a className="text-[#f15e4b] hover:text-gray-200 transition duration-150 ease-in-out" href="https://www.facebook.com/bewinebegles">Be Wine Bègles</a>
                 </div>
                 <blockquote className="text-lg text-gray-400 grow">
-                  — J'ai fait appel à l'agence pour concevoir l'intégralité de mon identité visuelle. Le résultat est à la hauteur de mes attentes, mon bar est désormais reconnaissable entre mille ! Merci à toute l'équipe.
+                  — J'ai fait appel à l'agence pour concevoir l'intégralité de mon identité visuelle, logo et flyers. Le résultat est à la hauteur de mes attentes, mon bar est désormais reconnaissable entre mille ! Merci à toute l'équipe.
                 </blockquote>
                 <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
                   <cite className="text-[#485b51] not-italic">Identité Visuelle</cite>
