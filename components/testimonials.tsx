@@ -40,7 +40,7 @@ export default function Testimonials() {
             }}
             pagination={false}
             navigation={false}
-            autoplay={{ delay: 3500 }} // Défilement toutes les 2,5 secondes
+            autoplay={{ delay: 6000 }} // Défilement toutes les 2,5 secondes
             modules={[EffectCoverflow, Pagination, Navigation, Autoplay]} // Activer les modules ici
             z-index={0} // Appliquer le z-index le plus bas
           >
