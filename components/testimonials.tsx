@@ -104,7 +104,7 @@ export default function Testimonials() {
               className="inline-flex items-center px-4 py-2 text-black bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors duration-200"
             >
               <Image src={Googlelogo} width={20} height={20} alt="Google logo" />
-              <span>  Consulter les avis Google</span>
+              <span className='font-bold ml-1'>  Consulter les avis Google</span>
             </a>
           </div>
         </div>

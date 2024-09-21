@@ -26,7 +26,7 @@ export default function Newsletter() {
               <div className="flex flex-col sm:flex-row justify-center max-w-xs mx-auto sm:max-w-md lg:max-w-none">
                 <input type="email" name="email" className="w-full appearance-none bg-white border border-gray-300 focus:border-gray-500 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-gray-900 placeholder-gray-400" placeholder="Votre email…" aria-label="Votre email…" required />
                 <input type="hidden" name="message" value="newsletter" />
-                <button type="submit" className="btn text-white bg-gray-800 hover:bg-gray-900 shadow">S'abonner</button>
+                <button type="submit" className="btn font-bold text-white bg-gray-800 hover:bg-gray-900 shadow">S'abonner</button>
               </div>
             </form>
 
