@@ -102,7 +102,7 @@ export default function Hero() {
             <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
               <div data-aos="fade-up" data-aos-delay="400">
                 <a
-                  className="btn text-white w-full mb-4 sm:w-auto sm:mb-0"
+                  className="btn font-bold text-white w-full mb-4 sm:w-auto sm:mb-0"
                   href="/contact"
                   style={{ backgroundColor: '#f15e4b' }}
                   onMouseEnter={e => e.currentTarget.style.backgroundColor = '#1a202c'}
@@ -112,7 +112,7 @@ export default function Hero() {
                 </a>
               </div>
               <div data-aos="fade-up" data-aos-delay="600">
-                <a className="btn text-white bg-[#485b51] hover:bg-gray-800 w-full sm:w-auto sm:ml-4" href="#features">Voir plus</a>
+                <a className="btn font-bold text-white bg-[#485b51] hover:bg-gray-800 w-full sm:w-auto sm:ml-4" href="#features">Voir plus</a>
               </div>
             </div>
           </div>
