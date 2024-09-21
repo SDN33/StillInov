@@ -116,10 +116,10 @@ export default function Home() {
       <Hero />
       <Features />
       <AboutUs />
+      <Cookies />
       <Testimonials />
       <Engagements />
       <Newsletter />
-      <Cookies />
       <Rdvicon />
       <Analytics />
       <SpeedInsights />
