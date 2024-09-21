@@ -42,8 +42,7 @@ export default function Testimonials() {
             navigation={false}
             autoplay={{ delay: 3500 }} // Défilement toutes les 2,5 secondes
             modules={[EffectCoverflow, Pagination, Navigation, Autoplay]} // Activer les modules ici
-            className="mySwiper -z-10" // Appliquer le z-index le plus bas
-            z-index={-10} // Appliquer le z-index le plus bas
+            z-index={0} // Appliquer le z-index le plus bas
           >
             {/* 1st testimonial */}
             <SwiperSlide>
